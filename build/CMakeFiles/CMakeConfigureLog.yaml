@@ -1,0 +1,3493 @@
+
+---
+events:
+  -
+    kind: "find-v1"
+    backtrace:
+      - "/opt/homebrew/share/cmake/Modules/CMakeDetermineSystem.cmake:12 (find_program)"
+      - "CMakeLists.txt:3 (project)"
+    mode: "program"
+    variable: "CMAKE_UNAME"
+    description: "Path to a program."
+    settings:
+      SearchFramework: "FIRST"
+      SearchAppBundle: "FIRST"
+      CMAKE_FIND_USE_CMAKE_PATH: true
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "uname"
+    candidate_directories:
+      - "/Users/chenhongchi/.codex/tmp/arg0/codex-arg0TRXaIE/"
+      - "/Users/chenhongchi/Library/Caches/JetBrains/CLion2026.1/acp-agents/.runtimes/node/24.13.0/npm-cache/_npx/7fd314b1ecd85c67/node_modules/@openai/codex-darwin-arm64/vendor/aarch64-apple-darwin/path/"
+      - "/Users/chenhongchi/Library/Caches/JetBrains/CLion2026.1/acp-agents/.runtimes/node/24.13.0/npm-cache/_npx/7fd314b1ecd85c67/node_modules/.bin/"
+      - "/Users/chenhongchi/Desktop/Engine/node_modules/.bin/"
+      - "/Users/chenhongchi/Desktop/node_modules/.bin/"
+      - "/Users/chenhongchi/node_modules/.bin/"
+      - "/Users/node_modules/.bin/"
+      - "/node_modules/.bin/"
+      - "/Users/chenhongchi/Library/Caches/JetBrains/CLion2026.1/acp-agents/.runtimes/node/24.13.0/lib/node_modules/npm/node_modules/@npmcli/run-script/lib/node-gyp-bin/"
+      - "/Users/chenhongchi/Library/Caches/JetBrains/CLion2026.1/acp-agents/.runtimes/node/24.13.0/bin/"
+      - "/opt/homebrew/bin/"
+      - "/opt/homebrew/sbin/"
+      - "/usr/local/bin/"
+      - "/System/Cryptexes/App/usr/bin/"
+      - "/usr/bin/"
+      - "/bin/"
+      - "/usr/sbin/"
+      - "/sbin/"
+      - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin/"
+      - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin/"
+      - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin/"
+      - "/opt/pkg/env/active/bin/"
+      - "/opt/pmk/env/global/bin/"
+      - "/Library/Apple/usr/bin/"
+      - "/usr/local/share/dotnet/"
+      - "/Users/chenhongchi/.dotnet/tools/"
+      - "/Users/chenhongchi/.local/bin/"
+    searched_directories:
+      - "/Users/chenhongchi/.codex/tmp/arg0/codex-arg0TRXaIE/uname"
+      - "/Users/chenhongchi/Library/Caches/JetBrains/CLion2026.1/acp-agents/.runtimes/node/24.13.0/npm-cache/_npx/7fd314b1ecd85c67/node_modules/@openai/codex-darwin-arm64/vendor/aarch64-apple-darwin/path/uname"
+      - "/Users/chenhongchi/Library/Caches/JetBrains/CLion2026.1/acp-agents/.runtimes/node/24.13.0/npm-cache/_npx/7fd314b1ecd85c67/node_modules/.bin/uname"
+      - "/Users/chenhongchi/Desktop/Engine/node_modules/.bin/uname"
+      - "/Users/chenhongchi/Desktop/node_modules/.bin/uname"
+      - "/Users/chenhongchi/node_modules/.bin/uname"
+      - "/Users/node_modules/.bin/uname"
+      - "/node_modules/.bin/uname"
+      - "/Users/chenhongchi/Library/Caches/JetBrains/CLion2026.1/acp-agents/.runtimes/node/24.13.0/lib/node_modules/npm/node_modules/@npmcli/run-script/lib/node-gyp-bin/uname"
+      - "/Users/chenhongchi/Library/Caches/JetBrains/CLion2026.1/acp-agents/.runtimes/node/24.13.0/bin/uname"
+      - "/opt/homebrew/bin/uname"
+      - "/opt/homebrew/sbin/uname"
+      - "/usr/local/bin/uname"
+      - "/System/Cryptexes/App/usr/bin/uname"
+    found: "/usr/bin/uname"
+    search_context:
+      ENV{PATH}:
+        - "/Users/chenhongchi/.codex/tmp/arg0/codex-arg0TRXaIE"
+        - "/Users/chenhongchi/Library/Caches/JetBrains/CLion2026.1/acp-agents/.runtimes/node/24.13.0/npm-cache/_npx/7fd314b1ecd85c67/node_modules/@openai/codex-darwin-arm64/vendor/aarch64-apple-darwin/path"
+        - "/Users/chenhongchi/Library/Caches/JetBrains/CLion2026.1/acp-agents/.runtimes/node/24.13.0/npm-cache/_npx/7fd314b1ecd85c67/node_modules/.bin"
+        - "/Users/chenhongchi/Desktop/Engine/node_modules/.bin"
+        - "/Users/chenhongchi/Desktop/node_modules/.bin"
+        - "/Users/chenhongchi/node_modules/.bin"
+        - "/Users/node_modules/.bin"
+        - "/node_modules/.bin"
+        - "/Users/chenhongchi/Library/Caches/JetBrains/CLion2026.1/acp-agents/.runtimes/node/24.13.0/lib/node_modules/npm/node_modules/@npmcli/run-script/lib/node-gyp-bin"
+        - "/Users/chenhongchi/Library/Caches/JetBrains/CLion2026.1/acp-agents/.runtimes/node/24.13.0/bin"
+        - "/opt/homebrew/bin"
+        - "/opt/homebrew/sbin"
+        - "/usr/local/bin"
+        - "/System/Cryptexes/App/usr/bin"
+        - "/usr/bin"
+        - "/bin"
+        - "/usr/sbin"
+        - "/sbin"
+        - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin"
+        - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin"
+        - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin"
+        - "/opt/pkg/env/active/bin"
+        - "/opt/pmk/env/global/bin"
+        - "/Library/Apple/usr/bin"
+        - "/usr/local/share/dotnet"
+        - "~/.dotnet/tools"
+        - "/Users/chenhongchi/.local/bin"
+        - "/Users/chenhongchi/.local/bin"
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/opt/homebrew/share/cmake/Modules/CMakeDetermineSystem.cmake:212 (message)"
+      - "CMakeLists.txt:3 (project)"
+    message: |
+      The system is: Darwin - 25.4.0 - arm64
+  -
+    kind: "find-v1"
+    backtrace:
+      - "/opt/homebrew/share/cmake/Modules/CMakeUnixFindMake.cmake:5 (find_program)"
+      - "CMakeLists.txt:3 (project)"
+    mode: "program"
+    variable: "CMAKE_MAKE_PROGRAM"
+    description: "Path to a program."
+    settings:
+      SearchFramework: "FIRST"
+      SearchAppBundle: "FIRST"
+      CMAKE_FIND_USE_CMAKE_PATH: true
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "gmake"
+      - "make"
+      - "smake"
+    candidate_directories:
+      - "/Users/chenhongchi/.codex/tmp/arg0/codex-arg0TRXaIE/"
+      - "/Users/chenhongchi/Library/Caches/JetBrains/CLion2026.1/acp-agents/.runtimes/node/24.13.0/npm-cache/_npx/7fd314b1ecd85c67/node_modules/@openai/codex-darwin-arm64/vendor/aarch64-apple-darwin/path/"
+      - "/Users/chenhongchi/Library/Caches/JetBrains/CLion2026.1/acp-agents/.runtimes/node/24.13.0/npm-cache/_npx/7fd314b1ecd85c67/node_modules/.bin/"
+      - "/Users/chenhongchi/Desktop/Engine/node_modules/.bin/"
+      - "/Users/chenhongchi/Desktop/node_modules/.bin/"
+      - "/Users/chenhongchi/node_modules/.bin/"
+      - "/Users/node_modules/.bin/"
+      - "/node_modules/.bin/"
+      - "/Users/chenhongchi/Library/Caches/JetBrains/CLion2026.1/acp-agents/.runtimes/node/24.13.0/lib/node_modules/npm/node_modules/@npmcli/run-script/lib/node-gyp-bin/"
+      - "/Users/chenhongchi/Library/Caches/JetBrains/CLion2026.1/acp-agents/.runtimes/node/24.13.0/bin/"
+      - "/opt/homebrew/bin/"
+      - "/opt/homebrew/sbin/"
+      - "/usr/local/bin/"
+      - "/System/Cryptexes/App/usr/bin/"
+      - "/usr/bin/"
+      - "/bin/"
+      - "/usr/sbin/"
+      - "/sbin/"
+      - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin/"
+      - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin/"
+      - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin/"
+      - "/opt/pkg/env/active/bin/"
+      - "/opt/pmk/env/global/bin/"
+      - "/Library/Apple/usr/bin/"
+      - "/usr/local/share/dotnet/"
+      - "/Users/chenhongchi/.dotnet/tools/"
+      - "/Users/chenhongchi/.local/bin/"
+    searched_directories:
+      - "/Users/chenhongchi/.codex/tmp/arg0/codex-arg0TRXaIE/gmake"
+      - "/Users/chenhongchi/Library/Caches/JetBrains/CLion2026.1/acp-agents/.runtimes/node/24.13.0/npm-cache/_npx/7fd314b1ecd85c67/node_modules/@openai/codex-darwin-arm64/vendor/aarch64-apple-darwin/path/gmake"
+      - "/Users/chenhongchi/Library/Caches/JetBrains/CLion2026.1/acp-agents/.runtimes/node/24.13.0/npm-cache/_npx/7fd314b1ecd85c67/node_modules/.bin/gmake"
+      - "/Users/chenhongchi/Desktop/Engine/node_modules/.bin/gmake"
+      - "/Users/chenhongchi/Desktop/node_modules/.bin/gmake"
+      - "/Users/chenhongchi/node_modules/.bin/gmake"
+      - "/Users/node_modules/.bin/gmake"
+      - "/node_modules/.bin/gmake"
+      - "/Users/chenhongchi/Library/Caches/JetBrains/CLion2026.1/acp-agents/.runtimes/node/24.13.0/lib/node_modules/npm/node_modules/@npmcli/run-script/lib/node-gyp-bin/gmake"
+      - "/Users/chenhongchi/Library/Caches/JetBrains/CLion2026.1/acp-agents/.runtimes/node/24.13.0/bin/gmake"
+      - "/opt/homebrew/bin/gmake"
+      - "/opt/homebrew/sbin/gmake"
+      - "/usr/local/bin/gmake"
+      - "/System/Cryptexes/App/usr/bin/gmake"
+      - "/usr/bin/gmake"
+      - "/bin/gmake"
+      - "/usr/sbin/gmake"
+      - "/sbin/gmake"
+      - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin/gmake"
+      - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin/gmake"
+      - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin/gmake"
+      - "/opt/pkg/env/active/bin/gmake"
+      - "/opt/pmk/env/global/bin/gmake"
+      - "/Library/Apple/usr/bin/gmake"
+      - "/usr/local/share/dotnet/gmake"
+      - "/Users/chenhongchi/.dotnet/tools/gmake"
+      - "/Users/chenhongchi/.local/bin/gmake"
+      - "/Users/chenhongchi/.codex/tmp/arg0/codex-arg0TRXaIE/make"
+      - "/Users/chenhongchi/Library/Caches/JetBrains/CLion2026.1/acp-agents/.runtimes/node/24.13.0/npm-cache/_npx/7fd314b1ecd85c67/node_modules/@openai/codex-darwin-arm64/vendor/aarch64-apple-darwin/path/make"
+      - "/Users/chenhongchi/Library/Caches/JetBrains/CLion2026.1/acp-agents/.runtimes/node/24.13.0/npm-cache/_npx/7fd314b1ecd85c67/node_modules/.bin/make"
+      - "/Users/chenhongchi/Desktop/Engine/node_modules/.bin/make"
+      - "/Users/chenhongchi/Desktop/node_modules/.bin/make"
+      - "/Users/chenhongchi/node_modules/.bin/make"
+      - "/Users/node_modules/.bin/make"
+      - "/node_modules/.bin/make"
+      - "/Users/chenhongchi/Library/Caches/JetBrains/CLion2026.1/acp-agents/.runtimes/node/24.13.0/lib/node_modules/npm/node_modules/@npmcli/run-script/lib/node-gyp-bin/make"
+      - "/Users/chenhongchi/Library/Caches/JetBrains/CLion2026.1/acp-agents/.runtimes/node/24.13.0/bin/make"
+      - "/opt/homebrew/bin/make"
+      - "/opt/homebrew/sbin/make"
+      - "/usr/local/bin/make"
+      - "/System/Cryptexes/App/usr/bin/make"
+    found: "/usr/bin/make"
+    search_context:
+      ENV{PATH}:
+        - "/Users/chenhongchi/.codex/tmp/arg0/codex-arg0TRXaIE"
+        - "/Users/chenhongchi/Library/Caches/JetBrains/CLion2026.1/acp-agents/.runtimes/node/24.13.0/npm-cache/_npx/7fd314b1ecd85c67/node_modules/@openai/codex-darwin-arm64/vendor/aarch64-apple-darwin/path"
+        - "/Users/chenhongchi/Library/Caches/JetBrains/CLion2026.1/acp-agents/.runtimes/node/24.13.0/npm-cache/_npx/7fd314b1ecd85c67/node_modules/.bin"
+        - "/Users/chenhongchi/Desktop/Engine/node_modules/.bin"
+        - "/Users/chenhongchi/Desktop/node_modules/.bin"
+        - "/Users/chenhongchi/node_modules/.bin"
+        - "/Users/node_modules/.bin"
+        - "/node_modules/.bin"
+        - "/Users/chenhongchi/Library/Caches/JetBrains/CLion2026.1/acp-agents/.runtimes/node/24.13.0/lib/node_modules/npm/node_modules/@npmcli/run-script/lib/node-gyp-bin"
+        - "/Users/chenhongchi/Library/Caches/JetBrains/CLion2026.1/acp-agents/.runtimes/node/24.13.0/bin"
+        - "/opt/homebrew/bin"
+        - "/opt/homebrew/sbin"
+        - "/usr/local/bin"
+        - "/System/Cryptexes/App/usr/bin"
+        - "/usr/bin"
+        - "/bin"
+        - "/usr/sbin"
+        - "/sbin"
+        - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin"
+        - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin"
+        - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin"
+        - "/opt/pkg/env/active/bin"
+        - "/opt/pmk/env/global/bin"
+        - "/Library/Apple/usr/bin"
+        - "/usr/local/share/dotnet"
+        - "~/.dotnet/tools"
+        - "/Users/chenhongchi/.local/bin"
+        - "/Users/chenhongchi/.local/bin"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "/opt/homebrew/share/cmake/Modules/CMakeDetermineCompiler.cmake:73 (find_program)"
+      - "/opt/homebrew/share/cmake/Modules/CMakeDetermineCXXCompiler.cmake:69 (_cmake_find_compiler)"
+      - "CMakeLists.txt:3 (project)"
+    mode: "program"
+    variable: "CMAKE_CXX_COMPILER"
+    description: "CXX compiler"
+    settings:
+      SearchFramework: "FIRST"
+      SearchAppBundle: "FIRST"
+      CMAKE_FIND_USE_CMAKE_PATH: true
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "c++"
+      - "g++"
+      - "cl"
+      - "bcc"
+      - "icpx"
+      - "icx"
+      - "clang++"
+    candidate_directories:
+      - "/Users/chenhongchi/.codex/tmp/arg0/codex-arg0TRXaIE/"
+      - "/Users/chenhongchi/Library/Caches/JetBrains/CLion2026.1/acp-agents/.runtimes/node/24.13.0/npm-cache/_npx/7fd314b1ecd85c67/node_modules/@openai/codex-darwin-arm64/vendor/aarch64-apple-darwin/path/"
+      - "/Users/chenhongchi/Library/Caches/JetBrains/CLion2026.1/acp-agents/.runtimes/node/24.13.0/npm-cache/_npx/7fd314b1ecd85c67/node_modules/.bin/"
+      - "/Users/chenhongchi/Desktop/Engine/node_modules/.bin/"
+      - "/Users/chenhongchi/Desktop/node_modules/.bin/"
+      - "/Users/chenhongchi/node_modules/.bin/"
+      - "/Users/node_modules/.bin/"
+      - "/node_modules/.bin/"
+      - "/Users/chenhongchi/Library/Caches/JetBrains/CLion2026.1/acp-agents/.runtimes/node/24.13.0/lib/node_modules/npm/node_modules/@npmcli/run-script/lib/node-gyp-bin/"
+      - "/Users/chenhongchi/Library/Caches/JetBrains/CLion2026.1/acp-agents/.runtimes/node/24.13.0/bin/"
+      - "/opt/homebrew/bin/"
+      - "/opt/homebrew/sbin/"
+      - "/usr/local/bin/"
+      - "/System/Cryptexes/App/usr/bin/"
+      - "/usr/bin/"
+      - "/bin/"
+      - "/usr/sbin/"
+      - "/sbin/"
+      - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin/"
+      - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin/"
+      - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin/"
+      - "/opt/pkg/env/active/bin/"
+      - "/opt/pmk/env/global/bin/"
+      - "/Library/Apple/usr/bin/"
+      - "/usr/local/share/dotnet/"
+      - "/Users/chenhongchi/.dotnet/tools/"
+      - "/Users/chenhongchi/.local/bin/"
+    searched_directories:
+      - "/Users/chenhongchi/.codex/tmp/arg0/codex-arg0TRXaIE/c++"
+      - "/Users/chenhongchi/Library/Caches/JetBrains/CLion2026.1/acp-agents/.runtimes/node/24.13.0/npm-cache/_npx/7fd314b1ecd85c67/node_modules/@openai/codex-darwin-arm64/vendor/aarch64-apple-darwin/path/c++"
+      - "/Users/chenhongchi/Library/Caches/JetBrains/CLion2026.1/acp-agents/.runtimes/node/24.13.0/npm-cache/_npx/7fd314b1ecd85c67/node_modules/.bin/c++"
+      - "/Users/chenhongchi/Desktop/Engine/node_modules/.bin/c++"
+      - "/Users/chenhongchi/Desktop/node_modules/.bin/c++"
+      - "/Users/chenhongchi/node_modules/.bin/c++"
+      - "/Users/node_modules/.bin/c++"
+      - "/node_modules/.bin/c++"
+      - "/Users/chenhongchi/Library/Caches/JetBrains/CLion2026.1/acp-agents/.runtimes/node/24.13.0/lib/node_modules/npm/node_modules/@npmcli/run-script/lib/node-gyp-bin/c++"
+      - "/Users/chenhongchi/Library/Caches/JetBrains/CLion2026.1/acp-agents/.runtimes/node/24.13.0/bin/c++"
+      - "/opt/homebrew/bin/c++"
+      - "/opt/homebrew/sbin/c++"
+      - "/usr/local/bin/c++"
+      - "/System/Cryptexes/App/usr/bin/c++"
+    found: "/usr/bin/c++"
+    search_context:
+      ENV{PATH}:
+        - "/Users/chenhongchi/.codex/tmp/arg0/codex-arg0TRXaIE"
+        - "/Users/chenhongchi/Library/Caches/JetBrains/CLion2026.1/acp-agents/.runtimes/node/24.13.0/npm-cache/_npx/7fd314b1ecd85c67/node_modules/@openai/codex-darwin-arm64/vendor/aarch64-apple-darwin/path"
+        - "/Users/chenhongchi/Library/Caches/JetBrains/CLion2026.1/acp-agents/.runtimes/node/24.13.0/npm-cache/_npx/7fd314b1ecd85c67/node_modules/.bin"
+        - "/Users/chenhongchi/Desktop/Engine/node_modules/.bin"
+        - "/Users/chenhongchi/Desktop/node_modules/.bin"
+        - "/Users/chenhongchi/node_modules/.bin"
+        - "/Users/node_modules/.bin"
+        - "/node_modules/.bin"
+        - "/Users/chenhongchi/Library/Caches/JetBrains/CLion2026.1/acp-agents/.runtimes/node/24.13.0/lib/node_modules/npm/node_modules/@npmcli/run-script/lib/node-gyp-bin"
+        - "/Users/chenhongchi/Library/Caches/JetBrains/CLion2026.1/acp-agents/.runtimes/node/24.13.0/bin"
+        - "/opt/homebrew/bin"
+        - "/opt/homebrew/sbin"
+        - "/usr/local/bin"
+        - "/System/Cryptexes/App/usr/bin"
+        - "/usr/bin"
+        - "/bin"
+        - "/usr/sbin"
+        - "/sbin"
+        - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin"
+        - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin"
+        - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin"
+        - "/opt/pkg/env/active/bin"
+        - "/opt/pmk/env/global/bin"
+        - "/Library/Apple/usr/bin"
+        - "/usr/local/share/dotnet"
+        - "~/.dotnet/tools"
+        - "/Users/chenhongchi/.local/bin"
+        - "/Users/chenhongchi/.local/bin"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "/opt/homebrew/share/cmake/Modules/CMakeDetermineCompilerId.cmake:468 (find_file)"
+      - "/opt/homebrew/share/cmake/Modules/CMakeDetermineCompilerId.cmake:506 (CMAKE_DETERMINE_COMPILER_ID_WRITE)"
+      - "/opt/homebrew/share/cmake/Modules/CMakeDetermineCompilerId.cmake:8 (CMAKE_DETERMINE_COMPILER_ID_BUILD)"
+      - "/opt/homebrew/share/cmake/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "/opt/homebrew/share/cmake/Modules/CMakeDetermineCXXCompiler.cmake:125 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:3 (project)"
+    mode: "file"
+    variable: "src_in"
+    description: "Path to a file."
+    settings:
+      SearchFramework: "FIRST"
+      SearchAppBundle: "FIRST"
+      CMAKE_FIND_USE_CMAKE_PATH: true
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "CMakeCXXCompilerId.cpp.in"
+    candidate_directories:
+      - "/opt/homebrew/share/cmake/Modules/"
+    found: "/opt/homebrew/share/cmake/Modules/CMakeCXXCompilerId.cpp.in"
+    search_context:
+      ENV{PATH}:
+        - "/Users/chenhongchi/.codex/tmp/arg0/codex-arg0TRXaIE"
+        - "/Users/chenhongchi/Library/Caches/JetBrains/CLion2026.1/acp-agents/.runtimes/node/24.13.0/npm-cache/_npx/7fd314b1ecd85c67/node_modules/@openai/codex-darwin-arm64/vendor/aarch64-apple-darwin/path"
+        - "/Users/chenhongchi/Library/Caches/JetBrains/CLion2026.1/acp-agents/.runtimes/node/24.13.0/npm-cache/_npx/7fd314b1ecd85c67/node_modules/.bin"
+        - "/Users/chenhongchi/Desktop/Engine/node_modules/.bin"
+        - "/Users/chenhongchi/Desktop/node_modules/.bin"
+        - "/Users/chenhongchi/node_modules/.bin"
+        - "/Users/node_modules/.bin"
+        - "/node_modules/.bin"
+        - "/Users/chenhongchi/Library/Caches/JetBrains/CLion2026.1/acp-agents/.runtimes/node/24.13.0/lib/node_modules/npm/node_modules/@npmcli/run-script/lib/node-gyp-bin"
+        - "/Users/chenhongchi/Library/Caches/JetBrains/CLion2026.1/acp-agents/.runtimes/node/24.13.0/bin"
+        - "/opt/homebrew/bin"
+        - "/opt/homebrew/sbin"
+        - "/usr/local/bin"
+        - "/System/Cryptexes/App/usr/bin"
+        - "/usr/bin"
+        - "/bin"
+        - "/usr/sbin"
+        - "/sbin"
+        - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin"
+        - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin"
+        - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin"
+        - "/opt/pkg/env/active/bin"
+        - "/opt/pmk/env/global/bin"
+        - "/Library/Apple/usr/bin"
+        - "/usr/local/share/dotnet"
+        - "~/.dotnet/tools"
+        - "/Users/chenhongchi/.local/bin"
+        - "/Users/chenhongchi/.local/bin"
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/opt/homebrew/share/cmake/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "/opt/homebrew/share/cmake/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "/opt/homebrew/share/cmake/Modules/CMakeDetermineCXXCompiler.cmake:125 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:3 (project)"
+    message: |
+      Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" succeeded.
+      Compiler: /usr/bin/c++ 
+      Build flags: 
+      Id flags:  
+      
+      The output was:
+      0
+      
+      
+      Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "a.out"
+      
+      The CXX compiler identification is AppleClang, found in:
+        /Users/chenhongchi/Desktop/Engine/build/CMakeFiles/4.3.1/CompilerIdCXX/a.out
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/opt/homebrew/share/cmake/Modules/CMakeDetermineCompilerId.cmake:296 (message)"
+      - "/opt/homebrew/share/cmake/Modules/CMakeDetermineCXXCompiler.cmake:125 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:3 (project)"
+    message: |
+      Detecting CXX compiler apple sysroot: "/usr/bin/c++" "-E" "apple-sdk.cpp"
+        # 1 "apple-sdk.cpp"
+        # 1 "<built-in>" 1
+        # 1 "<built-in>" 3
+        # 531 "<built-in>" 3
+        # 1 "<command line>" 1
+        # 1 "<built-in>" 2
+        # 1 "apple-sdk.cpp" 2
+        # 1 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/AvailabilityMacros.h" 1 3 4
+        # 89 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/AvailabilityMacros.h" 3 4
+        # 1 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/AvailabilityVersions.h" 1 3 4
+        # 90 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/AvailabilityMacros.h" 2 3 4
+        # 1 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/TargetConditionals.h" 1 3 4
+        # 91 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/AvailabilityMacros.h" 2 3 4
+        # 207 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/AvailabilityMacros.h" 3 4
+        # 1 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/Availability.h" 1 3 4
+        # 196 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/Availability.h" 3 4
+        # 1 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/AvailabilityVersions.h" 1 3 4
+        # 197 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/Availability.h" 2 3 4
+        # 1 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/AvailabilityInternal.h" 1 3 4
+        # 33 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/AvailabilityInternal.h" 3 4
+        # 1 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/AvailabilityVersions.h" 1 3 4
+        # 34 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/AvailabilityInternal.h" 2 3 4
+        # 198 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/Availability.h" 2 3 4
+        # 1 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/AvailabilityInternalLegacy.h" 1 3 4
+        # 34 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/AvailabilityInternalLegacy.h" 3 4
+        # 1 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/AvailabilityInternal.h" 1 3 4
+        # 35 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/AvailabilityInternalLegacy.h" 2 3 4
+        # 199 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/Availability.h" 2 3 4
+        # 208 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/AvailabilityMacros.h" 2 3 4
+        # 2 "apple-sdk.cpp" 2
+        
+        
+      Found apple sysroot: /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk
+  -
+    kind: "find-v1"
+    backtrace:
+      - "/opt/homebrew/share/cmake/Modules/CMakeFindBinUtils.cmake:243 (find_program)"
+      - "/opt/homebrew/share/cmake/Modules/CMakeDetermineCXXCompiler.cmake:206 (include)"
+      - "CMakeLists.txt:3 (project)"
+    mode: "program"
+    variable: "CMAKE_AR"
+    description: "Path to a program."
+    settings:
+      SearchFramework: "FIRST"
+      SearchAppBundle: "FIRST"
+      CMAKE_FIND_USE_CMAKE_PATH: false
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: false
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "ar"
+    candidate_directories:
+      - "/usr/bin/"
+      - "/Users/chenhongchi/.codex/tmp/arg0/codex-arg0TRXaIE/"
+      - "/Users/chenhongchi/Library/Caches/JetBrains/CLion2026.1/acp-agents/.runtimes/node/24.13.0/npm-cache/_npx/7fd314b1ecd85c67/node_modules/@openai/codex-darwin-arm64/vendor/aarch64-apple-darwin/path/"
+      - "/Users/chenhongchi/Library/Caches/JetBrains/CLion2026.1/acp-agents/.runtimes/node/24.13.0/npm-cache/_npx/7fd314b1ecd85c67/node_modules/.bin/"
+      - "/Users/chenhongchi/Desktop/Engine/node_modules/.bin/"
+      - "/Users/chenhongchi/Desktop/node_modules/.bin/"
+      - "/Users/chenhongchi/node_modules/.bin/"
+      - "/Users/node_modules/.bin/"
+      - "/node_modules/.bin/"
+      - "/Users/chenhongchi/Library/Caches/JetBrains/CLion2026.1/acp-agents/.runtimes/node/24.13.0/lib/node_modules/npm/node_modules/@npmcli/run-script/lib/node-gyp-bin/"
+      - "/Users/chenhongchi/Library/Caches/JetBrains/CLion2026.1/acp-agents/.runtimes/node/24.13.0/bin/"
+      - "/opt/homebrew/bin/"
+      - "/opt/homebrew/sbin/"
+      - "/usr/local/bin/"
+      - "/System/Cryptexes/App/usr/bin/"
+      - "/bin/"
+      - "/usr/sbin/"
+      - "/sbin/"
+      - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin/"
+      - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin/"
+      - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin/"
+      - "/opt/pkg/env/active/bin/"
+      - "/opt/pmk/env/global/bin/"
+      - "/Library/Apple/usr/bin/"
+      - "/usr/local/share/dotnet/"
+      - "/Users/chenhongchi/.dotnet/tools/"
+      - "/Users/chenhongchi/.local/bin/"
+    found: "/usr/bin/ar"
+    search_context:
+      ENV{PATH}:
+        - "/Users/chenhongchi/.codex/tmp/arg0/codex-arg0TRXaIE"
+        - "/Users/chenhongchi/Library/Caches/JetBrains/CLion2026.1/acp-agents/.runtimes/node/24.13.0/npm-cache/_npx/7fd314b1ecd85c67/node_modules/@openai/codex-darwin-arm64/vendor/aarch64-apple-darwin/path"
+        - "/Users/chenhongchi/Library/Caches/JetBrains/CLion2026.1/acp-agents/.runtimes/node/24.13.0/npm-cache/_npx/7fd314b1ecd85c67/node_modules/.bin"
+        - "/Users/chenhongchi/Desktop/Engine/node_modules/.bin"
+        - "/Users/chenhongchi/Desktop/node_modules/.bin"
+        - "/Users/chenhongchi/node_modules/.bin"
+        - "/Users/node_modules/.bin"
+        - "/node_modules/.bin"
+        - "/Users/chenhongchi/Library/Caches/JetBrains/CLion2026.1/acp-agents/.runtimes/node/24.13.0/lib/node_modules/npm/node_modules/@npmcli/run-script/lib/node-gyp-bin"
+        - "/Users/chenhongchi/Library/Caches/JetBrains/CLion2026.1/acp-agents/.runtimes/node/24.13.0/bin"
+        - "/opt/homebrew/bin"
+        - "/opt/homebrew/sbin"
+        - "/usr/local/bin"
+        - "/System/Cryptexes/App/usr/bin"
+        - "/usr/bin"
+        - "/bin"
+        - "/usr/sbin"
+        - "/sbin"
+        - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin"
+        - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin"
+        - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin"
+        - "/opt/pkg/env/active/bin"
+        - "/opt/pmk/env/global/bin"
+        - "/Library/Apple/usr/bin"
+        - "/usr/local/share/dotnet"
+        - "~/.dotnet/tools"
+        - "/Users/chenhongchi/.local/bin"
+        - "/Users/chenhongchi/.local/bin"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "/opt/homebrew/share/cmake/Modules/CMakeFindBinUtils.cmake:243 (find_program)"
+      - "/opt/homebrew/share/cmake/Modules/CMakeDetermineCXXCompiler.cmake:206 (include)"
+      - "CMakeLists.txt:3 (project)"
+    mode: "program"
+    variable: "CMAKE_RANLIB"
+    description: "Path to a program."
+    settings:
+      SearchFramework: "FIRST"
+      SearchAppBundle: "FIRST"
+      CMAKE_FIND_USE_CMAKE_PATH: false
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: false
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "ranlib"
+    candidate_directories:
+      - "/usr/bin/"
+      - "/Users/chenhongchi/.codex/tmp/arg0/codex-arg0TRXaIE/"
+      - "/Users/chenhongchi/Library/Caches/JetBrains/CLion2026.1/acp-agents/.runtimes/node/24.13.0/npm-cache/_npx/7fd314b1ecd85c67/node_modules/@openai/codex-darwin-arm64/vendor/aarch64-apple-darwin/path/"
+      - "/Users/chenhongchi/Library/Caches/JetBrains/CLion2026.1/acp-agents/.runtimes/node/24.13.0/npm-cache/_npx/7fd314b1ecd85c67/node_modules/.bin/"
+      - "/Users/chenhongchi/Desktop/Engine/node_modules/.bin/"
+      - "/Users/chenhongchi/Desktop/node_modules/.bin/"
+      - "/Users/chenhongchi/node_modules/.bin/"
+      - "/Users/node_modules/.bin/"
+      - "/node_modules/.bin/"
+      - "/Users/chenhongchi/Library/Caches/JetBrains/CLion2026.1/acp-agents/.runtimes/node/24.13.0/lib/node_modules/npm/node_modules/@npmcli/run-script/lib/node-gyp-bin/"
+      - "/Users/chenhongchi/Library/Caches/JetBrains/CLion2026.1/acp-agents/.runtimes/node/24.13.0/bin/"
+      - "/opt/homebrew/bin/"
+      - "/opt/homebrew/sbin/"
+      - "/usr/local/bin/"
+      - "/System/Cryptexes/App/usr/bin/"
+      - "/bin/"
+      - "/usr/sbin/"
+      - "/sbin/"
+      - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin/"
+      - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin/"
+      - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin/"
+      - "/opt/pkg/env/active/bin/"
+      - "/opt/pmk/env/global/bin/"
+      - "/Library/Apple/usr/bin/"
+      - "/usr/local/share/dotnet/"
+      - "/Users/chenhongchi/.dotnet/tools/"
+      - "/Users/chenhongchi/.local/bin/"
+    found: "/usr/bin/ranlib"
+    search_context:
+      ENV{PATH}:
+        - "/Users/chenhongchi/.codex/tmp/arg0/codex-arg0TRXaIE"
+        - "/Users/chenhongchi/Library/Caches/JetBrains/CLion2026.1/acp-agents/.runtimes/node/24.13.0/npm-cache/_npx/7fd314b1ecd85c67/node_modules/@openai/codex-darwin-arm64/vendor/aarch64-apple-darwin/path"
+        - "/Users/chenhongchi/Library/Caches/JetBrains/CLion2026.1/acp-agents/.runtimes/node/24.13.0/npm-cache/_npx/7fd314b1ecd85c67/node_modules/.bin"
+        - "/Users/chenhongchi/Desktop/Engine/node_modules/.bin"
+        - "/Users/chenhongchi/Desktop/node_modules/.bin"
+        - "/Users/chenhongchi/node_modules/.bin"
+        - "/Users/node_modules/.bin"
+        - "/node_modules/.bin"
+        - "/Users/chenhongchi/Library/Caches/JetBrains/CLion2026.1/acp-agents/.runtimes/node/24.13.0/lib/node_modules/npm/node_modules/@npmcli/run-script/lib/node-gyp-bin"
+        - "/Users/chenhongchi/Library/Caches/JetBrains/CLion2026.1/acp-agents/.runtimes/node/24.13.0/bin"
+        - "/opt/homebrew/bin"
+        - "/opt/homebrew/sbin"
+        - "/usr/local/bin"
+        - "/System/Cryptexes/App/usr/bin"
+        - "/usr/bin"
+        - "/bin"
+        - "/usr/sbin"
+        - "/sbin"
+        - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin"
+        - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin"
+        - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin"
+        - "/opt/pkg/env/active/bin"
+        - "/opt/pmk/env/global/bin"
+        - "/Library/Apple/usr/bin"
+        - "/usr/local/share/dotnet"
+        - "~/.dotnet/tools"
+        - "/Users/chenhongchi/.local/bin"
+        - "/Users/chenhongchi/.local/bin"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "/opt/homebrew/share/cmake/Modules/CMakeFindBinUtils.cmake:243 (find_program)"
+      - "/opt/homebrew/share/cmake/Modules/CMakeDetermineCXXCompiler.cmake:206 (include)"
+      - "CMakeLists.txt:3 (project)"
+    mode: "program"
+    variable: "CMAKE_STRIP"
+    description: "Path to a program."
+    settings:
+      SearchFramework: "FIRST"
+      SearchAppBundle: "FIRST"
+      CMAKE_FIND_USE_CMAKE_PATH: false
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: false
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "strip"
+    candidate_directories:
+      - "/usr/bin/"
+      - "/Users/chenhongchi/.codex/tmp/arg0/codex-arg0TRXaIE/"
+      - "/Users/chenhongchi/Library/Caches/JetBrains/CLion2026.1/acp-agents/.runtimes/node/24.13.0/npm-cache/_npx/7fd314b1ecd85c67/node_modules/@openai/codex-darwin-arm64/vendor/aarch64-apple-darwin/path/"
+      - "/Users/chenhongchi/Library/Caches/JetBrains/CLion2026.1/acp-agents/.runtimes/node/24.13.0/npm-cache/_npx/7fd314b1ecd85c67/node_modules/.bin/"
+      - "/Users/chenhongchi/Desktop/Engine/node_modules/.bin/"
+      - "/Users/chenhongchi/Desktop/node_modules/.bin/"
+      - "/Users/chenhongchi/node_modules/.bin/"
+      - "/Users/node_modules/.bin/"
+      - "/node_modules/.bin/"
+      - "/Users/chenhongchi/Library/Caches/JetBrains/CLion2026.1/acp-agents/.runtimes/node/24.13.0/lib/node_modules/npm/node_modules/@npmcli/run-script/lib/node-gyp-bin/"
+      - "/Users/chenhongchi/Library/Caches/JetBrains/CLion2026.1/acp-agents/.runtimes/node/24.13.0/bin/"
+      - "/opt/homebrew/bin/"
+      - "/opt/homebrew/sbin/"
+      - "/usr/local/bin/"
+      - "/System/Cryptexes/App/usr/bin/"
+      - "/bin/"
+      - "/usr/sbin/"
+      - "/sbin/"
+      - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin/"
+      - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin/"
+      - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin/"
+      - "/opt/pkg/env/active/bin/"
+      - "/opt/pmk/env/global/bin/"
+      - "/Library/Apple/usr/bin/"
+      - "/usr/local/share/dotnet/"
+      - "/Users/chenhongchi/.dotnet/tools/"
+      - "/Users/chenhongchi/.local/bin/"
+    found: "/usr/bin/strip"
+    search_context:
+      ENV{PATH}:
+        - "/Users/chenhongchi/.codex/tmp/arg0/codex-arg0TRXaIE"
+        - "/Users/chenhongchi/Library/Caches/JetBrains/CLion2026.1/acp-agents/.runtimes/node/24.13.0/npm-cache/_npx/7fd314b1ecd85c67/node_modules/@openai/codex-darwin-arm64/vendor/aarch64-apple-darwin/path"
+        - "/Users/chenhongchi/Library/Caches/JetBrains/CLion2026.1/acp-agents/.runtimes/node/24.13.0/npm-cache/_npx/7fd314b1ecd85c67/node_modules/.bin"
+        - "/Users/chenhongchi/Desktop/Engine/node_modules/.bin"
+        - "/Users/chenhongchi/Desktop/node_modules/.bin"
+        - "/Users/chenhongchi/node_modules/.bin"
+        - "/Users/node_modules/.bin"
+        - "/node_modules/.bin"
+        - "/Users/chenhongchi/Library/Caches/JetBrains/CLion2026.1/acp-agents/.runtimes/node/24.13.0/lib/node_modules/npm/node_modules/@npmcli/run-script/lib/node-gyp-bin"
+        - "/Users/chenhongchi/Library/Caches/JetBrains/CLion2026.1/acp-agents/.runtimes/node/24.13.0/bin"
+        - "/opt/homebrew/bin"
+        - "/opt/homebrew/sbin"
+        - "/usr/local/bin"
+        - "/System/Cryptexes/App/usr/bin"
+        - "/usr/bin"
+        - "/bin"
+        - "/usr/sbin"
+        - "/sbin"
+        - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin"
+        - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin"
+        - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin"
+        - "/opt/pkg/env/active/bin"
+        - "/opt/pmk/env/global/bin"
+        - "/Library/Apple/usr/bin"
+        - "/usr/local/share/dotnet"
+        - "~/.dotnet/tools"
+        - "/Users/chenhongchi/.local/bin"
+        - "/Users/chenhongchi/.local/bin"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "/opt/homebrew/share/cmake/Modules/CMakeFindBinUtils.cmake:243 (find_program)"
+      - "/opt/homebrew/share/cmake/Modules/CMakeDetermineCXXCompiler.cmake:206 (include)"
+      - "CMakeLists.txt:3 (project)"
+    mode: "program"
+    variable: "CMAKE_LINKER"
+    description: "Path to a program."
+    settings:
+      SearchFramework: "FIRST"
+      SearchAppBundle: "FIRST"
+      CMAKE_FIND_USE_CMAKE_PATH: false
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: false
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "ld"
+    candidate_directories:
+      - "/usr/bin/"
+      - "/Users/chenhongchi/.codex/tmp/arg0/codex-arg0TRXaIE/"
+      - "/Users/chenhongchi/Library/Caches/JetBrains/CLion2026.1/acp-agents/.runtimes/node/24.13.0/npm-cache/_npx/7fd314b1ecd85c67/node_modules/@openai/codex-darwin-arm64/vendor/aarch64-apple-darwin/path/"
+      - "/Users/chenhongchi/Library/Caches/JetBrains/CLion2026.1/acp-agents/.runtimes/node/24.13.0/npm-cache/_npx/7fd314b1ecd85c67/node_modules/.bin/"
+      - "/Users/chenhongchi/Desktop/Engine/node_modules/.bin/"
+      - "/Users/chenhongchi/Desktop/node_modules/.bin/"
+      - "/Users/chenhongchi/node_modules/.bin/"
+      - "/Users/node_modules/.bin/"
+      - "/node_modules/.bin/"
+      - "/Users/chenhongchi/Library/Caches/JetBrains/CLion2026.1/acp-agents/.runtimes/node/24.13.0/lib/node_modules/npm/node_modules/@npmcli/run-script/lib/node-gyp-bin/"
+      - "/Users/chenhongchi/Library/Caches/JetBrains/CLion2026.1/acp-agents/.runtimes/node/24.13.0/bin/"
+      - "/opt/homebrew/bin/"
+      - "/opt/homebrew/sbin/"
+      - "/usr/local/bin/"
+      - "/System/Cryptexes/App/usr/bin/"
+      - "/bin/"
+      - "/usr/sbin/"
+      - "/sbin/"
+      - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin/"
+      - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin/"
+      - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin/"
+      - "/opt/pkg/env/active/bin/"
+      - "/opt/pmk/env/global/bin/"
+      - "/Library/Apple/usr/bin/"
+      - "/usr/local/share/dotnet/"
+      - "/Users/chenhongchi/.dotnet/tools/"
+      - "/Users/chenhongchi/.local/bin/"
+    found: "/usr/bin/ld"
+    search_context:
+      ENV{PATH}:
+        - "/Users/chenhongchi/.codex/tmp/arg0/codex-arg0TRXaIE"
+        - "/Users/chenhongchi/Library/Caches/JetBrains/CLion2026.1/acp-agents/.runtimes/node/24.13.0/npm-cache/_npx/7fd314b1ecd85c67/node_modules/@openai/codex-darwin-arm64/vendor/aarch64-apple-darwin/path"
+        - "/Users/chenhongchi/Library/Caches/JetBrains/CLion2026.1/acp-agents/.runtimes/node/24.13.0/npm-cache/_npx/7fd314b1ecd85c67/node_modules/.bin"
+        - "/Users/chenhongchi/Desktop/Engine/node_modules/.bin"
+        - "/Users/chenhongchi/Desktop/node_modules/.bin"
+        - "/Users/chenhongchi/node_modules/.bin"
+        - "/Users/node_modules/.bin"
+        - "/node_modules/.bin"
+        - "/Users/chenhongchi/Library/Caches/JetBrains/CLion2026.1/acp-agents/.runtimes/node/24.13.0/lib/node_modules/npm/node_modules/@npmcli/run-script/lib/node-gyp-bin"
+        - "/Users/chenhongchi/Library/Caches/JetBrains/CLion2026.1/acp-agents/.runtimes/node/24.13.0/bin"
+        - "/opt/homebrew/bin"
+        - "/opt/homebrew/sbin"
+        - "/usr/local/bin"
+        - "/System/Cryptexes/App/usr/bin"
+        - "/usr/bin"
+        - "/bin"
+        - "/usr/sbin"
+        - "/sbin"
+        - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin"
+        - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin"
+        - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin"
+        - "/opt/pkg/env/active/bin"
+        - "/opt/pmk/env/global/bin"
+        - "/Library/Apple/usr/bin"
+        - "/usr/local/share/dotnet"
+        - "~/.dotnet/tools"
+        - "/Users/chenhongchi/.local/bin"
+        - "/Users/chenhongchi/.local/bin"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "/opt/homebrew/share/cmake/Modules/CMakeFindBinUtils.cmake:243 (find_program)"
+      - "/opt/homebrew/share/cmake/Modules/CMakeDetermineCXXCompiler.cmake:206 (include)"
+      - "CMakeLists.txt:3 (project)"
+    mode: "program"
+    variable: "CMAKE_NM"
+    description: "Path to a program."
+    settings:
+      SearchFramework: "FIRST"
+      SearchAppBundle: "FIRST"
+      CMAKE_FIND_USE_CMAKE_PATH: false
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: false
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "nm"
+    candidate_directories:
+      - "/usr/bin/"
+      - "/Users/chenhongchi/.codex/tmp/arg0/codex-arg0TRXaIE/"
+      - "/Users/chenhongchi/Library/Caches/JetBrains/CLion2026.1/acp-agents/.runtimes/node/24.13.0/npm-cache/_npx/7fd314b1ecd85c67/node_modules/@openai/codex-darwin-arm64/vendor/aarch64-apple-darwin/path/"
+      - "/Users/chenhongchi/Library/Caches/JetBrains/CLion2026.1/acp-agents/.runtimes/node/24.13.0/npm-cache/_npx/7fd314b1ecd85c67/node_modules/.bin/"
+      - "/Users/chenhongchi/Desktop/Engine/node_modules/.bin/"
+      - "/Users/chenhongchi/Desktop/node_modules/.bin/"
+      - "/Users/chenhongchi/node_modules/.bin/"
+      - "/Users/node_modules/.bin/"
+      - "/node_modules/.bin/"
+      - "/Users/chenhongchi/Library/Caches/JetBrains/CLion2026.1/acp-agents/.runtimes/node/24.13.0/lib/node_modules/npm/node_modules/@npmcli/run-script/lib/node-gyp-bin/"
+      - "/Users/chenhongchi/Library/Caches/JetBrains/CLion2026.1/acp-agents/.runtimes/node/24.13.0/bin/"
+      - "/opt/homebrew/bin/"
+      - "/opt/homebrew/sbin/"
+      - "/usr/local/bin/"
+      - "/System/Cryptexes/App/usr/bin/"
+      - "/bin/"
+      - "/usr/sbin/"
+      - "/sbin/"
+      - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin/"
+      - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin/"
+      - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin/"
+      - "/opt/pkg/env/active/bin/"
+      - "/opt/pmk/env/global/bin/"
+      - "/Library/Apple/usr/bin/"
+      - "/usr/local/share/dotnet/"
+      - "/Users/chenhongchi/.dotnet/tools/"
+      - "/Users/chenhongchi/.local/bin/"
+    found: "/usr/bin/nm"
+    search_context:
+      ENV{PATH}:
+        - "/Users/chenhongchi/.codex/tmp/arg0/codex-arg0TRXaIE"
+        - "/Users/chenhongchi/Library/Caches/JetBrains/CLion2026.1/acp-agents/.runtimes/node/24.13.0/npm-cache/_npx/7fd314b1ecd85c67/node_modules/@openai/codex-darwin-arm64/vendor/aarch64-apple-darwin/path"
+        - "/Users/chenhongchi/Library/Caches/JetBrains/CLion2026.1/acp-agents/.runtimes/node/24.13.0/npm-cache/_npx/7fd314b1ecd85c67/node_modules/.bin"
+        - "/Users/chenhongchi/Desktop/Engine/node_modules/.bin"
+        - "/Users/chenhongchi/Desktop/node_modules/.bin"
+        - "/Users/chenhongchi/node_modules/.bin"
+        - "/Users/node_modules/.bin"
+        - "/node_modules/.bin"
+        - "/Users/chenhongchi/Library/Caches/JetBrains/CLion2026.1/acp-agents/.runtimes/node/24.13.0/lib/node_modules/npm/node_modules/@npmcli/run-script/lib/node-gyp-bin"
+        - "/Users/chenhongchi/Library/Caches/JetBrains/CLion2026.1/acp-agents/.runtimes/node/24.13.0/bin"
+        - "/opt/homebrew/bin"
+        - "/opt/homebrew/sbin"
+        - "/usr/local/bin"
+        - "/System/Cryptexes/App/usr/bin"
+        - "/usr/bin"
+        - "/bin"
+        - "/usr/sbin"
+        - "/sbin"
+        - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin"
+        - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin"
+        - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin"
+        - "/opt/pkg/env/active/bin"
+        - "/opt/pmk/env/global/bin"
+        - "/Library/Apple/usr/bin"
+        - "/usr/local/share/dotnet"
+        - "~/.dotnet/tools"
+        - "/Users/chenhongchi/.local/bin"
+        - "/Users/chenhongchi/.local/bin"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "/opt/homebrew/share/cmake/Modules/CMakeFindBinUtils.cmake:243 (find_program)"
+      - "/opt/homebrew/share/cmake/Modules/CMakeDetermineCXXCompiler.cmake:206 (include)"
+      - "CMakeLists.txt:3 (project)"
+    mode: "program"
+    variable: "CMAKE_OBJDUMP"
+    description: "Path to a program."
+    settings:
+      SearchFramework: "FIRST"
+      SearchAppBundle: "FIRST"
+      CMAKE_FIND_USE_CMAKE_PATH: false
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: false
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "objdump"
+    candidate_directories:
+      - "/usr/bin/"
+      - "/Users/chenhongchi/.codex/tmp/arg0/codex-arg0TRXaIE/"
+      - "/Users/chenhongchi/Library/Caches/JetBrains/CLion2026.1/acp-agents/.runtimes/node/24.13.0/npm-cache/_npx/7fd314b1ecd85c67/node_modules/@openai/codex-darwin-arm64/vendor/aarch64-apple-darwin/path/"
+      - "/Users/chenhongchi/Library/Caches/JetBrains/CLion2026.1/acp-agents/.runtimes/node/24.13.0/npm-cache/_npx/7fd314b1ecd85c67/node_modules/.bin/"
+      - "/Users/chenhongchi/Desktop/Engine/node_modules/.bin/"
+      - "/Users/chenhongchi/Desktop/node_modules/.bin/"
+      - "/Users/chenhongchi/node_modules/.bin/"
+      - "/Users/node_modules/.bin/"
+      - "/node_modules/.bin/"
+      - "/Users/chenhongchi/Library/Caches/JetBrains/CLion2026.1/acp-agents/.runtimes/node/24.13.0/lib/node_modules/npm/node_modules/@npmcli/run-script/lib/node-gyp-bin/"
+      - "/Users/chenhongchi/Library/Caches/JetBrains/CLion2026.1/acp-agents/.runtimes/node/24.13.0/bin/"
+      - "/opt/homebrew/bin/"
+      - "/opt/homebrew/sbin/"
+      - "/usr/local/bin/"
+      - "/System/Cryptexes/App/usr/bin/"
+      - "/bin/"
+      - "/usr/sbin/"
+      - "/sbin/"
+      - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin/"
+      - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin/"
+      - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin/"
+      - "/opt/pkg/env/active/bin/"
+      - "/opt/pmk/env/global/bin/"
+      - "/Library/Apple/usr/bin/"
+      - "/usr/local/share/dotnet/"
+      - "/Users/chenhongchi/.dotnet/tools/"
+      - "/Users/chenhongchi/.local/bin/"
+    found: "/usr/bin/objdump"
+    search_context:
+      ENV{PATH}:
+        - "/Users/chenhongchi/.codex/tmp/arg0/codex-arg0TRXaIE"
+        - "/Users/chenhongchi/Library/Caches/JetBrains/CLion2026.1/acp-agents/.runtimes/node/24.13.0/npm-cache/_npx/7fd314b1ecd85c67/node_modules/@openai/codex-darwin-arm64/vendor/aarch64-apple-darwin/path"
+        - "/Users/chenhongchi/Library/Caches/JetBrains/CLion2026.1/acp-agents/.runtimes/node/24.13.0/npm-cache/_npx/7fd314b1ecd85c67/node_modules/.bin"
+        - "/Users/chenhongchi/Desktop/Engine/node_modules/.bin"
+        - "/Users/chenhongchi/Desktop/node_modules/.bin"
+        - "/Users/chenhongchi/node_modules/.bin"
+        - "/Users/node_modules/.bin"
+        - "/node_modules/.bin"
+        - "/Users/chenhongchi/Library/Caches/JetBrains/CLion2026.1/acp-agents/.runtimes/node/24.13.0/lib/node_modules/npm/node_modules/@npmcli/run-script/lib/node-gyp-bin"
+        - "/Users/chenhongchi/Library/Caches/JetBrains/CLion2026.1/acp-agents/.runtimes/node/24.13.0/bin"
+        - "/opt/homebrew/bin"
+        - "/opt/homebrew/sbin"
+        - "/usr/local/bin"
+        - "/System/Cryptexes/App/usr/bin"
+        - "/usr/bin"
+        - "/bin"
+        - "/usr/sbin"
+        - "/sbin"
+        - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin"
+        - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin"
+        - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin"
+        - "/opt/pkg/env/active/bin"
+        - "/opt/pmk/env/global/bin"
+        - "/Library/Apple/usr/bin"
+        - "/usr/local/share/dotnet"
+        - "~/.dotnet/tools"
+        - "/Users/chenhongchi/.local/bin"
+        - "/Users/chenhongchi/.local/bin"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "/opt/homebrew/share/cmake/Modules/CMakeFindBinUtils.cmake:243 (find_program)"
+      - "/opt/homebrew/share/cmake/Modules/CMakeDetermineCXXCompiler.cmake:206 (include)"
+      - "CMakeLists.txt:3 (project)"
+    mode: "program"
+    variable: "CMAKE_OBJCOPY"
+    description: "Path to a program."
+    settings:
+      SearchFramework: "FIRST"
+      SearchAppBundle: "FIRST"
+      CMAKE_FIND_USE_CMAKE_PATH: false
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: false
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "objcopy"
+    candidate_directories:
+      - "/usr/bin/"
+      - "/Users/chenhongchi/.codex/tmp/arg0/codex-arg0TRXaIE/"
+      - "/Users/chenhongchi/Library/Caches/JetBrains/CLion2026.1/acp-agents/.runtimes/node/24.13.0/npm-cache/_npx/7fd314b1ecd85c67/node_modules/@openai/codex-darwin-arm64/vendor/aarch64-apple-darwin/path/"
+      - "/Users/chenhongchi/Library/Caches/JetBrains/CLion2026.1/acp-agents/.runtimes/node/24.13.0/npm-cache/_npx/7fd314b1ecd85c67/node_modules/.bin/"
+      - "/Users/chenhongchi/Desktop/Engine/node_modules/.bin/"
+      - "/Users/chenhongchi/Desktop/node_modules/.bin/"
+      - "/Users/chenhongchi/node_modules/.bin/"
+      - "/Users/node_modules/.bin/"
+      - "/node_modules/.bin/"
+      - "/Users/chenhongchi/Library/Caches/JetBrains/CLion2026.1/acp-agents/.runtimes/node/24.13.0/lib/node_modules/npm/node_modules/@npmcli/run-script/lib/node-gyp-bin/"
+      - "/Users/chenhongchi/Library/Caches/JetBrains/CLion2026.1/acp-agents/.runtimes/node/24.13.0/bin/"
+      - "/opt/homebrew/bin/"
+      - "/opt/homebrew/sbin/"
+      - "/usr/local/bin/"
+      - "/System/Cryptexes/App/usr/bin/"
+      - "/bin/"
+      - "/usr/sbin/"
+      - "/sbin/"
+      - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin/"
+      - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin/"
+      - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin/"
+      - "/opt/pkg/env/active/bin/"
+      - "/opt/pmk/env/global/bin/"
+      - "/Library/Apple/usr/bin/"
+      - "/usr/local/share/dotnet/"
+      - "/Users/chenhongchi/.dotnet/tools/"
+      - "/Users/chenhongchi/.local/bin/"
+    searched_directories:
+      - "/usr/bin/objcopy"
+      - "/Users/chenhongchi/.codex/tmp/arg0/codex-arg0TRXaIE/objcopy"
+      - "/Users/chenhongchi/Library/Caches/JetBrains/CLion2026.1/acp-agents/.runtimes/node/24.13.0/npm-cache/_npx/7fd314b1ecd85c67/node_modules/@openai/codex-darwin-arm64/vendor/aarch64-apple-darwin/path/objcopy"
+      - "/Users/chenhongchi/Library/Caches/JetBrains/CLion2026.1/acp-agents/.runtimes/node/24.13.0/npm-cache/_npx/7fd314b1ecd85c67/node_modules/.bin/objcopy"
+      - "/Users/chenhongchi/Desktop/Engine/node_modules/.bin/objcopy"
+      - "/Users/chenhongchi/Desktop/node_modules/.bin/objcopy"
+      - "/Users/chenhongchi/node_modules/.bin/objcopy"
+      - "/Users/node_modules/.bin/objcopy"
+      - "/node_modules/.bin/objcopy"
+      - "/Users/chenhongchi/Library/Caches/JetBrains/CLion2026.1/acp-agents/.runtimes/node/24.13.0/lib/node_modules/npm/node_modules/@npmcli/run-script/lib/node-gyp-bin/objcopy"
+      - "/Users/chenhongchi/Library/Caches/JetBrains/CLion2026.1/acp-agents/.runtimes/node/24.13.0/bin/objcopy"
+      - "/opt/homebrew/bin/objcopy"
+      - "/opt/homebrew/sbin/objcopy"
+      - "/usr/local/bin/objcopy"
+      - "/System/Cryptexes/App/usr/bin/objcopy"
+      - "/bin/objcopy"
+      - "/usr/sbin/objcopy"
+      - "/sbin/objcopy"
+      - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin/objcopy"
+      - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin/objcopy"
+      - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin/objcopy"
+      - "/opt/pkg/env/active/bin/objcopy"
+      - "/opt/pmk/env/global/bin/objcopy"
+      - "/Library/Apple/usr/bin/objcopy"
+      - "/usr/local/share/dotnet/objcopy"
+      - "/Users/chenhongchi/.dotnet/tools/objcopy"
+      - "/Users/chenhongchi/.local/bin/objcopy"
+    found: false
+    search_context:
+      ENV{PATH}:
+        - "/Users/chenhongchi/.codex/tmp/arg0/codex-arg0TRXaIE"
+        - "/Users/chenhongchi/Library/Caches/JetBrains/CLion2026.1/acp-agents/.runtimes/node/24.13.0/npm-cache/_npx/7fd314b1ecd85c67/node_modules/@openai/codex-darwin-arm64/vendor/aarch64-apple-darwin/path"
+        - "/Users/chenhongchi/Library/Caches/JetBrains/CLion2026.1/acp-agents/.runtimes/node/24.13.0/npm-cache/_npx/7fd314b1ecd85c67/node_modules/.bin"
+        - "/Users/chenhongchi/Desktop/Engine/node_modules/.bin"
+        - "/Users/chenhongchi/Desktop/node_modules/.bin"
+        - "/Users/chenhongchi/node_modules/.bin"
+        - "/Users/node_modules/.bin"
+        - "/node_modules/.bin"
+        - "/Users/chenhongchi/Library/Caches/JetBrains/CLion2026.1/acp-agents/.runtimes/node/24.13.0/lib/node_modules/npm/node_modules/@npmcli/run-script/lib/node-gyp-bin"
+        - "/Users/chenhongchi/Library/Caches/JetBrains/CLion2026.1/acp-agents/.runtimes/node/24.13.0/bin"
+        - "/opt/homebrew/bin"
+        - "/opt/homebrew/sbin"
+        - "/usr/local/bin"
+        - "/System/Cryptexes/App/usr/bin"
+        - "/usr/bin"
+        - "/bin"
+        - "/usr/sbin"
+        - "/sbin"
+        - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin"
+        - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin"
+        - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin"
+        - "/opt/pkg/env/active/bin"
+        - "/opt/pmk/env/global/bin"
+        - "/Library/Apple/usr/bin"
+        - "/usr/local/share/dotnet"
+        - "~/.dotnet/tools"
+        - "/Users/chenhongchi/.local/bin"
+        - "/Users/chenhongchi/.local/bin"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "/opt/homebrew/share/cmake/Modules/CMakeFindBinUtils.cmake:243 (find_program)"
+      - "/opt/homebrew/share/cmake/Modules/CMakeDetermineCXXCompiler.cmake:206 (include)"
+      - "CMakeLists.txt:3 (project)"
+    mode: "program"
+    variable: "CMAKE_READELF"
+    description: "Path to a program."
+    settings:
+      SearchFramework: "FIRST"
+      SearchAppBundle: "FIRST"
+      CMAKE_FIND_USE_CMAKE_PATH: false
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: false
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "readelf"
+    candidate_directories:
+      - "/usr/bin/"
+      - "/Users/chenhongchi/.codex/tmp/arg0/codex-arg0TRXaIE/"
+      - "/Users/chenhongchi/Library/Caches/JetBrains/CLion2026.1/acp-agents/.runtimes/node/24.13.0/npm-cache/_npx/7fd314b1ecd85c67/node_modules/@openai/codex-darwin-arm64/vendor/aarch64-apple-darwin/path/"
+      - "/Users/chenhongchi/Library/Caches/JetBrains/CLion2026.1/acp-agents/.runtimes/node/24.13.0/npm-cache/_npx/7fd314b1ecd85c67/node_modules/.bin/"
+      - "/Users/chenhongchi/Desktop/Engine/node_modules/.bin/"
+      - "/Users/chenhongchi/Desktop/node_modules/.bin/"
+      - "/Users/chenhongchi/node_modules/.bin/"
+      - "/Users/node_modules/.bin/"
+      - "/node_modules/.bin/"
+      - "/Users/chenhongchi/Library/Caches/JetBrains/CLion2026.1/acp-agents/.runtimes/node/24.13.0/lib/node_modules/npm/node_modules/@npmcli/run-script/lib/node-gyp-bin/"
+      - "/Users/chenhongchi/Library/Caches/JetBrains/CLion2026.1/acp-agents/.runtimes/node/24.13.0/bin/"
+      - "/opt/homebrew/bin/"
+      - "/opt/homebrew/sbin/"
+      - "/usr/local/bin/"
+      - "/System/Cryptexes/App/usr/bin/"
+      - "/bin/"
+      - "/usr/sbin/"
+      - "/sbin/"
+      - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin/"
+      - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin/"
+      - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin/"
+      - "/opt/pkg/env/active/bin/"
+      - "/opt/pmk/env/global/bin/"
+      - "/Library/Apple/usr/bin/"
+      - "/usr/local/share/dotnet/"
+      - "/Users/chenhongchi/.dotnet/tools/"
+      - "/Users/chenhongchi/.local/bin/"
+    searched_directories:
+      - "/usr/bin/readelf"
+      - "/Users/chenhongchi/.codex/tmp/arg0/codex-arg0TRXaIE/readelf"
+      - "/Users/chenhongchi/Library/Caches/JetBrains/CLion2026.1/acp-agents/.runtimes/node/24.13.0/npm-cache/_npx/7fd314b1ecd85c67/node_modules/@openai/codex-darwin-arm64/vendor/aarch64-apple-darwin/path/readelf"
+      - "/Users/chenhongchi/Library/Caches/JetBrains/CLion2026.1/acp-agents/.runtimes/node/24.13.0/npm-cache/_npx/7fd314b1ecd85c67/node_modules/.bin/readelf"
+      - "/Users/chenhongchi/Desktop/Engine/node_modules/.bin/readelf"
+      - "/Users/chenhongchi/Desktop/node_modules/.bin/readelf"
+      - "/Users/chenhongchi/node_modules/.bin/readelf"
+      - "/Users/node_modules/.bin/readelf"
+      - "/node_modules/.bin/readelf"
+      - "/Users/chenhongchi/Library/Caches/JetBrains/CLion2026.1/acp-agents/.runtimes/node/24.13.0/lib/node_modules/npm/node_modules/@npmcli/run-script/lib/node-gyp-bin/readelf"
+      - "/Users/chenhongchi/Library/Caches/JetBrains/CLion2026.1/acp-agents/.runtimes/node/24.13.0/bin/readelf"
+      - "/opt/homebrew/bin/readelf"
+      - "/opt/homebrew/sbin/readelf"
+      - "/usr/local/bin/readelf"
+      - "/System/Cryptexes/App/usr/bin/readelf"
+      - "/bin/readelf"
+      - "/usr/sbin/readelf"
+      - "/sbin/readelf"
+      - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin/readelf"
+      - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin/readelf"
+      - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin/readelf"
+      - "/opt/pkg/env/active/bin/readelf"
+      - "/opt/pmk/env/global/bin/readelf"
+      - "/Library/Apple/usr/bin/readelf"
+      - "/usr/local/share/dotnet/readelf"
+      - "/Users/chenhongchi/.dotnet/tools/readelf"
+      - "/Users/chenhongchi/.local/bin/readelf"
+    found: false
+    search_context:
+      ENV{PATH}:
+        - "/Users/chenhongchi/.codex/tmp/arg0/codex-arg0TRXaIE"
+        - "/Users/chenhongchi/Library/Caches/JetBrains/CLion2026.1/acp-agents/.runtimes/node/24.13.0/npm-cache/_npx/7fd314b1ecd85c67/node_modules/@openai/codex-darwin-arm64/vendor/aarch64-apple-darwin/path"
+        - "/Users/chenhongchi/Library/Caches/JetBrains/CLion2026.1/acp-agents/.runtimes/node/24.13.0/npm-cache/_npx/7fd314b1ecd85c67/node_modules/.bin"
+        - "/Users/chenhongchi/Desktop/Engine/node_modules/.bin"
+        - "/Users/chenhongchi/Desktop/node_modules/.bin"
+        - "/Users/chenhongchi/node_modules/.bin"
+        - "/Users/node_modules/.bin"
+        - "/node_modules/.bin"
+        - "/Users/chenhongchi/Library/Caches/JetBrains/CLion2026.1/acp-agents/.runtimes/node/24.13.0/lib/node_modules/npm/node_modules/@npmcli/run-script/lib/node-gyp-bin"
+        - "/Users/chenhongchi/Library/Caches/JetBrains/CLion2026.1/acp-agents/.runtimes/node/24.13.0/bin"
+        - "/opt/homebrew/bin"
+        - "/opt/homebrew/sbin"
+        - "/usr/local/bin"
+        - "/System/Cryptexes/App/usr/bin"
+        - "/usr/bin"
+        - "/bin"
+        - "/usr/sbin"
+        - "/sbin"
+        - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin"
+        - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin"
+        - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin"
+        - "/opt/pkg/env/active/bin"
+        - "/opt/pmk/env/global/bin"
+        - "/Library/Apple/usr/bin"
+        - "/usr/local/share/dotnet"
+        - "~/.dotnet/tools"
+        - "/Users/chenhongchi/.local/bin"
+        - "/Users/chenhongchi/.local/bin"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "/opt/homebrew/share/cmake/Modules/CMakeFindBinUtils.cmake:243 (find_program)"
+      - "/opt/homebrew/share/cmake/Modules/CMakeDetermineCXXCompiler.cmake:206 (include)"
+      - "CMakeLists.txt:3 (project)"
+    mode: "program"
+    variable: "CMAKE_DLLTOOL"
+    description: "Path to a program."
+    settings:
+      SearchFramework: "FIRST"
+      SearchAppBundle: "FIRST"
+      CMAKE_FIND_USE_CMAKE_PATH: false
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: false
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "dlltool"
+    candidate_directories:
+      - "/usr/bin/"
+      - "/Users/chenhongchi/.codex/tmp/arg0/codex-arg0TRXaIE/"
+      - "/Users/chenhongchi/Library/Caches/JetBrains/CLion2026.1/acp-agents/.runtimes/node/24.13.0/npm-cache/_npx/7fd314b1ecd85c67/node_modules/@openai/codex-darwin-arm64/vendor/aarch64-apple-darwin/path/"
+      - "/Users/chenhongchi/Library/Caches/JetBrains/CLion2026.1/acp-agents/.runtimes/node/24.13.0/npm-cache/_npx/7fd314b1ecd85c67/node_modules/.bin/"
+      - "/Users/chenhongchi/Desktop/Engine/node_modules/.bin/"
+      - "/Users/chenhongchi/Desktop/node_modules/.bin/"
+      - "/Users/chenhongchi/node_modules/.bin/"
+      - "/Users/node_modules/.bin/"
+      - "/node_modules/.bin/"
+      - "/Users/chenhongchi/Library/Caches/JetBrains/CLion2026.1/acp-agents/.runtimes/node/24.13.0/lib/node_modules/npm/node_modules/@npmcli/run-script/lib/node-gyp-bin/"
+      - "/Users/chenhongchi/Library/Caches/JetBrains/CLion2026.1/acp-agents/.runtimes/node/24.13.0/bin/"
+      - "/opt/homebrew/bin/"
+      - "/opt/homebrew/sbin/"
+      - "/usr/local/bin/"
+      - "/System/Cryptexes/App/usr/bin/"
+      - "/bin/"
+      - "/usr/sbin/"
+      - "/sbin/"
+      - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin/"
+      - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin/"
+      - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin/"
+      - "/opt/pkg/env/active/bin/"
+      - "/opt/pmk/env/global/bin/"
+      - "/Library/Apple/usr/bin/"
+      - "/usr/local/share/dotnet/"
+      - "/Users/chenhongchi/.dotnet/tools/"
+      - "/Users/chenhongchi/.local/bin/"
+    searched_directories:
+      - "/usr/bin/dlltool"
+      - "/Users/chenhongchi/.codex/tmp/arg0/codex-arg0TRXaIE/dlltool"
+      - "/Users/chenhongchi/Library/Caches/JetBrains/CLion2026.1/acp-agents/.runtimes/node/24.13.0/npm-cache/_npx/7fd314b1ecd85c67/node_modules/@openai/codex-darwin-arm64/vendor/aarch64-apple-darwin/path/dlltool"
+      - "/Users/chenhongchi/Library/Caches/JetBrains/CLion2026.1/acp-agents/.runtimes/node/24.13.0/npm-cache/_npx/7fd314b1ecd85c67/node_modules/.bin/dlltool"
+      - "/Users/chenhongchi/Desktop/Engine/node_modules/.bin/dlltool"
+      - "/Users/chenhongchi/Desktop/node_modules/.bin/dlltool"
+      - "/Users/chenhongchi/node_modules/.bin/dlltool"
+      - "/Users/node_modules/.bin/dlltool"
+      - "/node_modules/.bin/dlltool"
+      - "/Users/chenhongchi/Library/Caches/JetBrains/CLion2026.1/acp-agents/.runtimes/node/24.13.0/lib/node_modules/npm/node_modules/@npmcli/run-script/lib/node-gyp-bin/dlltool"
+      - "/Users/chenhongchi/Library/Caches/JetBrains/CLion2026.1/acp-agents/.runtimes/node/24.13.0/bin/dlltool"
+      - "/opt/homebrew/bin/dlltool"
+      - "/opt/homebrew/sbin/dlltool"
+      - "/usr/local/bin/dlltool"
+      - "/System/Cryptexes/App/usr/bin/dlltool"
+      - "/bin/dlltool"
+      - "/usr/sbin/dlltool"
+      - "/sbin/dlltool"
+      - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin/dlltool"
+      - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin/dlltool"
+      - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin/dlltool"
+      - "/opt/pkg/env/active/bin/dlltool"
+      - "/opt/pmk/env/global/bin/dlltool"
+      - "/Library/Apple/usr/bin/dlltool"
+      - "/usr/local/share/dotnet/dlltool"
+      - "/Users/chenhongchi/.dotnet/tools/dlltool"
+      - "/Users/chenhongchi/.local/bin/dlltool"
+    found: false
+    search_context:
+      ENV{PATH}:
+        - "/Users/chenhongchi/.codex/tmp/arg0/codex-arg0TRXaIE"
+        - "/Users/chenhongchi/Library/Caches/JetBrains/CLion2026.1/acp-agents/.runtimes/node/24.13.0/npm-cache/_npx/7fd314b1ecd85c67/node_modules/@openai/codex-darwin-arm64/vendor/aarch64-apple-darwin/path"
+        - "/Users/chenhongchi/Library/Caches/JetBrains/CLion2026.1/acp-agents/.runtimes/node/24.13.0/npm-cache/_npx/7fd314b1ecd85c67/node_modules/.bin"
+        - "/Users/chenhongchi/Desktop/Engine/node_modules/.bin"
+        - "/Users/chenhongchi/Desktop/node_modules/.bin"
+        - "/Users/chenhongchi/node_modules/.bin"
+        - "/Users/node_modules/.bin"
+        - "/node_modules/.bin"
+        - "/Users/chenhongchi/Library/Caches/JetBrains/CLion2026.1/acp-agents/.runtimes/node/24.13.0/lib/node_modules/npm/node_modules/@npmcli/run-script/lib/node-gyp-bin"
+        - "/Users/chenhongchi/Library/Caches/JetBrains/CLion2026.1/acp-agents/.runtimes/node/24.13.0/bin"
+        - "/opt/homebrew/bin"
+        - "/opt/homebrew/sbin"
+        - "/usr/local/bin"
+        - "/System/Cryptexes/App/usr/bin"
+        - "/usr/bin"
+        - "/bin"
+        - "/usr/sbin"
+        - "/sbin"
+        - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin"
+        - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin"
+        - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin"
+        - "/opt/pkg/env/active/bin"
+        - "/opt/pmk/env/global/bin"
+        - "/Library/Apple/usr/bin"
+        - "/usr/local/share/dotnet"
+        - "~/.dotnet/tools"
+        - "/Users/chenhongchi/.local/bin"
+        - "/Users/chenhongchi/.local/bin"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "/opt/homebrew/share/cmake/Modules/CMakeFindBinUtils.cmake:243 (find_program)"
+      - "/opt/homebrew/share/cmake/Modules/CMakeDetermineCXXCompiler.cmake:206 (include)"
+      - "CMakeLists.txt:3 (project)"
+    mode: "program"
+    variable: "CMAKE_ADDR2LINE"
+    description: "Path to a program."
+    settings:
+      SearchFramework: "FIRST"
+      SearchAppBundle: "FIRST"
+      CMAKE_FIND_USE_CMAKE_PATH: false
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: false
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "addr2line"
+    candidate_directories:
+      - "/usr/bin/"
+      - "/Users/chenhongchi/.codex/tmp/arg0/codex-arg0TRXaIE/"
+      - "/Users/chenhongchi/Library/Caches/JetBrains/CLion2026.1/acp-agents/.runtimes/node/24.13.0/npm-cache/_npx/7fd314b1ecd85c67/node_modules/@openai/codex-darwin-arm64/vendor/aarch64-apple-darwin/path/"
+      - "/Users/chenhongchi/Library/Caches/JetBrains/CLion2026.1/acp-agents/.runtimes/node/24.13.0/npm-cache/_npx/7fd314b1ecd85c67/node_modules/.bin/"
+      - "/Users/chenhongchi/Desktop/Engine/node_modules/.bin/"
+      - "/Users/chenhongchi/Desktop/node_modules/.bin/"
+      - "/Users/chenhongchi/node_modules/.bin/"
+      - "/Users/node_modules/.bin/"
+      - "/node_modules/.bin/"
+      - "/Users/chenhongchi/Library/Caches/JetBrains/CLion2026.1/acp-agents/.runtimes/node/24.13.0/lib/node_modules/npm/node_modules/@npmcli/run-script/lib/node-gyp-bin/"
+      - "/Users/chenhongchi/Library/Caches/JetBrains/CLion2026.1/acp-agents/.runtimes/node/24.13.0/bin/"
+      - "/opt/homebrew/bin/"
+      - "/opt/homebrew/sbin/"
+      - "/usr/local/bin/"
+      - "/System/Cryptexes/App/usr/bin/"
+      - "/bin/"
+      - "/usr/sbin/"
+      - "/sbin/"
+      - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin/"
+      - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin/"
+      - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin/"
+      - "/opt/pkg/env/active/bin/"
+      - "/opt/pmk/env/global/bin/"
+      - "/Library/Apple/usr/bin/"
+      - "/usr/local/share/dotnet/"
+      - "/Users/chenhongchi/.dotnet/tools/"
+      - "/Users/chenhongchi/.local/bin/"
+    searched_directories:
+      - "/usr/bin/addr2line"
+      - "/Users/chenhongchi/.codex/tmp/arg0/codex-arg0TRXaIE/addr2line"
+      - "/Users/chenhongchi/Library/Caches/JetBrains/CLion2026.1/acp-agents/.runtimes/node/24.13.0/npm-cache/_npx/7fd314b1ecd85c67/node_modules/@openai/codex-darwin-arm64/vendor/aarch64-apple-darwin/path/addr2line"
+      - "/Users/chenhongchi/Library/Caches/JetBrains/CLion2026.1/acp-agents/.runtimes/node/24.13.0/npm-cache/_npx/7fd314b1ecd85c67/node_modules/.bin/addr2line"
+      - "/Users/chenhongchi/Desktop/Engine/node_modules/.bin/addr2line"
+      - "/Users/chenhongchi/Desktop/node_modules/.bin/addr2line"
+      - "/Users/chenhongchi/node_modules/.bin/addr2line"
+      - "/Users/node_modules/.bin/addr2line"
+      - "/node_modules/.bin/addr2line"
+      - "/Users/chenhongchi/Library/Caches/JetBrains/CLion2026.1/acp-agents/.runtimes/node/24.13.0/lib/node_modules/npm/node_modules/@npmcli/run-script/lib/node-gyp-bin/addr2line"
+      - "/Users/chenhongchi/Library/Caches/JetBrains/CLion2026.1/acp-agents/.runtimes/node/24.13.0/bin/addr2line"
+      - "/opt/homebrew/bin/addr2line"
+      - "/opt/homebrew/sbin/addr2line"
+      - "/usr/local/bin/addr2line"
+      - "/System/Cryptexes/App/usr/bin/addr2line"
+      - "/bin/addr2line"
+      - "/usr/sbin/addr2line"
+      - "/sbin/addr2line"
+      - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin/addr2line"
+      - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin/addr2line"
+      - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin/addr2line"
+      - "/opt/pkg/env/active/bin/addr2line"
+      - "/opt/pmk/env/global/bin/addr2line"
+      - "/Library/Apple/usr/bin/addr2line"
+      - "/usr/local/share/dotnet/addr2line"
+      - "/Users/chenhongchi/.dotnet/tools/addr2line"
+      - "/Users/chenhongchi/.local/bin/addr2line"
+    found: false
+    search_context:
+      ENV{PATH}:
+        - "/Users/chenhongchi/.codex/tmp/arg0/codex-arg0TRXaIE"
+        - "/Users/chenhongchi/Library/Caches/JetBrains/CLion2026.1/acp-agents/.runtimes/node/24.13.0/npm-cache/_npx/7fd314b1ecd85c67/node_modules/@openai/codex-darwin-arm64/vendor/aarch64-apple-darwin/path"
+        - "/Users/chenhongchi/Library/Caches/JetBrains/CLion2026.1/acp-agents/.runtimes/node/24.13.0/npm-cache/_npx/7fd314b1ecd85c67/node_modules/.bin"
+        - "/Users/chenhongchi/Desktop/Engine/node_modules/.bin"
+        - "/Users/chenhongchi/Desktop/node_modules/.bin"
+        - "/Users/chenhongchi/node_modules/.bin"
+        - "/Users/node_modules/.bin"
+        - "/node_modules/.bin"
+        - "/Users/chenhongchi/Library/Caches/JetBrains/CLion2026.1/acp-agents/.runtimes/node/24.13.0/lib/node_modules/npm/node_modules/@npmcli/run-script/lib/node-gyp-bin"
+        - "/Users/chenhongchi/Library/Caches/JetBrains/CLion2026.1/acp-agents/.runtimes/node/24.13.0/bin"
+        - "/opt/homebrew/bin"
+        - "/opt/homebrew/sbin"
+        - "/usr/local/bin"
+        - "/System/Cryptexes/App/usr/bin"
+        - "/usr/bin"
+        - "/bin"
+        - "/usr/sbin"
+        - "/sbin"
+        - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin"
+        - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin"
+        - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin"
+        - "/opt/pkg/env/active/bin"
+        - "/opt/pmk/env/global/bin"
+        - "/Library/Apple/usr/bin"
+        - "/usr/local/share/dotnet"
+        - "~/.dotnet/tools"
+        - "/Users/chenhongchi/.local/bin"
+        - "/Users/chenhongchi/.local/bin"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "/opt/homebrew/share/cmake/Modules/CMakeFindBinUtils.cmake:243 (find_program)"
+      - "/opt/homebrew/share/cmake/Modules/CMakeDetermineCXXCompiler.cmake:206 (include)"
+      - "CMakeLists.txt:3 (project)"
+    mode: "program"
+    variable: "CMAKE_TAPI"
+    description: "Path to a program."
+    settings:
+      SearchFramework: "FIRST"
+      SearchAppBundle: "FIRST"
+      CMAKE_FIND_USE_CMAKE_PATH: false
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: false
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "tapi"
+    candidate_directories:
+      - "/usr/bin/"
+      - "/Users/chenhongchi/.codex/tmp/arg0/codex-arg0TRXaIE/"
+      - "/Users/chenhongchi/Library/Caches/JetBrains/CLion2026.1/acp-agents/.runtimes/node/24.13.0/npm-cache/_npx/7fd314b1ecd85c67/node_modules/@openai/codex-darwin-arm64/vendor/aarch64-apple-darwin/path/"
+      - "/Users/chenhongchi/Library/Caches/JetBrains/CLion2026.1/acp-agents/.runtimes/node/24.13.0/npm-cache/_npx/7fd314b1ecd85c67/node_modules/.bin/"
+      - "/Users/chenhongchi/Desktop/Engine/node_modules/.bin/"
+      - "/Users/chenhongchi/Desktop/node_modules/.bin/"
+      - "/Users/chenhongchi/node_modules/.bin/"
+      - "/Users/node_modules/.bin/"
+      - "/node_modules/.bin/"
+      - "/Users/chenhongchi/Library/Caches/JetBrains/CLion2026.1/acp-agents/.runtimes/node/24.13.0/lib/node_modules/npm/node_modules/@npmcli/run-script/lib/node-gyp-bin/"
+      - "/Users/chenhongchi/Library/Caches/JetBrains/CLion2026.1/acp-agents/.runtimes/node/24.13.0/bin/"
+      - "/opt/homebrew/bin/"
+      - "/opt/homebrew/sbin/"
+      - "/usr/local/bin/"
+      - "/System/Cryptexes/App/usr/bin/"
+      - "/bin/"
+      - "/usr/sbin/"
+      - "/sbin/"
+      - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin/"
+      - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin/"
+      - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin/"
+      - "/opt/pkg/env/active/bin/"
+      - "/opt/pmk/env/global/bin/"
+      - "/Library/Apple/usr/bin/"
+      - "/usr/local/share/dotnet/"
+      - "/Users/chenhongchi/.dotnet/tools/"
+      - "/Users/chenhongchi/.local/bin/"
+    searched_directories:
+      - "/usr/bin/tapi"
+      - "/Users/chenhongchi/.codex/tmp/arg0/codex-arg0TRXaIE/tapi"
+      - "/Users/chenhongchi/Library/Caches/JetBrains/CLion2026.1/acp-agents/.runtimes/node/24.13.0/npm-cache/_npx/7fd314b1ecd85c67/node_modules/@openai/codex-darwin-arm64/vendor/aarch64-apple-darwin/path/tapi"
+      - "/Users/chenhongchi/Library/Caches/JetBrains/CLion2026.1/acp-agents/.runtimes/node/24.13.0/npm-cache/_npx/7fd314b1ecd85c67/node_modules/.bin/tapi"
+      - "/Users/chenhongchi/Desktop/Engine/node_modules/.bin/tapi"
+      - "/Users/chenhongchi/Desktop/node_modules/.bin/tapi"
+      - "/Users/chenhongchi/node_modules/.bin/tapi"
+      - "/Users/node_modules/.bin/tapi"
+      - "/node_modules/.bin/tapi"
+      - "/Users/chenhongchi/Library/Caches/JetBrains/CLion2026.1/acp-agents/.runtimes/node/24.13.0/lib/node_modules/npm/node_modules/@npmcli/run-script/lib/node-gyp-bin/tapi"
+      - "/Users/chenhongchi/Library/Caches/JetBrains/CLion2026.1/acp-agents/.runtimes/node/24.13.0/bin/tapi"
+      - "/opt/homebrew/bin/tapi"
+      - "/opt/homebrew/sbin/tapi"
+      - "/usr/local/bin/tapi"
+      - "/System/Cryptexes/App/usr/bin/tapi"
+      - "/bin/tapi"
+      - "/usr/sbin/tapi"
+      - "/sbin/tapi"
+      - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin/tapi"
+      - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin/tapi"
+      - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin/tapi"
+      - "/opt/pkg/env/active/bin/tapi"
+      - "/opt/pmk/env/global/bin/tapi"
+      - "/Library/Apple/usr/bin/tapi"
+      - "/usr/local/share/dotnet/tapi"
+      - "/Users/chenhongchi/.dotnet/tools/tapi"
+      - "/Users/chenhongchi/.local/bin/tapi"
+    found: false
+    search_context:
+      ENV{PATH}:
+        - "/Users/chenhongchi/.codex/tmp/arg0/codex-arg0TRXaIE"
+        - "/Users/chenhongchi/Library/Caches/JetBrains/CLion2026.1/acp-agents/.runtimes/node/24.13.0/npm-cache/_npx/7fd314b1ecd85c67/node_modules/@openai/codex-darwin-arm64/vendor/aarch64-apple-darwin/path"
+        - "/Users/chenhongchi/Library/Caches/JetBrains/CLion2026.1/acp-agents/.runtimes/node/24.13.0/npm-cache/_npx/7fd314b1ecd85c67/node_modules/.bin"
+        - "/Users/chenhongchi/Desktop/Engine/node_modules/.bin"
+        - "/Users/chenhongchi/Desktop/node_modules/.bin"
+        - "/Users/chenhongchi/node_modules/.bin"
+        - "/Users/node_modules/.bin"
+        - "/node_modules/.bin"
+        - "/Users/chenhongchi/Library/Caches/JetBrains/CLion2026.1/acp-agents/.runtimes/node/24.13.0/lib/node_modules/npm/node_modules/@npmcli/run-script/lib/node-gyp-bin"
+        - "/Users/chenhongchi/Library/Caches/JetBrains/CLion2026.1/acp-agents/.runtimes/node/24.13.0/bin"
+        - "/opt/homebrew/bin"
+        - "/opt/homebrew/sbin"
+        - "/usr/local/bin"
+        - "/System/Cryptexes/App/usr/bin"
+        - "/usr/bin"
+        - "/bin"
+        - "/usr/sbin"
+        - "/sbin"
+        - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin"
+        - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin"
+        - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin"
+        - "/opt/pkg/env/active/bin"
+        - "/opt/pmk/env/global/bin"
+        - "/Library/Apple/usr/bin"
+        - "/usr/local/share/dotnet"
+        - "~/.dotnet/tools"
+        - "/Users/chenhongchi/.local/bin"
+        - "/Users/chenhongchi/.local/bin"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "/opt/homebrew/share/cmake/Modules/Platform/Darwin.cmake:66 (find_program)"
+      - "/opt/homebrew/share/cmake/Modules/CMakeSystemSpecificInformation.cmake:32 (include)"
+      - "CMakeLists.txt:3 (project)"
+    mode: "program"
+    variable: "CMAKE_INSTALL_NAME_TOOL"
+    description: "Path to a program."
+    settings:
+      SearchFramework: "FIRST"
+      SearchAppBundle: "FIRST"
+      CMAKE_FIND_USE_CMAKE_PATH: true
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "install_name_tool"
+    candidate_directories:
+      - "/Users/chenhongchi/.codex/tmp/arg0/codex-arg0TRXaIE/"
+      - "/Users/chenhongchi/Library/Caches/JetBrains/CLion2026.1/acp-agents/.runtimes/node/24.13.0/npm-cache/_npx/7fd314b1ecd85c67/node_modules/@openai/codex-darwin-arm64/vendor/aarch64-apple-darwin/path/"
+      - "/Users/chenhongchi/Library/Caches/JetBrains/CLion2026.1/acp-agents/.runtimes/node/24.13.0/npm-cache/_npx/7fd314b1ecd85c67/node_modules/.bin/"
+      - "/Users/chenhongchi/Desktop/Engine/node_modules/.bin/"
+      - "/Users/chenhongchi/Desktop/node_modules/.bin/"
+      - "/Users/chenhongchi/node_modules/.bin/"
+      - "/Users/node_modules/.bin/"
+      - "/node_modules/.bin/"
+      - "/Users/chenhongchi/Library/Caches/JetBrains/CLion2026.1/acp-agents/.runtimes/node/24.13.0/lib/node_modules/npm/node_modules/@npmcli/run-script/lib/node-gyp-bin/"
+      - "/Users/chenhongchi/Library/Caches/JetBrains/CLion2026.1/acp-agents/.runtimes/node/24.13.0/bin/"
+      - "/opt/homebrew/bin/"
+      - "/opt/homebrew/sbin/"
+      - "/usr/local/bin/"
+      - "/System/Cryptexes/App/usr/bin/"
+      - "/usr/bin/"
+      - "/bin/"
+      - "/usr/sbin/"
+      - "/sbin/"
+      - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin/"
+      - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin/"
+      - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin/"
+      - "/opt/pkg/env/active/bin/"
+      - "/opt/pmk/env/global/bin/"
+      - "/Library/Apple/usr/bin/"
+      - "/usr/local/share/dotnet/"
+      - "/Users/chenhongchi/.dotnet/tools/"
+      - "/Users/chenhongchi/.local/bin/"
+    searched_directories:
+      - "/Users/chenhongchi/.codex/tmp/arg0/codex-arg0TRXaIE/install_name_tool"
+      - "/Users/chenhongchi/Library/Caches/JetBrains/CLion2026.1/acp-agents/.runtimes/node/24.13.0/npm-cache/_npx/7fd314b1ecd85c67/node_modules/@openai/codex-darwin-arm64/vendor/aarch64-apple-darwin/path/install_name_tool"
+      - "/Users/chenhongchi/Library/Caches/JetBrains/CLion2026.1/acp-agents/.runtimes/node/24.13.0/npm-cache/_npx/7fd314b1ecd85c67/node_modules/.bin/install_name_tool"
+      - "/Users/chenhongchi/Desktop/Engine/node_modules/.bin/install_name_tool"
+      - "/Users/chenhongchi/Desktop/node_modules/.bin/install_name_tool"
+      - "/Users/chenhongchi/node_modules/.bin/install_name_tool"
+      - "/Users/node_modules/.bin/install_name_tool"
+      - "/node_modules/.bin/install_name_tool"
+      - "/Users/chenhongchi/Library/Caches/JetBrains/CLion2026.1/acp-agents/.runtimes/node/24.13.0/lib/node_modules/npm/node_modules/@npmcli/run-script/lib/node-gyp-bin/install_name_tool"
+      - "/Users/chenhongchi/Library/Caches/JetBrains/CLion2026.1/acp-agents/.runtimes/node/24.13.0/bin/install_name_tool"
+      - "/opt/homebrew/bin/install_name_tool"
+      - "/opt/homebrew/sbin/install_name_tool"
+      - "/usr/local/bin/install_name_tool"
+      - "/System/Cryptexes/App/usr/bin/install_name_tool"
+    found: "/usr/bin/install_name_tool"
+    search_context:
+      ENV{PATH}:
+        - "/Users/chenhongchi/.codex/tmp/arg0/codex-arg0TRXaIE"
+        - "/Users/chenhongchi/Library/Caches/JetBrains/CLion2026.1/acp-agents/.runtimes/node/24.13.0/npm-cache/_npx/7fd314b1ecd85c67/node_modules/@openai/codex-darwin-arm64/vendor/aarch64-apple-darwin/path"
+        - "/Users/chenhongchi/Library/Caches/JetBrains/CLion2026.1/acp-agents/.runtimes/node/24.13.0/npm-cache/_npx/7fd314b1ecd85c67/node_modules/.bin"
+        - "/Users/chenhongchi/Desktop/Engine/node_modules/.bin"
+        - "/Users/chenhongchi/Desktop/node_modules/.bin"
+        - "/Users/chenhongchi/node_modules/.bin"
+        - "/Users/node_modules/.bin"
+        - "/node_modules/.bin"
+        - "/Users/chenhongchi/Library/Caches/JetBrains/CLion2026.1/acp-agents/.runtimes/node/24.13.0/lib/node_modules/npm/node_modules/@npmcli/run-script/lib/node-gyp-bin"
+        - "/Users/chenhongchi/Library/Caches/JetBrains/CLion2026.1/acp-agents/.runtimes/node/24.13.0/bin"
+        - "/opt/homebrew/bin"
+        - "/opt/homebrew/sbin"
+        - "/usr/local/bin"
+        - "/System/Cryptexes/App/usr/bin"
+        - "/usr/bin"
+        - "/bin"
+        - "/usr/sbin"
+        - "/sbin"
+        - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin"
+        - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin"
+        - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin"
+        - "/opt/pkg/env/active/bin"
+        - "/opt/pmk/env/global/bin"
+        - "/Library/Apple/usr/bin"
+        - "/usr/local/share/dotnet"
+        - "~/.dotnet/tools"
+        - "/Users/chenhongchi/.local/bin"
+        - "/Users/chenhongchi/.local/bin"
+      CMAKE_INSTALL_PREFIX: "/usr/local"
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/opt/homebrew/share/cmake/Modules/CMakeDetermineCompilerABI.cmake:83 (try_compile)"
+      - "/opt/homebrew/share/cmake/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:3 (project)"
+    checks:
+      - "Detecting CXX compiler ABI info"
+    directories:
+      source: "/Users/chenhongchi/Desktop/Engine/build/CMakeFiles/CMakeScratch/TryCompile-yMj0tP"
+      binary: "/Users/chenhongchi/Desktop/Engine/build/CMakeFiles/CMakeScratch/TryCompile-yMj0tP"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: ""
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_CXX_SCAN_FOR_MODULES: "OFF"
+      CMAKE_CXX_STDLIB_MODULES_JSON: ""
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_OSX_ARCHITECTURES: ""
+      CMAKE_OSX_DEPLOYMENT_TARGET: ""
+      CMAKE_OSX_SYSROOT: ""
+    buildResult:
+      variable: "CMAKE_CXX_ABI_COMPILED"
+      cached: true
+      stdout: |
+        Change Dir: '/Users/chenhongchi/Desktop/Engine/build/CMakeFiles/CMakeScratch/TryCompile-yMj0tP'
+        
+        Run Build Command(s): /opt/homebrew/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_63a9b/fast
+        /Library/Developer/CommandLineTools/usr/bin/make  -f CMakeFiles/cmTC_63a9b.dir/build.make CMakeFiles/cmTC_63a9b.dir/build
+        Building CXX object CMakeFiles/cmTC_63a9b.dir/CMakeCXXCompilerABI.cpp.o
+        /usr/bin/c++   -v -Wl,-v -MD -MT CMakeFiles/cmTC_63a9b.dir/CMakeCXXCompilerABI.cpp.o -MF CMakeFiles/cmTC_63a9b.dir/CMakeCXXCompilerABI.cpp.o.d -o CMakeFiles/cmTC_63a9b.dir/CMakeCXXCompilerABI.cpp.o -c /opt/homebrew/share/cmake/Modules/CMakeCXXCompilerABI.cpp
+        Apple clang version 21.0.0 (clang-2100.1.1.101)
+        Target: arm64-apple-darwin25.4.0
+        Thread model: posix
+        InstalledDir: /Library/Developer/CommandLineTools/usr/bin
+        clang++: warning: -Wl,-v: 'linker' input unused [-Wunused-command-line-argument]
+        ignoring nonexistent directory "/Library/Developer/CommandLineTools/usr/bin/../include/c++/v1"
+         "/Library/Developer/CommandLineTools/usr/bin/clang" -cc1 -triple arm64-apple-macosx26.0.0 -Wundef-prefix=TARGET_OS_ -Wdeprecated-objc-isa-usage -Werror=deprecated-objc-isa-usage -Werror=implicit-function-declaration -emit-obj -disable-free -clear-ast-before-backend -disable-llvm-verifier -discard-value-names -main-file-name CMakeCXXCompilerABI.cpp -mrelocation-model pic -pic-level 2 -mframe-pointer=non-leaf -fno-strict-return -ffp-contract=on -fno-rounding-math -funwind-tables=1 -fobjc-msgsend-selector-stubs -fno-sized-deallocation -target-sdk-version=26.5 -fvisibility-inlines-hidden-static-local-var -fno-modulemap-allow-subdirectory-search -fdefine-target-os-macros -fno-assume-unique-vtables -fno-modulemap-allow-subdirectory-search -enable-tlsdesc -target-cpu apple-m1 -target-feature +v8.5a -target-feature +aes -target-feature +altnzcv -target-feature +ccdp -target-feature +ccpp -target-feature +complxnum -target-feature +crc -target-feature +dotprod -target-feature +flagm -target-feature +fp-armv8 -target-feature +fp16fml -target-feature +fptoint -target-feature +fullfp16 -target-feature +jsconv -target-feature +lse -target-feature +neon -target-feature +pauth -target-feature +perfmon -target-feature +predres -target-feature +ras -target-feature +rcpc -target-feature +rdm -target-feature +sb -target-feature +sha2 -target-feature +sha3 -target-feature +specrestrict -target-feature +ssbs -target-abi darwinpcs -debugger-tuning=lldb -fdebug-compilation-dir=/Users/chenhongchi/Desktop/Engine/build/CMakeFiles/CMakeScratch/TryCompile-yMj0tP -target-linker-version 1267 -v -fcoverage-compilation-dir=/Users/chenhongchi/Desktop/Engine/build/CMakeFiles/CMakeScratch/TryCompile-yMj0tP -resource-dir /Library/Developer/CommandLineTools/usr/lib/clang/21 -dependency-file CMakeFiles/cmTC_63a9b.dir/CMakeCXXCompilerABI.cpp.o.d -skip-unused-modulemap-deps -MT CMakeFiles/cmTC_63a9b.dir/CMakeCXXCompilerABI.cpp.o -sys-header-deps -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk -I/usr/local/include -internal-isystem /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1 -internal-isystem /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/local/include -internal-isystem /Library/Developer/CommandLineTools/usr/lib/clang/21/include -internal-externc-isystem /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include -internal-externc-isystem /Library/Developer/CommandLineTools/usr/include -internal-iframework /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/System/Library/Frameworks -internal-iframework /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/System/Library/SubFrameworks -internal-iframework /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/Library/Frameworks -Wno-elaborated-enum-base -fdeprecated-macro -ferror-limit 19 -stack-protector 1 -fstack-check -mdarwin-stkchk-strong-link -fblocks -fencode-extended-block-signature -fregister-global-dtors-with-atexit -fgnuc-version=4.2.1 -fskip-odr-check-in-gmf -fcxx-exceptions -fexceptions -fmax-type-align=16 -fcommon -clang-vendor-feature=+disableNonDependentMemberExprInCurrentInstantiation -fno-odr-hash-protocols -clang-vendor-feature=+enableAggressiveVLAFolding -clang-vendor-feature=+revert09abecef7bbf -clang-vendor-feature=+thisNoAlignAttr -clang-vendor-feature=+thisNoNullAttr -clang-vendor-feature=+disableAtImportPrivateFrameworkInImplementationError -Wno-error=allocator-wrappers -fdwarf2-cfi-asm -o CMakeFiles/cmTC_63a9b.dir/CMakeCXXCompilerABI.cpp.o -x c++ /opt/homebrew/share/cmake/Modules/CMakeCXXCompilerABI.cpp
+        clang -cc1 version 21.0.0 (clang-2100.1.1.101) default target arm64-apple-darwin25.4.0
+        ignoring nonexistent directory "/usr/local/include"
+        ignoring nonexistent directory "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/local/include"
+        ignoring nonexistent directory "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/Library/Frameworks"
+        #include "..." search starts here:
+        #include <...> search starts here:
+         /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1
+         /Library/Developer/CommandLineTools/usr/lib/clang/21/include
+         /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include
+         /Library/Developer/CommandLineTools/usr/include
+         /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/System/Library/Frameworks (framework directory)
+         /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/System/Library/SubFrameworks (framework directory)
+        End of search list.
+        Linking CXX executable cmTC_63a9b
+        /opt/homebrew/bin/cmake -E cmake_link_script CMakeFiles/cmTC_63a9b.dir/link.txt --verbose=1
+        Apple clang version 21.0.0 (clang-2100.1.1.101)
+        Target: arm64-apple-darwin25.4.0
+        Thread model: posix
+        InstalledDir: /Library/Developer/CommandLineTools/usr/bin
+         "/Library/Developer/CommandLineTools/usr/bin/ld" -demangle -lto_library /Library/Developer/CommandLineTools/usr/lib/libLTO.dylib -dynamic -arch arm64 -platform_version macos 26.0.0 26.5 -syslibroot /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk -mllvm -enable-linkonceodr-outlining -o cmTC_63a9b -L/usr/local/lib -v CMakeFiles/cmTC_63a9b.dir/CMakeCXXCompilerABI.cpp.o -lc++ -lSystem /Library/Developer/CommandLineTools/usr/lib/clang/21/lib/darwin/libclang_rt.osx.a
+        @(#)PROGRAM:ld PROJECT:ld-1267
+        BUILD 18:30:29 Apr 22 2026
+        configured to support archs: armv6 armv7 armv7s arm64 arm64e arm64_32 i386 x86_64 x86_64h armv6m armv7k armv7m armv7em armv8m.main armv8.1m.main
+        will use ld-classic for: armv6 armv7 armv7s i386 armv6m armv7k armv7m armv7em
+        LTO support using: LLVM version 21.0.0 (static support for 30, runtime is 30)
+        TAPI support using: Apple TAPI version 21.0.0 (tapi-2100.0.2.6)
+        Library search paths:
+        	/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/lib
+        	/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/lib/swift
+        Framework search paths:
+        	/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/System/Library/Frameworks
+        /usr/bin/c++  -v -Wl,-v CMakeFiles/cmTC_63a9b.dir/CMakeCXXCompilerABI.cpp.o -o cmTC_63a9b
+        
+      exitCode: 0
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/opt/homebrew/share/cmake/Modules/CMakeDetermineCompilerABI.cmake:122 (message)"
+      - "/opt/homebrew/share/cmake/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:3 (project)"
+    message: |
+      Effective list of requested architectures (possibly empty)  : ""
+      Effective list of architectures found in the ABI info binary: "arm64"
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/opt/homebrew/share/cmake/Modules/CMakeDetermineCompilerABI.cmake:217 (message)"
+      - "/opt/homebrew/share/cmake/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:3 (project)"
+    message: |
+      Parsed CXX implicit include dir info: rv=done
+        found start of include info
+        found start of implicit include info
+          add: [/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1]
+          add: [/Library/Developer/CommandLineTools/usr/lib/clang/21/include]
+          add: [/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include]
+          add: [/Library/Developer/CommandLineTools/usr/include]
+        end of search list found
+        collapse include dir [/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1] ==> [/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1]
+        collapse include dir [/Library/Developer/CommandLineTools/usr/lib/clang/21/include] ==> [/Library/Developer/CommandLineTools/usr/lib/clang/21/include]
+        collapse include dir [/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include] ==> [/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include]
+        collapse include dir [/Library/Developer/CommandLineTools/usr/include] ==> [/Library/Developer/CommandLineTools/usr/include]
+        implicit include dirs: [/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1;/Library/Developer/CommandLineTools/usr/lib/clang/21/include;/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include;/Library/Developer/CommandLineTools/usr/include]
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/opt/homebrew/share/cmake/Modules/CMakeDetermineCompilerABI.cmake:253 (message)"
+      - "/opt/homebrew/share/cmake/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:3 (project)"
+    message: |
+      Parsed CXX implicit link information:
+        link line regex: [^( *|.*[/\\])(ld[0-9]*(|\\.[a-rt-z][a-z]*|\\.s[a-np-z][a-z]*|\\.so[a-z]+)|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\\]+-)?ld|collect2)[^/\\]*( |$)]
+        linker tool regex: [^[ 	]*(->|"|[0-9]+>[ 	-]*Build:[ 	0-9]+ ms[ 	]*)?[ 	]*(([^"]*[/\\])?(ld[0-9]*(|\\.[a-rt-z][a-z]*|\\.s[a-np-z][a-z]*|\\.so[a-z]+)))("|,| |$)]
+        ignore line: [Change Dir: '/Users/chenhongchi/Desktop/Engine/build/CMakeFiles/CMakeScratch/TryCompile-yMj0tP']
+        ignore line: []
+        ignore line: [Run Build Command(s): /opt/homebrew/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_63a9b/fast]
+        ignore line: [/Library/Developer/CommandLineTools/usr/bin/make  -f CMakeFiles/cmTC_63a9b.dir/build.make CMakeFiles/cmTC_63a9b.dir/build]
+        ignore line: [Building CXX object CMakeFiles/cmTC_63a9b.dir/CMakeCXXCompilerABI.cpp.o]
+        ignore line: [/usr/bin/c++   -v -Wl -v -MD -MT CMakeFiles/cmTC_63a9b.dir/CMakeCXXCompilerABI.cpp.o -MF CMakeFiles/cmTC_63a9b.dir/CMakeCXXCompilerABI.cpp.o.d -o CMakeFiles/cmTC_63a9b.dir/CMakeCXXCompilerABI.cpp.o -c /opt/homebrew/share/cmake/Modules/CMakeCXXCompilerABI.cpp]
+        ignore line: [Apple clang version 21.0.0 (clang-2100.1.1.101)]
+        ignore line: [Target: arm64-apple-darwin25.4.0]
+        ignore line: [Thread model: posix]
+        ignore line: [InstalledDir: /Library/Developer/CommandLineTools/usr/bin]
+        ignore line: [clang++: warning: -Wl -v: 'linker' input unused [-Wunused-command-line-argument]]
+        ignore line: [ignoring nonexistent directory "/Library/Developer/CommandLineTools/usr/bin/../include/c++/v1"]
+        ignore line: [ "/Library/Developer/CommandLineTools/usr/bin/clang" -cc1 -triple arm64-apple-macosx26.0.0 -Wundef-prefix=TARGET_OS_ -Wdeprecated-objc-isa-usage -Werror=deprecated-objc-isa-usage -Werror=implicit-function-declaration -emit-obj -disable-free -clear-ast-before-backend -disable-llvm-verifier -discard-value-names -main-file-name CMakeCXXCompilerABI.cpp -mrelocation-model pic -pic-level 2 -mframe-pointer=non-leaf -fno-strict-return -ffp-contract=on -fno-rounding-math -funwind-tables=1 -fobjc-msgsend-selector-stubs -fno-sized-deallocation -target-sdk-version=26.5 -fvisibility-inlines-hidden-static-local-var -fno-modulemap-allow-subdirectory-search -fdefine-target-os-macros -fno-assume-unique-vtables -fno-modulemap-allow-subdirectory-search -enable-tlsdesc -target-cpu apple-m1 -target-feature +v8.5a -target-feature +aes -target-feature +altnzcv -target-feature +ccdp -target-feature +ccpp -target-feature +complxnum -target-feature +crc -target-feature +dotprod -target-feature +flagm -target-feature +fp-armv8 -target-feature +fp16fml -target-feature +fptoint -target-feature +fullfp16 -target-feature +jsconv -target-feature +lse -target-feature +neon -target-feature +pauth -target-feature +perfmon -target-feature +predres -target-feature +ras -target-feature +rcpc -target-feature +rdm -target-feature +sb -target-feature +sha2 -target-feature +sha3 -target-feature +specrestrict -target-feature +ssbs -target-abi darwinpcs -debugger-tuning=lldb -fdebug-compilation-dir=/Users/chenhongchi/Desktop/Engine/build/CMakeFiles/CMakeScratch/TryCompile-yMj0tP -target-linker-version 1267 -v -fcoverage-compilation-dir=/Users/chenhongchi/Desktop/Engine/build/CMakeFiles/CMakeScratch/TryCompile-yMj0tP -resource-dir /Library/Developer/CommandLineTools/usr/lib/clang/21 -dependency-file CMakeFiles/cmTC_63a9b.dir/CMakeCXXCompilerABI.cpp.o.d -skip-unused-modulemap-deps -MT CMakeFiles/cmTC_63a9b.dir/CMakeCXXCompilerABI.cpp.o -sys-header-deps -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk -I/usr/local/include -internal-isystem /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1 -internal-isystem /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/local/include -internal-isystem /Library/Developer/CommandLineTools/usr/lib/clang/21/include -internal-externc-isystem /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include -internal-externc-isystem /Library/Developer/CommandLineTools/usr/include -internal-iframework /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/System/Library/Frameworks -internal-iframework /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/System/Library/SubFrameworks -internal-iframework /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/Library/Frameworks -Wno-elaborated-enum-base -fdeprecated-macro -ferror-limit 19 -stack-protector 1 -fstack-check -mdarwin-stkchk-strong-link -fblocks -fencode-extended-block-signature -fregister-global-dtors-with-atexit -fgnuc-version=4.2.1 -fskip-odr-check-in-gmf -fcxx-exceptions -fexceptions -fmax-type-align=16 -fcommon -clang-vendor-feature=+disableNonDependentMemberExprInCurrentInstantiation -fno-odr-hash-protocols -clang-vendor-feature=+enableAggressiveVLAFolding -clang-vendor-feature=+revert09abecef7bbf -clang-vendor-feature=+thisNoAlignAttr -clang-vendor-feature=+thisNoNullAttr -clang-vendor-feature=+disableAtImportPrivateFrameworkInImplementationError -Wno-error=allocator-wrappers -fdwarf2-cfi-asm -o CMakeFiles/cmTC_63a9b.dir/CMakeCXXCompilerABI.cpp.o -x c++ /opt/homebrew/share/cmake/Modules/CMakeCXXCompilerABI.cpp]
+        ignore line: [clang -cc1 version 21.0.0 (clang-2100.1.1.101) default target arm64-apple-darwin25.4.0]
+        ignore line: [ignoring nonexistent directory "/usr/local/include"]
+        ignore line: [ignoring nonexistent directory "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/local/include"]
+        ignore line: [ignoring nonexistent directory "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/Library/Frameworks"]
+        ignore line: [#include "..." search starts here:]
+        ignore line: [#include <...> search starts here:]
+        ignore line: [ /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1]
+        ignore line: [ /Library/Developer/CommandLineTools/usr/lib/clang/21/include]
+        ignore line: [ /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include]
+        ignore line: [ /Library/Developer/CommandLineTools/usr/include]
+        ignore line: [ /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/System/Library/Frameworks (framework directory)]
+        ignore line: [ /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/System/Library/SubFrameworks (framework directory)]
+        ignore line: [End of search list.]
+        ignore line: [Linking CXX executable cmTC_63a9b]
+        ignore line: [/opt/homebrew/bin/cmake -E cmake_link_script CMakeFiles/cmTC_63a9b.dir/link.txt --verbose=1]
+        ignore line: [Apple clang version 21.0.0 (clang-2100.1.1.101)]
+        ignore line: [Target: arm64-apple-darwin25.4.0]
+        ignore line: [Thread model: posix]
+        ignore line: [InstalledDir: /Library/Developer/CommandLineTools/usr/bin]
+        link line: [ "/Library/Developer/CommandLineTools/usr/bin/ld" -demangle -lto_library /Library/Developer/CommandLineTools/usr/lib/libLTO.dylib -dynamic -arch arm64 -platform_version macos 26.0.0 26.5 -syslibroot /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk -mllvm -enable-linkonceodr-outlining -o cmTC_63a9b -L/usr/local/lib -v CMakeFiles/cmTC_63a9b.dir/CMakeCXXCompilerABI.cpp.o -lc++ -lSystem /Library/Developer/CommandLineTools/usr/lib/clang/21/lib/darwin/libclang_rt.osx.a]
+          arg [/Library/Developer/CommandLineTools/usr/bin/ld] ==> ignore
+          arg [-demangle] ==> ignore
+          arg [-lto_library] ==> ignore, skip following value
+          arg [/Library/Developer/CommandLineTools/usr/lib/libLTO.dylib] ==> skip value of -lto_library
+          arg [-dynamic] ==> ignore
+          arg [-arch] ==> ignore
+          arg [arm64] ==> ignore
+          arg [-platform_version] ==> ignore
+          arg [macos] ==> ignore
+          arg [26.0.0] ==> ignore
+          arg [26.5] ==> ignore
+          arg [-syslibroot] ==> ignore
+          arg [/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk] ==> ignore
+          arg [-mllvm] ==> ignore
+          arg [-enable-linkonceodr-outlining] ==> ignore
+          arg [-o] ==> ignore
+          arg [cmTC_63a9b] ==> ignore
+          arg [-L/usr/local/lib] ==> dir [/usr/local/lib]
+          arg [-v] ==> ignore
+          arg [CMakeFiles/cmTC_63a9b.dir/CMakeCXXCompilerABI.cpp.o] ==> ignore
+          arg [-lc++] ==> lib [c++]
+          arg [-lSystem] ==> lib [System]
+          arg [/Library/Developer/CommandLineTools/usr/lib/clang/21/lib/darwin/libclang_rt.osx.a] ==> lib [/Library/Developer/CommandLineTools/usr/lib/clang/21/lib/darwin/libclang_rt.osx.a]
+        linker tool for 'CXX': /Library/Developer/CommandLineTools/usr/bin/ld
+        Library search paths: [;/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/lib;/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/lib/swift]
+        Framework search paths: [;/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/System/Library/Frameworks]
+        remove lib [System]
+        remove lib [/Library/Developer/CommandLineTools/usr/lib/clang/21/lib/darwin/libclang_rt.osx.a]
+        collapse library dir [/usr/local/lib] ==> [/usr/local/lib]
+        collapse library dir [/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/lib] ==> [/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/lib]
+        collapse library dir [/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/lib/swift] ==> [/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/lib/swift]
+        collapse framework dir [/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/System/Library/Frameworks] ==> [/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/System/Library/Frameworks]
+        implicit libs: [c++]
+        implicit objs: []
+        implicit dirs: [/usr/local/lib;/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/lib;/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/lib/swift]
+        implicit fwks: [/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/System/Library/Frameworks]
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/opt/homebrew/share/cmake/Modules/Internal/CMakeDetermineLinkerId.cmake:38 (message)"
+      - "/opt/homebrew/share/cmake/Modules/CMakeDetermineCompilerABI.cmake:299 (cmake_determine_linker_id)"
+      - "/opt/homebrew/share/cmake/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:3 (project)"
+    message: |
+      Running the CXX compiler's linker: "/Library/Developer/CommandLineTools/usr/bin/ld" "-v"
+      @(#)PROGRAM:ld PROJECT:ld-1267
+      BUILD 18:30:29 Apr 22 2026
+      configured to support archs: armv6 armv7 armv7s arm64 arm64e arm64_32 i386 x86_64 x86_64h armv6m armv7k armv7m armv7em armv8m.main armv8.1m.main
+      will use ld-classic for: armv6 armv7 armv7s i386 armv6m armv7k armv7m armv7em
+      LTO support using: LLVM version 21.0.0 (static support for 30, runtime is 30)
+      TAPI support using: Apple TAPI version 21.0.0 (tapi-2100.0.2.6)
+  -
+    kind: "find-v1"
+    backtrace:
+      - "/opt/homebrew/share/cmake/Modules/FindVulkan.cmake:409 (find_path)"
+      - "CMakeLists.txt:9 (find_package)"
+    mode: "path"
+    variable: "Vulkan_INCLUDE_DIR"
+    description: "Path to a file."
+    settings:
+      SearchFramework: "FIRST"
+      SearchAppBundle: "FIRST"
+      CMAKE_FIND_USE_CMAKE_PATH: true
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "vulkan/vulkan.h"
+    candidate_directories:
+      - "/Users/chenhongchi/.codex/tmp/arg0/codex-arg0TRXaIE/"
+      - "/Users/chenhongchi/Library/Caches/JetBrains/CLion2026.1/acp-agents/.runtimes/node/24.13.0/npm-cache/_npx/7fd314b1ecd85c67/node_modules/@openai/codex-darwin-arm64/vendor/aarch64-apple-darwin/path/"
+      - "/Users/chenhongchi/Library/Caches/JetBrains/CLion2026.1/acp-agents/.runtimes/node/24.13.0/npm-cache/_npx/7fd314b1ecd85c67/node_modules/.bin/"
+      - "/Users/chenhongchi/Desktop/Engine/node_modules/.bin/"
+      - "/Users/chenhongchi/Desktop/node_modules/.bin/"
+      - "/Users/chenhongchi/node_modules/.bin/"
+      - "/Users/node_modules/.bin/"
+      - "/node_modules/.bin/"
+      - "/Users/chenhongchi/Library/Caches/JetBrains/CLion2026.1/acp-agents/.runtimes/node/24.13.0/lib/node_modules/npm/node_modules/@npmcli/run-script/lib/node-gyp-bin/"
+      - "/Users/chenhongchi/Library/Caches/JetBrains/CLion2026.1/acp-agents/.runtimes/node/24.13.0/bin/"
+      - "/opt/homebrew/bin/"
+      - "/opt/homebrew/sbin/"
+      - "/usr/local/bin/"
+      - "/System/Cryptexes/App/usr/bin/"
+      - "/usr/bin/"
+      - "/bin/"
+      - "/usr/sbin/"
+      - "/sbin/"
+      - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin/"
+      - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin/"
+      - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin/"
+      - "/opt/pkg/env/active/bin/"
+      - "/opt/pmk/env/global/bin/"
+      - "/Library/Apple/usr/bin/"
+      - "/usr/local/share/dotnet/"
+      - "/Users/chenhongchi/.dotnet/tools/"
+      - "/Users/chenhongchi/.local/bin/"
+      - "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/"
+      - "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/"
+      - "/opt/homebrew/include/"
+      - "/opt/homebrew/"
+      - "/usr/local/include/"
+      - "/usr/local/"
+      - "/usr/include/"
+      - "/usr/"
+      - "/include/"
+      - "/usr/X11R6/include/"
+      - "/usr/X11R6/"
+      - "/usr/pkg/include/"
+      - "/usr/pkg/"
+      - "/opt/include/"
+      - "/opt/"
+      - "/sw/include/"
+      - "/sw/"
+      - "/opt/local/include/"
+      - "/opt/local/"
+      - "/usr/include/X11/"
+      - "/Users/chenhongchi/Library/Frameworks/"
+      - "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/Library/Frameworks/"
+      - "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/Network/Library/Frameworks/"
+      - "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/System/Library/Frameworks/"
+      - "/Library/Developer/CommandLineTools/Library/Frameworks/"
+      - "/Library/Frameworks/"
+      - "/Network/Library/Frameworks/"
+      - "/System/Library/Frameworks/"
+    searched_directories:
+      - "/Users/chenhongchi/.codex/tmp/arg0/codex-arg0TRXaIE/vulkan.framework/Headers/vulkan.h"
+      - "/Users/chenhongchi/Library/Caches/JetBrains/CLion2026.1/acp-agents/.runtimes/node/24.13.0/npm-cache/_npx/7fd314b1ecd85c67/node_modules/@openai/codex-darwin-arm64/vendor/aarch64-apple-darwin/path/vulkan.framework/Headers/vulkan.h"
+      - "/Users/chenhongchi/Library/Caches/JetBrains/CLion2026.1/acp-agents/.runtimes/node/24.13.0/npm-cache/_npx/7fd314b1ecd85c67/node_modules/.bin/vulkan.framework/Headers/vulkan.h"
+      - "/Users/chenhongchi/Desktop/Engine/node_modules/.bin/vulkan.framework/Headers/vulkan.h"
+      - "/Users/chenhongchi/Desktop/node_modules/.bin/vulkan.framework/Headers/vulkan.h"
+      - "/Users/chenhongchi/node_modules/.bin/vulkan.framework/Headers/vulkan.h"
+      - "/Users/node_modules/.bin/vulkan.framework/Headers/vulkan.h"
+      - "/node_modules/.bin/vulkan.framework/Headers/vulkan.h"
+      - "/Users/chenhongchi/Library/Caches/JetBrains/CLion2026.1/acp-agents/.runtimes/node/24.13.0/lib/node_modules/npm/node_modules/@npmcli/run-script/lib/node-gyp-bin/vulkan.framework/Headers/vulkan.h"
+      - "/Users/chenhongchi/Library/Caches/JetBrains/CLion2026.1/acp-agents/.runtimes/node/24.13.0/bin/vulkan.framework/Headers/vulkan.h"
+      - "/opt/homebrew/bin/vulkan.framework/Headers/vulkan.h"
+      - "/opt/homebrew/sbin/vulkan.framework/Headers/vulkan.h"
+      - "/usr/local/bin/vulkan.framework/Headers/vulkan.h"
+      - "/System/Cryptexes/App/usr/bin/vulkan.framework/Headers/vulkan.h"
+      - "/usr/bin/vulkan.framework/Headers/vulkan.h"
+      - "/bin/vulkan.framework/Headers/vulkan.h"
+      - "/usr/sbin/vulkan.framework/Headers/vulkan.h"
+      - "/sbin/vulkan.framework/Headers/vulkan.h"
+      - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin/vulkan.framework/Headers/vulkan.h"
+      - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin/vulkan.framework/Headers/vulkan.h"
+      - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin/vulkan.framework/Headers/vulkan.h"
+      - "/opt/pkg/env/active/bin/vulkan.framework/Headers/vulkan.h"
+      - "/opt/pmk/env/global/bin/vulkan.framework/Headers/vulkan.h"
+      - "/Library/Apple/usr/bin/vulkan.framework/Headers/vulkan.h"
+      - "/usr/local/share/dotnet/vulkan.framework/Headers/vulkan.h"
+      - "/Users/chenhongchi/.dotnet/tools/vulkan.framework/Headers/vulkan.h"
+      - "/Users/chenhongchi/.local/bin/vulkan.framework/Headers/vulkan.h"
+      - "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/vulkan.framework/Headers/vulkan.h"
+      - "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/vulkan.framework/Headers/vulkan.h"
+      - "/opt/homebrew/include/vulkan.framework/Headers/vulkan.h"
+      - "/opt/homebrew/vulkan.framework/Headers/vulkan.h"
+      - "/usr/local/include/vulkan.framework/Headers/vulkan.h"
+      - "/usr/local/vulkan.framework/Headers/vulkan.h"
+      - "/usr/include/vulkan.framework/Headers/vulkan.h"
+      - "/usr/vulkan.framework/Headers/vulkan.h"
+      - "/include/vulkan.framework/Headers/vulkan.h"
+      - "/usr/X11R6/include/vulkan.framework/Headers/vulkan.h"
+      - "/usr/X11R6/vulkan.framework/Headers/vulkan.h"
+      - "/usr/pkg/include/vulkan.framework/Headers/vulkan.h"
+      - "/usr/pkg/vulkan.framework/Headers/vulkan.h"
+      - "/opt/include/vulkan.framework/Headers/vulkan.h"
+      - "/opt/vulkan.framework/Headers/vulkan.h"
+      - "/sw/include/vulkan.framework/Headers/vulkan.h"
+      - "/sw/vulkan.framework/Headers/vulkan.h"
+      - "/opt/local/include/vulkan.framework/Headers/vulkan.h"
+      - "/opt/local/vulkan.framework/Headers/vulkan.h"
+      - "/usr/include/X11/vulkan.framework/Headers/vulkan.h"
+      - "/Users/chenhongchi/Library/Frameworks/vulkan.framework/Headers/vulkan.h"
+      - "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/Library/Frameworks/vulkan.framework/Headers/vulkan.h"
+      - "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/Network/Library/Frameworks/vulkan.framework/Headers/vulkan.h"
+      - "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/System/Library/Frameworks/vulkan.framework/Headers/vulkan.h"
+      - "/Library/Developer/CommandLineTools/Library/Frameworks/vulkan.framework/Headers/vulkan.h"
+      - "/Library/Frameworks/vulkan.framework/Headers/vulkan.h"
+      - "/Network/Library/Frameworks/vulkan.framework/Headers/vulkan.h"
+      - "/System/Library/Frameworks/vulkan.framework/Headers/vulkan.h"
+      - "/Users/chenhongchi/.codex/tmp/arg0/codex-arg0TRXaIE/vulkan/vulkan.h"
+      - "/Users/chenhongchi/Library/Caches/JetBrains/CLion2026.1/acp-agents/.runtimes/node/24.13.0/npm-cache/_npx/7fd314b1ecd85c67/node_modules/@openai/codex-darwin-arm64/vendor/aarch64-apple-darwin/path/vulkan/vulkan.h"
+      - "/Users/chenhongchi/Library/Caches/JetBrains/CLion2026.1/acp-agents/.runtimes/node/24.13.0/npm-cache/_npx/7fd314b1ecd85c67/node_modules/.bin/vulkan/vulkan.h"
+      - "/Users/chenhongchi/Desktop/Engine/node_modules/.bin/vulkan/vulkan.h"
+      - "/Users/chenhongchi/Desktop/node_modules/.bin/vulkan/vulkan.h"
+      - "/Users/chenhongchi/node_modules/.bin/vulkan/vulkan.h"
+      - "/Users/node_modules/.bin/vulkan/vulkan.h"
+      - "/node_modules/.bin/vulkan/vulkan.h"
+      - "/Users/chenhongchi/Library/Caches/JetBrains/CLion2026.1/acp-agents/.runtimes/node/24.13.0/lib/node_modules/npm/node_modules/@npmcli/run-script/lib/node-gyp-bin/vulkan/vulkan.h"
+      - "/Users/chenhongchi/Library/Caches/JetBrains/CLion2026.1/acp-agents/.runtimes/node/24.13.0/bin/vulkan/vulkan.h"
+      - "/opt/homebrew/bin/vulkan/vulkan.h"
+      - "/opt/homebrew/sbin/vulkan/vulkan.h"
+      - "/usr/local/bin/vulkan/vulkan.h"
+      - "/System/Cryptexes/App/usr/bin/vulkan/vulkan.h"
+      - "/usr/bin/vulkan/vulkan.h"
+      - "/bin/vulkan/vulkan.h"
+      - "/usr/sbin/vulkan/vulkan.h"
+      - "/sbin/vulkan/vulkan.h"
+      - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin/vulkan/vulkan.h"
+      - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin/vulkan/vulkan.h"
+      - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin/vulkan/vulkan.h"
+      - "/opt/pkg/env/active/bin/vulkan/vulkan.h"
+      - "/opt/pmk/env/global/bin/vulkan/vulkan.h"
+      - "/Library/Apple/usr/bin/vulkan/vulkan.h"
+      - "/usr/local/share/dotnet/vulkan/vulkan.h"
+      - "/Users/chenhongchi/.dotnet/tools/vulkan/vulkan.h"
+      - "/Users/chenhongchi/.local/bin/vulkan/vulkan.h"
+      - "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/vulkan/vulkan.h"
+      - "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/vulkan/vulkan.h"
+      - "/opt/homebrew/include/vulkan/vulkan.h"
+      - "/opt/homebrew/vulkan/vulkan.h"
+      - "/usr/local/include/vulkan/vulkan.h"
+      - "/usr/local/vulkan/vulkan.h"
+      - "/usr/include/vulkan/vulkan.h"
+      - "/usr/vulkan/vulkan.h"
+      - "/include/vulkan/vulkan.h"
+      - "/usr/X11R6/include/vulkan/vulkan.h"
+      - "/usr/X11R6/vulkan/vulkan.h"
+      - "/usr/pkg/include/vulkan/vulkan.h"
+      - "/usr/pkg/vulkan/vulkan.h"
+      - "/opt/include/vulkan/vulkan.h"
+      - "/opt/vulkan/vulkan.h"
+      - "/sw/include/vulkan/vulkan.h"
+      - "/sw/vulkan/vulkan.h"
+      - "/opt/local/include/vulkan/vulkan.h"
+      - "/opt/local/vulkan/vulkan.h"
+      - "/usr/include/X11/vulkan/vulkan.h"
+      - "/Users/chenhongchi/Library/Frameworks/vulkan/vulkan.h"
+      - "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/Library/Frameworks/vulkan/vulkan.h"
+      - "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/Network/Library/Frameworks/vulkan/vulkan.h"
+      - "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/System/Library/Frameworks/vulkan/vulkan.h"
+      - "/Library/Developer/CommandLineTools/Library/Frameworks/vulkan/vulkan.h"
+      - "/Library/Frameworks/vulkan/vulkan.h"
+      - "/Network/Library/Frameworks/vulkan/vulkan.h"
+      - "/System/Library/Frameworks/vulkan/vulkan.h"
+    found: false
+    search_context:
+      ENV{PATH}:
+        - "/Users/chenhongchi/.codex/tmp/arg0/codex-arg0TRXaIE"
+        - "/Users/chenhongchi/Library/Caches/JetBrains/CLion2026.1/acp-agents/.runtimes/node/24.13.0/npm-cache/_npx/7fd314b1ecd85c67/node_modules/@openai/codex-darwin-arm64/vendor/aarch64-apple-darwin/path"
+        - "/Users/chenhongchi/Library/Caches/JetBrains/CLion2026.1/acp-agents/.runtimes/node/24.13.0/npm-cache/_npx/7fd314b1ecd85c67/node_modules/.bin"
+        - "/Users/chenhongchi/Desktop/Engine/node_modules/.bin"
+        - "/Users/chenhongchi/Desktop/node_modules/.bin"
+        - "/Users/chenhongchi/node_modules/.bin"
+        - "/Users/node_modules/.bin"
+        - "/node_modules/.bin"
+        - "/Users/chenhongchi/Library/Caches/JetBrains/CLion2026.1/acp-agents/.runtimes/node/24.13.0/lib/node_modules/npm/node_modules/@npmcli/run-script/lib/node-gyp-bin"
+        - "/Users/chenhongchi/Library/Caches/JetBrains/CLion2026.1/acp-agents/.runtimes/node/24.13.0/bin"
+        - "/opt/homebrew/bin"
+        - "/opt/homebrew/sbin"
+        - "/usr/local/bin"
+        - "/System/Cryptexes/App/usr/bin"
+        - "/usr/bin"
+        - "/bin"
+        - "/usr/sbin"
+        - "/sbin"
+        - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin"
+        - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin"
+        - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin"
+        - "/opt/pkg/env/active/bin"
+        - "/opt/pmk/env/global/bin"
+        - "/Library/Apple/usr/bin"
+        - "/usr/local/share/dotnet"
+        - "~/.dotnet/tools"
+        - "/Users/chenhongchi/.local/bin"
+        - "/Users/chenhongchi/.local/bin"
+      CMAKE_INSTALL_PREFIX: "/usr/local"
+      CMAKE_SYSTEM_PREFIX_PATH:
+        - "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr"
+        - "/opt/homebrew"
+        - "/usr/local"
+        - "/usr"
+        - "/"
+        - "/opt/homebrew"
+        - "/usr/local"
+        - "/usr/X11R6"
+        - "/usr/pkg"
+        - "/opt"
+        - "/sw"
+        - "/opt/local"
+      CMAKE_SYSTEM_INCLUDE_PATH:
+        - "/usr/include/X11"
+      CMAKE_SYSTEM_FRAMEWORK_PATH:
+        - "~/Library/Frameworks"
+        - "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/Library/Frameworks"
+        - "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/Network/Library/Frameworks"
+        - "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/System/Library/Frameworks"
+        - "/Library/Developer/CommandLineTools/Library/Frameworks"
+        - "/Library/Developer/CommandLineTools/Library/Frameworks"
+        - "/Library/Frameworks"
+        - "/Network/Library/Frameworks"
+        - "/System/Library/Frameworks"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "/opt/homebrew/share/cmake/Modules/FindVulkan.cmake:416 (find_library)"
+      - "CMakeLists.txt:9 (find_package)"
+    mode: "library"
+    variable: "Vulkan_LIBRARY"
+    description: "Path to a library."
+    settings:
+      SearchFramework: "FIRST"
+      SearchAppBundle: "FIRST"
+      CMAKE_FIND_USE_CMAKE_PATH: true
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "vulkan"
+    candidate_directories:
+      - "/Users/chenhongchi/.codex/tmp/arg0/codex-arg0TRXaIE/"
+      - "/Users/chenhongchi/Library/Caches/JetBrains/CLion2026.1/acp-agents/.runtimes/node/24.13.0/npm-cache/_npx/7fd314b1ecd85c67/node_modules/@openai/codex-darwin-arm64/vendor/aarch64-apple-darwin/path/"
+      - "/Users/chenhongchi/Library/Caches/JetBrains/CLion2026.1/acp-agents/.runtimes/node/24.13.0/npm-cache/_npx/7fd314b1ecd85c67/node_modules/.bin/"
+      - "/Users/chenhongchi/Library/Caches/JetBrains/CLion2026.1/acp-agents/.runtimes/node/24.13.0/lib/node_modules/npm/node_modules/@npmcli/run-script/lib/node-gyp-bin/"
+      - "/Users/chenhongchi/Library/Caches/JetBrains/CLion2026.1/acp-agents/.runtimes/node/24.13.0/bin/"
+      - "/opt/homebrew/bin/"
+      - "/opt/homebrew/sbin/"
+      - "/System/Cryptexes/App/usr/bin/"
+      - "/usr/bin/"
+      - "/bin/"
+      - "/usr/sbin/"
+      - "/sbin/"
+      - "/Library/Apple/usr/bin/"
+      - "/usr/local/share/dotnet/"
+      - "/Users/chenhongchi/.local/bin/"
+      - "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/lib/"
+      - "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/"
+      - "/opt/homebrew/lib/"
+      - "/opt/homebrew/"
+      - "/usr/local/"
+      - "/usr/lib/"
+      - "/usr/"
+      - "/opt/"
+      - "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/System/Library/Frameworks/"
+      - "/Library/Developer/CommandLineTools/Library/Frameworks/"
+      - "/Library/Frameworks/"
+      - "/System/Library/Frameworks/"
+    searched_directories:
+      - "/Users/chenhongchi/.codex/tmp/arg0/codex-arg0TRXaIE/"
+      - "/Users/chenhongchi/Library/Caches/JetBrains/CLion2026.1/acp-agents/.runtimes/node/24.13.0/npm-cache/_npx/7fd314b1ecd85c67/node_modules/@openai/codex-darwin-arm64/vendor/aarch64-apple-darwin/path/"
+      - "/Users/chenhongchi/Library/Caches/JetBrains/CLion2026.1/acp-agents/.runtimes/node/24.13.0/npm-cache/_npx/7fd314b1ecd85c67/node_modules/.bin/"
+      - "/Users/chenhongchi/Library/Caches/JetBrains/CLion2026.1/acp-agents/.runtimes/node/24.13.0/lib/node_modules/npm/node_modules/@npmcli/run-script/lib/node-gyp-bin/"
+      - "/Users/chenhongchi/Library/Caches/JetBrains/CLion2026.1/acp-agents/.runtimes/node/24.13.0/bin/"
+      - "/opt/homebrew/bin/"
+      - "/opt/homebrew/sbin/"
+      - "/System/Cryptexes/App/usr/bin/"
+      - "/usr/bin/"
+      - "/bin/"
+      - "/usr/sbin/"
+      - "/sbin/"
+      - "/Library/Apple/usr/bin/"
+      - "/usr/local/share/dotnet/"
+      - "/Users/chenhongchi/.local/bin/"
+      - "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/lib/"
+      - "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/"
+      - "/opt/homebrew/lib/"
+      - "/opt/homebrew/"
+      - "/usr/local/"
+      - "/usr/lib/"
+      - "/usr/"
+      - "/opt/"
+      - "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/System/Library/Frameworks/"
+      - "/Library/Developer/CommandLineTools/Library/Frameworks/"
+      - "/Library/Frameworks/"
+      - "/System/Library/Frameworks/"
+    found: false
+    search_context:
+      ENV{PATH}:
+        - "/Users/chenhongchi/.codex/tmp/arg0/codex-arg0TRXaIE"
+        - "/Users/chenhongchi/Library/Caches/JetBrains/CLion2026.1/acp-agents/.runtimes/node/24.13.0/npm-cache/_npx/7fd314b1ecd85c67/node_modules/@openai/codex-darwin-arm64/vendor/aarch64-apple-darwin/path"
+        - "/Users/chenhongchi/Library/Caches/JetBrains/CLion2026.1/acp-agents/.runtimes/node/24.13.0/npm-cache/_npx/7fd314b1ecd85c67/node_modules/.bin"
+        - "/Users/chenhongchi/Desktop/Engine/node_modules/.bin"
+        - "/Users/chenhongchi/Desktop/node_modules/.bin"
+        - "/Users/chenhongchi/node_modules/.bin"
+        - "/Users/node_modules/.bin"
+        - "/node_modules/.bin"
+        - "/Users/chenhongchi/Library/Caches/JetBrains/CLion2026.1/acp-agents/.runtimes/node/24.13.0/lib/node_modules/npm/node_modules/@npmcli/run-script/lib/node-gyp-bin"
+        - "/Users/chenhongchi/Library/Caches/JetBrains/CLion2026.1/acp-agents/.runtimes/node/24.13.0/bin"
+        - "/opt/homebrew/bin"
+        - "/opt/homebrew/sbin"
+        - "/usr/local/bin"
+        - "/System/Cryptexes/App/usr/bin"
+        - "/usr/bin"
+        - "/bin"
+        - "/usr/sbin"
+        - "/sbin"
+        - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin"
+        - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin"
+        - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin"
+        - "/opt/pkg/env/active/bin"
+        - "/opt/pmk/env/global/bin"
+        - "/Library/Apple/usr/bin"
+        - "/usr/local/share/dotnet"
+        - "~/.dotnet/tools"
+        - "/Users/chenhongchi/.local/bin"
+        - "/Users/chenhongchi/.local/bin"
+      CMAKE_INSTALL_PREFIX: "/usr/local"
+      CMAKE_SYSTEM_PREFIX_PATH:
+        - "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr"
+        - "/opt/homebrew"
+        - "/usr/local"
+        - "/usr"
+        - "/"
+        - "/opt/homebrew"
+        - "/usr/local"
+        - "/usr/X11R6"
+        - "/usr/pkg"
+        - "/opt"
+        - "/sw"
+        - "/opt/local"
+      CMAKE_SYSTEM_LIBRARY_PATH:
+        - "/usr/lib/X11"
+      CMAKE_SYSTEM_FRAMEWORK_PATH:
+        - "~/Library/Frameworks"
+        - "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/Library/Frameworks"
+        - "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/Network/Library/Frameworks"
+        - "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/System/Library/Frameworks"
+        - "/Library/Developer/CommandLineTools/Library/Frameworks"
+        - "/Library/Developer/CommandLineTools/Library/Frameworks"
+        - "/Library/Frameworks"
+        - "/Network/Library/Frameworks"
+        - "/System/Library/Frameworks"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "/opt/homebrew/share/cmake/Modules/FindVulkan.cmake:424 (find_program)"
+      - "CMakeLists.txt:9 (find_package)"
+    mode: "program"
+    variable: "Vulkan_GLSLC_EXECUTABLE"
+    description: "Path to a program."
+    settings:
+      SearchFramework: "FIRST"
+      SearchAppBundle: "FIRST"
+      CMAKE_FIND_USE_CMAKE_PATH: true
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "glslc"
+    candidate_directories:
+      - "/Users/chenhongchi/.codex/tmp/arg0/codex-arg0TRXaIE/"
+      - "/Users/chenhongchi/Library/Caches/JetBrains/CLion2026.1/acp-agents/.runtimes/node/24.13.0/npm-cache/_npx/7fd314b1ecd85c67/node_modules/@openai/codex-darwin-arm64/vendor/aarch64-apple-darwin/path/"
+      - "/Users/chenhongchi/Library/Caches/JetBrains/CLion2026.1/acp-agents/.runtimes/node/24.13.0/npm-cache/_npx/7fd314b1ecd85c67/node_modules/.bin/"
+      - "/Users/chenhongchi/Desktop/Engine/node_modules/.bin/"
+      - "/Users/chenhongchi/Desktop/node_modules/.bin/"
+      - "/Users/chenhongchi/node_modules/.bin/"
+      - "/Users/node_modules/.bin/"
+      - "/node_modules/.bin/"
+      - "/Users/chenhongchi/Library/Caches/JetBrains/CLion2026.1/acp-agents/.runtimes/node/24.13.0/lib/node_modules/npm/node_modules/@npmcli/run-script/lib/node-gyp-bin/"
+      - "/Users/chenhongchi/Library/Caches/JetBrains/CLion2026.1/acp-agents/.runtimes/node/24.13.0/bin/"
+      - "/opt/homebrew/bin/"
+      - "/opt/homebrew/sbin/"
+      - "/usr/local/bin/"
+      - "/System/Cryptexes/App/usr/bin/"
+      - "/usr/bin/"
+      - "/bin/"
+      - "/usr/sbin/"
+      - "/sbin/"
+      - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin/"
+      - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin/"
+      - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin/"
+      - "/opt/pkg/env/active/bin/"
+      - "/opt/pmk/env/global/bin/"
+      - "/Library/Apple/usr/bin/"
+      - "/usr/local/share/dotnet/"
+      - "/Users/chenhongchi/.dotnet/tools/"
+      - "/Users/chenhongchi/.local/bin/"
+      - "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/bin/"
+      - "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/sbin/"
+      - "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/"
+      - "/opt/homebrew/bin/"
+      - "/opt/homebrew/sbin/"
+      - "/opt/homebrew/"
+      - "/usr/local/bin/"
+      - "/usr/local/sbin/"
+      - "/usr/local/"
+      - "/usr/bin/"
+      - "/usr/sbin/"
+      - "/usr/"
+      - "/bin/"
+      - "/sbin/"
+      - "/usr/X11R6/bin/"
+      - "/usr/X11R6/sbin/"
+      - "/usr/X11R6/"
+      - "/usr/pkg/bin/"
+      - "/usr/pkg/sbin/"
+      - "/usr/pkg/"
+      - "/opt/bin/"
+      - "/opt/sbin/"
+      - "/opt/"
+      - "/sw/bin/"
+      - "/sw/sbin/"
+      - "/sw/"
+      - "/opt/local/bin/"
+      - "/opt/local/sbin/"
+      - "/opt/local/"
+      - "/Applications/"
+    searched_directories:
+      - "/Users/chenhongchi/.codex/tmp/arg0/codex-arg0TRXaIE/glslc"
+      - "/Users/chenhongchi/Library/Caches/JetBrains/CLion2026.1/acp-agents/.runtimes/node/24.13.0/npm-cache/_npx/7fd314b1ecd85c67/node_modules/@openai/codex-darwin-arm64/vendor/aarch64-apple-darwin/path/glslc"
+      - "/Users/chenhongchi/Library/Caches/JetBrains/CLion2026.1/acp-agents/.runtimes/node/24.13.0/npm-cache/_npx/7fd314b1ecd85c67/node_modules/.bin/glslc"
+      - "/Users/chenhongchi/Desktop/Engine/node_modules/.bin/glslc"
+      - "/Users/chenhongchi/Desktop/node_modules/.bin/glslc"
+      - "/Users/chenhongchi/node_modules/.bin/glslc"
+      - "/Users/node_modules/.bin/glslc"
+      - "/node_modules/.bin/glslc"
+      - "/Users/chenhongchi/Library/Caches/JetBrains/CLion2026.1/acp-agents/.runtimes/node/24.13.0/lib/node_modules/npm/node_modules/@npmcli/run-script/lib/node-gyp-bin/glslc"
+      - "/Users/chenhongchi/Library/Caches/JetBrains/CLion2026.1/acp-agents/.runtimes/node/24.13.0/bin/glslc"
+      - "/opt/homebrew/bin/glslc"
+      - "/opt/homebrew/sbin/glslc"
+      - "/usr/local/bin/glslc"
+      - "/System/Cryptexes/App/usr/bin/glslc"
+      - "/usr/bin/glslc"
+      - "/bin/glslc"
+      - "/usr/sbin/glslc"
+      - "/sbin/glslc"
+      - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin/glslc"
+      - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin/glslc"
+      - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin/glslc"
+      - "/opt/pkg/env/active/bin/glslc"
+      - "/opt/pmk/env/global/bin/glslc"
+      - "/Library/Apple/usr/bin/glslc"
+      - "/usr/local/share/dotnet/glslc"
+      - "/Users/chenhongchi/.dotnet/tools/glslc"
+      - "/Users/chenhongchi/.local/bin/glslc"
+      - "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/bin/glslc"
+      - "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/sbin/glslc"
+      - "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/glslc"
+      - "/opt/homebrew/bin/glslc"
+      - "/opt/homebrew/sbin/glslc"
+      - "/opt/homebrew/glslc"
+      - "/usr/local/bin/glslc"
+      - "/usr/local/sbin/glslc"
+      - "/usr/local/glslc"
+      - "/usr/bin/glslc"
+      - "/usr/sbin/glslc"
+      - "/usr/glslc"
+      - "/bin/glslc"
+      - "/sbin/glslc"
+      - "/usr/X11R6/bin/glslc"
+      - "/usr/X11R6/sbin/glslc"
+      - "/usr/X11R6/glslc"
+      - "/usr/pkg/bin/glslc"
+      - "/usr/pkg/sbin/glslc"
+      - "/usr/pkg/glslc"
+      - "/opt/bin/glslc"
+      - "/opt/sbin/glslc"
+      - "/opt/glslc"
+      - "/sw/bin/glslc"
+      - "/sw/sbin/glslc"
+      - "/sw/glslc"
+      - "/opt/local/bin/glslc"
+      - "/opt/local/sbin/glslc"
+      - "/opt/local/glslc"
+      - "/Applications/glslc"
+    found: false
+    search_context:
+      ENV{PATH}:
+        - "/Users/chenhongchi/.codex/tmp/arg0/codex-arg0TRXaIE"
+        - "/Users/chenhongchi/Library/Caches/JetBrains/CLion2026.1/acp-agents/.runtimes/node/24.13.0/npm-cache/_npx/7fd314b1ecd85c67/node_modules/@openai/codex-darwin-arm64/vendor/aarch64-apple-darwin/path"
+        - "/Users/chenhongchi/Library/Caches/JetBrains/CLion2026.1/acp-agents/.runtimes/node/24.13.0/npm-cache/_npx/7fd314b1ecd85c67/node_modules/.bin"
+        - "/Users/chenhongchi/Desktop/Engine/node_modules/.bin"
+        - "/Users/chenhongchi/Desktop/node_modules/.bin"
+        - "/Users/chenhongchi/node_modules/.bin"
+        - "/Users/node_modules/.bin"
+        - "/node_modules/.bin"
+        - "/Users/chenhongchi/Library/Caches/JetBrains/CLion2026.1/acp-agents/.runtimes/node/24.13.0/lib/node_modules/npm/node_modules/@npmcli/run-script/lib/node-gyp-bin"
+        - "/Users/chenhongchi/Library/Caches/JetBrains/CLion2026.1/acp-agents/.runtimes/node/24.13.0/bin"
+        - "/opt/homebrew/bin"
+        - "/opt/homebrew/sbin"
+        - "/usr/local/bin"
+        - "/System/Cryptexes/App/usr/bin"
+        - "/usr/bin"
+        - "/bin"
+        - "/usr/sbin"
+        - "/sbin"
+        - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin"
+        - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin"
+        - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin"
+        - "/opt/pkg/env/active/bin"
+        - "/opt/pmk/env/global/bin"
+        - "/Library/Apple/usr/bin"
+        - "/usr/local/share/dotnet"
+        - "~/.dotnet/tools"
+        - "/Users/chenhongchi/.local/bin"
+        - "/Users/chenhongchi/.local/bin"
+      CMAKE_INSTALL_PREFIX: "/usr/local"
+      CMAKE_SYSTEM_PREFIX_PATH:
+        - "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr"
+        - "/opt/homebrew"
+        - "/usr/local"
+        - "/usr"
+        - "/"
+        - "/opt/homebrew"
+        - "/usr/local"
+        - "/usr/X11R6"
+        - "/usr/pkg"
+        - "/opt"
+        - "/sw"
+        - "/opt/local"
+      CMAKE_SYSTEM_APPBUNDLE_PATH:
+        - "/Applications"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "/opt/homebrew/share/cmake/Modules/FindVulkan.cmake:432 (find_program)"
+      - "CMakeLists.txt:9 (find_package)"
+    mode: "program"
+    variable: "Vulkan_GLSLANG_VALIDATOR_EXECUTABLE"
+    description: "Path to a program."
+    settings:
+      SearchFramework: "FIRST"
+      SearchAppBundle: "FIRST"
+      CMAKE_FIND_USE_CMAKE_PATH: true
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "glslangValidator"
+    candidate_directories:
+      - "/Users/chenhongchi/.codex/tmp/arg0/codex-arg0TRXaIE/"
+      - "/Users/chenhongchi/Library/Caches/JetBrains/CLion2026.1/acp-agents/.runtimes/node/24.13.0/npm-cache/_npx/7fd314b1ecd85c67/node_modules/@openai/codex-darwin-arm64/vendor/aarch64-apple-darwin/path/"
+      - "/Users/chenhongchi/Library/Caches/JetBrains/CLion2026.1/acp-agents/.runtimes/node/24.13.0/npm-cache/_npx/7fd314b1ecd85c67/node_modules/.bin/"
+      - "/Users/chenhongchi/Desktop/Engine/node_modules/.bin/"
+      - "/Users/chenhongchi/Desktop/node_modules/.bin/"
+      - "/Users/chenhongchi/node_modules/.bin/"
+      - "/Users/node_modules/.bin/"
+      - "/node_modules/.bin/"
+      - "/Users/chenhongchi/Library/Caches/JetBrains/CLion2026.1/acp-agents/.runtimes/node/24.13.0/lib/node_modules/npm/node_modules/@npmcli/run-script/lib/node-gyp-bin/"
+      - "/Users/chenhongchi/Library/Caches/JetBrains/CLion2026.1/acp-agents/.runtimes/node/24.13.0/bin/"
+      - "/opt/homebrew/bin/"
+      - "/opt/homebrew/sbin/"
+      - "/usr/local/bin/"
+      - "/System/Cryptexes/App/usr/bin/"
+      - "/usr/bin/"
+      - "/bin/"
+      - "/usr/sbin/"
+      - "/sbin/"
+      - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin/"
+      - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin/"
+      - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin/"
+      - "/opt/pkg/env/active/bin/"
+      - "/opt/pmk/env/global/bin/"
+      - "/Library/Apple/usr/bin/"
+      - "/usr/local/share/dotnet/"
+      - "/Users/chenhongchi/.dotnet/tools/"
+      - "/Users/chenhongchi/.local/bin/"
+      - "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/bin/"
+      - "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/sbin/"
+      - "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/"
+      - "/opt/homebrew/bin/"
+      - "/opt/homebrew/sbin/"
+      - "/opt/homebrew/"
+      - "/usr/local/bin/"
+      - "/usr/local/sbin/"
+      - "/usr/local/"
+      - "/usr/bin/"
+      - "/usr/sbin/"
+      - "/usr/"
+      - "/bin/"
+      - "/sbin/"
+      - "/usr/X11R6/bin/"
+      - "/usr/X11R6/sbin/"
+      - "/usr/X11R6/"
+      - "/usr/pkg/bin/"
+      - "/usr/pkg/sbin/"
+      - "/usr/pkg/"
+      - "/opt/bin/"
+      - "/opt/sbin/"
+      - "/opt/"
+      - "/sw/bin/"
+      - "/sw/sbin/"
+      - "/sw/"
+      - "/opt/local/bin/"
+      - "/opt/local/sbin/"
+      - "/opt/local/"
+      - "/Applications/"
+    searched_directories:
+      - "/Users/chenhongchi/.codex/tmp/arg0/codex-arg0TRXaIE/glslangValidator"
+      - "/Users/chenhongchi/Library/Caches/JetBrains/CLion2026.1/acp-agents/.runtimes/node/24.13.0/npm-cache/_npx/7fd314b1ecd85c67/node_modules/@openai/codex-darwin-arm64/vendor/aarch64-apple-darwin/path/glslangValidator"
+      - "/Users/chenhongchi/Library/Caches/JetBrains/CLion2026.1/acp-agents/.runtimes/node/24.13.0/npm-cache/_npx/7fd314b1ecd85c67/node_modules/.bin/glslangValidator"
+      - "/Users/chenhongchi/Desktop/Engine/node_modules/.bin/glslangValidator"
+      - "/Users/chenhongchi/Desktop/node_modules/.bin/glslangValidator"
+      - "/Users/chenhongchi/node_modules/.bin/glslangValidator"
+      - "/Users/node_modules/.bin/glslangValidator"
+      - "/node_modules/.bin/glslangValidator"
+      - "/Users/chenhongchi/Library/Caches/JetBrains/CLion2026.1/acp-agents/.runtimes/node/24.13.0/lib/node_modules/npm/node_modules/@npmcli/run-script/lib/node-gyp-bin/glslangValidator"
+      - "/Users/chenhongchi/Library/Caches/JetBrains/CLion2026.1/acp-agents/.runtimes/node/24.13.0/bin/glslangValidator"
+      - "/opt/homebrew/bin/glslangValidator"
+      - "/opt/homebrew/sbin/glslangValidator"
+      - "/usr/local/bin/glslangValidator"
+      - "/System/Cryptexes/App/usr/bin/glslangValidator"
+      - "/usr/bin/glslangValidator"
+      - "/bin/glslangValidator"
+      - "/usr/sbin/glslangValidator"
+      - "/sbin/glslangValidator"
+      - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin/glslangValidator"
+      - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin/glslangValidator"
+      - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin/glslangValidator"
+      - "/opt/pkg/env/active/bin/glslangValidator"
+      - "/opt/pmk/env/global/bin/glslangValidator"
+      - "/Library/Apple/usr/bin/glslangValidator"
+      - "/usr/local/share/dotnet/glslangValidator"
+      - "/Users/chenhongchi/.dotnet/tools/glslangValidator"
+      - "/Users/chenhongchi/.local/bin/glslangValidator"
+      - "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/bin/glslangValidator"
+      - "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/sbin/glslangValidator"
+      - "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/glslangValidator"
+      - "/opt/homebrew/bin/glslangValidator"
+      - "/opt/homebrew/sbin/glslangValidator"
+      - "/opt/homebrew/glslangValidator"
+      - "/usr/local/bin/glslangValidator"
+      - "/usr/local/sbin/glslangValidator"
+      - "/usr/local/glslangValidator"
+      - "/usr/bin/glslangValidator"
+      - "/usr/sbin/glslangValidator"
+      - "/usr/glslangValidator"
+      - "/bin/glslangValidator"
+      - "/sbin/glslangValidator"
+      - "/usr/X11R6/bin/glslangValidator"
+      - "/usr/X11R6/sbin/glslangValidator"
+      - "/usr/X11R6/glslangValidator"
+      - "/usr/pkg/bin/glslangValidator"
+      - "/usr/pkg/sbin/glslangValidator"
+      - "/usr/pkg/glslangValidator"
+      - "/opt/bin/glslangValidator"
+      - "/opt/sbin/glslangValidator"
+      - "/opt/glslangValidator"
+      - "/sw/bin/glslangValidator"
+      - "/sw/sbin/glslangValidator"
+      - "/sw/glslangValidator"
+      - "/opt/local/bin/glslangValidator"
+      - "/opt/local/sbin/glslangValidator"
+      - "/opt/local/glslangValidator"
+      - "/Applications/glslangValidator"
+    found: false
+    search_context:
+      ENV{PATH}:
+        - "/Users/chenhongchi/.codex/tmp/arg0/codex-arg0TRXaIE"
+        - "/Users/chenhongchi/Library/Caches/JetBrains/CLion2026.1/acp-agents/.runtimes/node/24.13.0/npm-cache/_npx/7fd314b1ecd85c67/node_modules/@openai/codex-darwin-arm64/vendor/aarch64-apple-darwin/path"
+        - "/Users/chenhongchi/Library/Caches/JetBrains/CLion2026.1/acp-agents/.runtimes/node/24.13.0/npm-cache/_npx/7fd314b1ecd85c67/node_modules/.bin"
+        - "/Users/chenhongchi/Desktop/Engine/node_modules/.bin"
+        - "/Users/chenhongchi/Desktop/node_modules/.bin"
+        - "/Users/chenhongchi/node_modules/.bin"
+        - "/Users/node_modules/.bin"
+        - "/node_modules/.bin"
+        - "/Users/chenhongchi/Library/Caches/JetBrains/CLion2026.1/acp-agents/.runtimes/node/24.13.0/lib/node_modules/npm/node_modules/@npmcli/run-script/lib/node-gyp-bin"
+        - "/Users/chenhongchi/Library/Caches/JetBrains/CLion2026.1/acp-agents/.runtimes/node/24.13.0/bin"
+        - "/opt/homebrew/bin"
+        - "/opt/homebrew/sbin"
+        - "/usr/local/bin"
+        - "/System/Cryptexes/App/usr/bin"
+        - "/usr/bin"
+        - "/bin"
+        - "/usr/sbin"
+        - "/sbin"
+        - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin"
+        - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin"
+        - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin"
+        - "/opt/pkg/env/active/bin"
+        - "/opt/pmk/env/global/bin"
+        - "/Library/Apple/usr/bin"
+        - "/usr/local/share/dotnet"
+        - "~/.dotnet/tools"
+        - "/Users/chenhongchi/.local/bin"
+        - "/Users/chenhongchi/.local/bin"
+      CMAKE_INSTALL_PREFIX: "/usr/local"
+      CMAKE_SYSTEM_PREFIX_PATH:
+        - "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr"
+        - "/opt/homebrew"
+        - "/usr/local"
+        - "/usr"
+        - "/"
+        - "/opt/homebrew"
+        - "/usr/local"
+        - "/usr/X11R6"
+        - "/usr/pkg"
+        - "/opt"
+        - "/sw"
+        - "/opt/local"
+      CMAKE_SYSTEM_APPBUNDLE_PATH:
+        - "/Applications"
+...
+
+---
+events:
+  -
+    kind: "find-v1"
+    backtrace:
+      - "/opt/homebrew/share/cmake/Modules/FindVulkan.cmake:409 (find_path)"
+      - "CMakeLists.txt:9 (find_package)"
+    mode: "path"
+    variable: "Vulkan_INCLUDE_DIR"
+    description: "Path to a file."
+    settings:
+      SearchFramework: "FIRST"
+      SearchAppBundle: "FIRST"
+      CMAKE_FIND_USE_CMAKE_PATH: true
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "vulkan/vulkan.h"
+    candidate_directories:
+      - "/Users/chenhongchi/VulkanSDK/1.4.350.0/macOS/include/"
+      - "/opt/homebrew/bin/"
+      - "/opt/homebrew/sbin/"
+      - "/usr/local/bin/"
+      - "/System/Cryptexes/App/usr/bin/"
+      - "/usr/bin/"
+      - "/bin/"
+      - "/usr/sbin/"
+      - "/sbin/"
+      - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin/"
+      - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin/"
+      - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin/"
+      - "/opt/pkg/env/active/bin/"
+      - "/opt/pmk/env/global/bin/"
+      - "/Library/Apple/usr/bin/"
+      - "/usr/local/share/dotnet/"
+      - "/Users/chenhongchi/.dotnet/tools/"
+      - "/Users/chenhongchi/.local/bin/"
+      - "/Users/chenhongchi/VulkanSDK/1.4.350.0/macOS/bin/"
+      - "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/"
+      - "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/"
+      - "/opt/homebrew/include/"
+      - "/opt/homebrew/"
+      - "/usr/local/include/"
+      - "/usr/local/"
+      - "/usr/include/"
+      - "/usr/"
+      - "/include/"
+      - "/usr/X11R6/include/"
+      - "/usr/X11R6/"
+      - "/usr/pkg/include/"
+      - "/usr/pkg/"
+      - "/opt/include/"
+      - "/opt/"
+      - "/sw/include/"
+      - "/sw/"
+      - "/opt/local/include/"
+      - "/opt/local/"
+      - "/usr/include/X11/"
+      - "/Users/chenhongchi/Library/Frameworks/"
+      - "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/Library/Frameworks/"
+      - "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/Network/Library/Frameworks/"
+      - "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/System/Library/Frameworks/"
+      - "/Library/Developer/CommandLineTools/Library/Frameworks/"
+      - "/Library/Frameworks/"
+      - "/Network/Library/Frameworks/"
+      - "/System/Library/Frameworks/"
+    searched_directories:
+      - "/Users/chenhongchi/VulkanSDK/1.4.350.0/macOS/include/vulkan.framework/Headers/vulkan.h"
+      - "/opt/homebrew/bin/vulkan.framework/Headers/vulkan.h"
+      - "/opt/homebrew/sbin/vulkan.framework/Headers/vulkan.h"
+      - "/usr/local/bin/vulkan.framework/Headers/vulkan.h"
+      - "/System/Cryptexes/App/usr/bin/vulkan.framework/Headers/vulkan.h"
+      - "/usr/bin/vulkan.framework/Headers/vulkan.h"
+      - "/bin/vulkan.framework/Headers/vulkan.h"
+      - "/usr/sbin/vulkan.framework/Headers/vulkan.h"
+      - "/sbin/vulkan.framework/Headers/vulkan.h"
+      - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin/vulkan.framework/Headers/vulkan.h"
+      - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin/vulkan.framework/Headers/vulkan.h"
+      - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin/vulkan.framework/Headers/vulkan.h"
+      - "/opt/pkg/env/active/bin/vulkan.framework/Headers/vulkan.h"
+      - "/opt/pmk/env/global/bin/vulkan.framework/Headers/vulkan.h"
+      - "/Library/Apple/usr/bin/vulkan.framework/Headers/vulkan.h"
+      - "/usr/local/share/dotnet/vulkan.framework/Headers/vulkan.h"
+      - "/Users/chenhongchi/.dotnet/tools/vulkan.framework/Headers/vulkan.h"
+      - "/Users/chenhongchi/.local/bin/vulkan.framework/Headers/vulkan.h"
+      - "/Users/chenhongchi/VulkanSDK/1.4.350.0/macOS/bin/vulkan.framework/Headers/vulkan.h"
+      - "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/vulkan.framework/Headers/vulkan.h"
+      - "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/vulkan.framework/Headers/vulkan.h"
+      - "/opt/homebrew/include/vulkan.framework/Headers/vulkan.h"
+      - "/opt/homebrew/vulkan.framework/Headers/vulkan.h"
+      - "/usr/local/include/vulkan.framework/Headers/vulkan.h"
+      - "/usr/local/vulkan.framework/Headers/vulkan.h"
+      - "/usr/include/vulkan.framework/Headers/vulkan.h"
+      - "/usr/vulkan.framework/Headers/vulkan.h"
+      - "/include/vulkan.framework/Headers/vulkan.h"
+      - "/usr/X11R6/include/vulkan.framework/Headers/vulkan.h"
+      - "/usr/X11R6/vulkan.framework/Headers/vulkan.h"
+      - "/usr/pkg/include/vulkan.framework/Headers/vulkan.h"
+      - "/usr/pkg/vulkan.framework/Headers/vulkan.h"
+      - "/opt/include/vulkan.framework/Headers/vulkan.h"
+      - "/opt/vulkan.framework/Headers/vulkan.h"
+      - "/sw/include/vulkan.framework/Headers/vulkan.h"
+      - "/sw/vulkan.framework/Headers/vulkan.h"
+      - "/opt/local/include/vulkan.framework/Headers/vulkan.h"
+      - "/opt/local/vulkan.framework/Headers/vulkan.h"
+      - "/usr/include/X11/vulkan.framework/Headers/vulkan.h"
+      - "/Users/chenhongchi/Library/Frameworks/vulkan.framework/Headers/vulkan.h"
+      - "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/Library/Frameworks/vulkan.framework/Headers/vulkan.h"
+      - "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/Network/Library/Frameworks/vulkan.framework/Headers/vulkan.h"
+      - "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/System/Library/Frameworks/vulkan.framework/Headers/vulkan.h"
+      - "/Library/Developer/CommandLineTools/Library/Frameworks/vulkan.framework/Headers/vulkan.h"
+      - "/Library/Frameworks/vulkan.framework/Headers/vulkan.h"
+      - "/Network/Library/Frameworks/vulkan.framework/Headers/vulkan.h"
+      - "/System/Library/Frameworks/vulkan.framework/Headers/vulkan.h"
+    found: "/Users/chenhongchi/VulkanSDK/1.4.350.0/macOS/include/"
+    search_context:
+      ENV{PATH}:
+        - "/opt/homebrew/bin"
+        - "/opt/homebrew/sbin"
+        - "/usr/local/bin"
+        - "/System/Cryptexes/App/usr/bin"
+        - "/usr/bin"
+        - "/bin"
+        - "/usr/sbin"
+        - "/sbin"
+        - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin"
+        - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin"
+        - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin"
+        - "/opt/pkg/env/active/bin"
+        - "/opt/pmk/env/global/bin"
+        - "/Library/Apple/usr/bin"
+        - "/usr/local/share/dotnet"
+        - "~/.dotnet/tools"
+        - "/Users/chenhongchi/.local/bin"
+        - "/Users/chenhongchi/.local/bin"
+        - "/Users/chenhongchi/VulkanSDK/1.4.350.0/macOS/bin"
+      CMAKE_INSTALL_PREFIX: "/usr/local"
+      CMAKE_SYSTEM_PREFIX_PATH:
+        - "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr"
+        - "/opt/homebrew"
+        - "/usr/local"
+        - "/usr"
+        - "/"
+        - "/opt/homebrew"
+        - "/usr/local"
+        - "/usr/X11R6"
+        - "/usr/pkg"
+        - "/opt"
+        - "/sw"
+        - "/opt/local"
+      CMAKE_SYSTEM_INCLUDE_PATH:
+        - "/usr/include/X11"
+      CMAKE_SYSTEM_FRAMEWORK_PATH:
+        - "~/Library/Frameworks"
+        - "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/Library/Frameworks"
+        - "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/Network/Library/Frameworks"
+        - "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/System/Library/Frameworks"
+        - "/Library/Developer/CommandLineTools/Library/Frameworks"
+        - "/Library/Developer/CommandLineTools/Library/Frameworks"
+        - "/Library/Frameworks"
+        - "/Network/Library/Frameworks"
+        - "/System/Library/Frameworks"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "/opt/homebrew/share/cmake/Modules/FindVulkan.cmake:416 (find_library)"
+      - "CMakeLists.txt:9 (find_package)"
+    mode: "library"
+    variable: "Vulkan_LIBRARY"
+    description: "Path to a library."
+    settings:
+      SearchFramework: "FIRST"
+      SearchAppBundle: "FIRST"
+      CMAKE_FIND_USE_CMAKE_PATH: true
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "vulkan"
+    candidate_directories:
+      - "/Users/chenhongchi/VulkanSDK/1.4.350.0/macOS/lib/"
+      - "/opt/homebrew/bin/"
+      - "/opt/homebrew/sbin/"
+      - "/usr/local/bin/"
+      - "/System/Cryptexes/App/usr/bin/"
+      - "/usr/bin/"
+      - "/bin/"
+      - "/usr/sbin/"
+      - "/sbin/"
+      - "/Library/Apple/usr/bin/"
+      - "/usr/local/share/dotnet/"
+      - "/Users/chenhongchi/.local/bin/"
+      - "/Users/chenhongchi/VulkanSDK/1.4.350.0/macOS/bin/"
+      - "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/lib/"
+      - "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/"
+      - "/opt/homebrew/lib/"
+      - "/opt/homebrew/"
+      - "/usr/local/lib/"
+      - "/usr/local/"
+      - "/usr/lib/"
+      - "/usr/"
+      - "/opt/"
+      - "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/System/Library/Frameworks/"
+      - "/Library/Developer/CommandLineTools/Library/Frameworks/"
+      - "/Library/Frameworks/"
+      - "/System/Library/Frameworks/"
+    found: "/Users/chenhongchi/VulkanSDK/1.4.350.0/macOS/lib/libvulkan.dylib"
+    search_context:
+      ENV{PATH}:
+        - "/opt/homebrew/bin"
+        - "/opt/homebrew/sbin"
+        - "/usr/local/bin"
+        - "/System/Cryptexes/App/usr/bin"
+        - "/usr/bin"
+        - "/bin"
+        - "/usr/sbin"
+        - "/sbin"
+        - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin"
+        - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin"
+        - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin"
+        - "/opt/pkg/env/active/bin"
+        - "/opt/pmk/env/global/bin"
+        - "/Library/Apple/usr/bin"
+        - "/usr/local/share/dotnet"
+        - "~/.dotnet/tools"
+        - "/Users/chenhongchi/.local/bin"
+        - "/Users/chenhongchi/.local/bin"
+        - "/Users/chenhongchi/VulkanSDK/1.4.350.0/macOS/bin"
+      CMAKE_INSTALL_PREFIX: "/usr/local"
+      CMAKE_SYSTEM_PREFIX_PATH:
+        - "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr"
+        - "/opt/homebrew"
+        - "/usr/local"
+        - "/usr"
+        - "/"
+        - "/opt/homebrew"
+        - "/usr/local"
+        - "/usr/X11R6"
+        - "/usr/pkg"
+        - "/opt"
+        - "/sw"
+        - "/opt/local"
+      CMAKE_SYSTEM_LIBRARY_PATH:
+        - "/usr/lib/X11"
+      CMAKE_SYSTEM_FRAMEWORK_PATH:
+        - "~/Library/Frameworks"
+        - "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/Library/Frameworks"
+        - "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/Network/Library/Frameworks"
+        - "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/System/Library/Frameworks"
+        - "/Library/Developer/CommandLineTools/Library/Frameworks"
+        - "/Library/Developer/CommandLineTools/Library/Frameworks"
+        - "/Library/Frameworks"
+        - "/Network/Library/Frameworks"
+        - "/System/Library/Frameworks"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "/opt/homebrew/share/cmake/Modules/FindVulkan.cmake:424 (find_program)"
+      - "CMakeLists.txt:9 (find_package)"
+    mode: "program"
+    variable: "Vulkan_GLSLC_EXECUTABLE"
+    description: "Path to a program."
+    settings:
+      SearchFramework: "FIRST"
+      SearchAppBundle: "FIRST"
+      CMAKE_FIND_USE_CMAKE_PATH: true
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "glslc"
+    candidate_directories:
+      - "/Users/chenhongchi/VulkanSDK/1.4.350.0/macOS/bin/"
+      - "/opt/homebrew/bin/"
+      - "/opt/homebrew/sbin/"
+      - "/usr/local/bin/"
+      - "/System/Cryptexes/App/usr/bin/"
+      - "/usr/bin/"
+      - "/bin/"
+      - "/usr/sbin/"
+      - "/sbin/"
+      - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin/"
+      - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin/"
+      - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin/"
+      - "/opt/pkg/env/active/bin/"
+      - "/opt/pmk/env/global/bin/"
+      - "/Library/Apple/usr/bin/"
+      - "/usr/local/share/dotnet/"
+      - "/Users/chenhongchi/.dotnet/tools/"
+      - "/Users/chenhongchi/.local/bin/"
+      - "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/bin/"
+      - "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/sbin/"
+      - "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/"
+      - "/opt/homebrew/bin/"
+      - "/opt/homebrew/sbin/"
+      - "/opt/homebrew/"
+      - "/usr/local/bin/"
+      - "/usr/local/sbin/"
+      - "/usr/local/"
+      - "/usr/bin/"
+      - "/usr/sbin/"
+      - "/usr/"
+      - "/bin/"
+      - "/sbin/"
+      - "/usr/X11R6/bin/"
+      - "/usr/X11R6/sbin/"
+      - "/usr/X11R6/"
+      - "/usr/pkg/bin/"
+      - "/usr/pkg/sbin/"
+      - "/usr/pkg/"
+      - "/opt/bin/"
+      - "/opt/sbin/"
+      - "/opt/"
+      - "/sw/bin/"
+      - "/sw/sbin/"
+      - "/sw/"
+      - "/opt/local/bin/"
+      - "/opt/local/sbin/"
+      - "/opt/local/"
+      - "/Applications/"
+    found: "/Users/chenhongchi/VulkanSDK/1.4.350.0/macOS/bin/glslc"
+    search_context:
+      ENV{PATH}:
+        - "/opt/homebrew/bin"
+        - "/opt/homebrew/sbin"
+        - "/usr/local/bin"
+        - "/System/Cryptexes/App/usr/bin"
+        - "/usr/bin"
+        - "/bin"
+        - "/usr/sbin"
+        - "/sbin"
+        - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin"
+        - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin"
+        - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin"
+        - "/opt/pkg/env/active/bin"
+        - "/opt/pmk/env/global/bin"
+        - "/Library/Apple/usr/bin"
+        - "/usr/local/share/dotnet"
+        - "~/.dotnet/tools"
+        - "/Users/chenhongchi/.local/bin"
+        - "/Users/chenhongchi/.local/bin"
+        - "/Users/chenhongchi/VulkanSDK/1.4.350.0/macOS/bin"
+      CMAKE_INSTALL_PREFIX: "/usr/local"
+      CMAKE_SYSTEM_PREFIX_PATH:
+        - "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr"
+        - "/opt/homebrew"
+        - "/usr/local"
+        - "/usr"
+        - "/"
+        - "/opt/homebrew"
+        - "/usr/local"
+        - "/usr/X11R6"
+        - "/usr/pkg"
+        - "/opt"
+        - "/sw"
+        - "/opt/local"
+      CMAKE_SYSTEM_APPBUNDLE_PATH:
+        - "/Applications"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "/opt/homebrew/share/cmake/Modules/FindVulkan.cmake:432 (find_program)"
+      - "CMakeLists.txt:9 (find_package)"
+    mode: "program"
+    variable: "Vulkan_GLSLANG_VALIDATOR_EXECUTABLE"
+    description: "Path to a program."
+    settings:
+      SearchFramework: "FIRST"
+      SearchAppBundle: "FIRST"
+      CMAKE_FIND_USE_CMAKE_PATH: true
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "glslangValidator"
+    candidate_directories:
+      - "/Users/chenhongchi/VulkanSDK/1.4.350.0/macOS/bin/"
+      - "/opt/homebrew/bin/"
+      - "/opt/homebrew/sbin/"
+      - "/usr/local/bin/"
+      - "/System/Cryptexes/App/usr/bin/"
+      - "/usr/bin/"
+      - "/bin/"
+      - "/usr/sbin/"
+      - "/sbin/"
+      - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin/"
+      - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin/"
+      - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin/"
+      - "/opt/pkg/env/active/bin/"
+      - "/opt/pmk/env/global/bin/"
+      - "/Library/Apple/usr/bin/"
+      - "/usr/local/share/dotnet/"
+      - "/Users/chenhongchi/.dotnet/tools/"
+      - "/Users/chenhongchi/.local/bin/"
+      - "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/bin/"
+      - "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/sbin/"
+      - "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/"
+      - "/opt/homebrew/bin/"
+      - "/opt/homebrew/sbin/"
+      - "/opt/homebrew/"
+      - "/usr/local/bin/"
+      - "/usr/local/sbin/"
+      - "/usr/local/"
+      - "/usr/bin/"
+      - "/usr/sbin/"
+      - "/usr/"
+      - "/bin/"
+      - "/sbin/"
+      - "/usr/X11R6/bin/"
+      - "/usr/X11R6/sbin/"
+      - "/usr/X11R6/"
+      - "/usr/pkg/bin/"
+      - "/usr/pkg/sbin/"
+      - "/usr/pkg/"
+      - "/opt/bin/"
+      - "/opt/sbin/"
+      - "/opt/"
+      - "/sw/bin/"
+      - "/sw/sbin/"
+      - "/sw/"
+      - "/opt/local/bin/"
+      - "/opt/local/sbin/"
+      - "/opt/local/"
+      - "/Applications/"
+    found: "/Users/chenhongchi/VulkanSDK/1.4.350.0/macOS/bin/glslangValidator"
+    search_context:
+      ENV{PATH}:
+        - "/opt/homebrew/bin"
+        - "/opt/homebrew/sbin"
+        - "/usr/local/bin"
+        - "/System/Cryptexes/App/usr/bin"
+        - "/usr/bin"
+        - "/bin"
+        - "/usr/sbin"
+        - "/sbin"
+        - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin"
+        - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin"
+        - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin"
+        - "/opt/pkg/env/active/bin"
+        - "/opt/pmk/env/global/bin"
+        - "/Library/Apple/usr/bin"
+        - "/usr/local/share/dotnet"
+        - "~/.dotnet/tools"
+        - "/Users/chenhongchi/.local/bin"
+        - "/Users/chenhongchi/.local/bin"
+        - "/Users/chenhongchi/VulkanSDK/1.4.350.0/macOS/bin"
+      CMAKE_INSTALL_PREFIX: "/usr/local"
+      CMAKE_SYSTEM_PREFIX_PATH:
+        - "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr"
+        - "/opt/homebrew"
+        - "/usr/local"
+        - "/usr"
+        - "/"
+        - "/opt/homebrew"
+        - "/usr/local"
+        - "/usr/X11R6"
+        - "/usr/pkg"
+        - "/opt"
+        - "/sw"
+        - "/opt/local"
+      CMAKE_SYSTEM_APPBUNDLE_PATH:
+        - "/Applications"
+...
+
+---
+events:
+  -
+
+---
+events:
+    kind: "try_compile-v1"
+  -
+    kind: "try_compile-v1"
+    backtrace:
+    backtrace:
+      - "/opt/homebrew/share/cmake/Modules/Internal/CheckSourceCompiles.cmake:104 (try_compile)"
+      - "/opt/homebrew/share/cmake/Modules/Internal/CheckSourceCompiles.cmake:104 (try_compile)"
+      - "/opt/homebrew/share/cmake/Modules/CheckCXXSourceCompiles.cmake:103 (cmake_check_source_compiles)"
+      - "/opt/homebrew/share/cmake/Modules/CheckCXXSourceCompiles.cmake:103 (cmake_check_source_compiles)"
+      - "/opt/homebrew/share/cmake/Modules/FindThreads.cmake:162 (check_cxx_source_compiles)"
+      - "/opt/homebrew/share/cmake/Modules/FindThreads.cmake:162 (check_cxx_source_compiles)"
+      - "/opt/homebrew/share/cmake/Modules/FindThreads.cmake:226 (_threads_check_libc)"
+      - "/opt/homebrew/share/cmake/Modules/FindThreads.cmake:226 (_threads_check_libc)"
+      - "/opt/homebrew/share/cmake/Modules/CMakeFindDependencyMacro.cmake:93 (find_package)"
+      - "/opt/homebrew/share/cmake/Modules/CMakeFindDependencyMacro.cmake:93 (find_package)"
+      - "/opt/homebrew/share/cmake/Modules/CMakeFindDependencyMacro.cmake:125 (__find_dependency_common)"
+      - "/opt/homebrew/share/cmake/Modules/CMakeFindDependencyMacro.cmake:125 (__find_dependency_common)"
+      - "/opt/homebrew/lib/cmake/glfw3/glfw3Config.cmake:2 (find_dependency)"
+      - "/opt/homebrew/lib/cmake/glfw3/glfw3Config.cmake:2 (find_dependency)"
+      - "CMakeLists.txt:10 (find_package)"
+      - "CMakeLists.txt:10 (find_package)"
+    checks:
+    checks:
+      - "Performing Test CMAKE_HAVE_LIBC_PTHREAD"
+      - "Performing Test CMAKE_HAVE_LIBC_PTHREAD"
+    directories:
+    directories:
+      source: "/Users/chenhongchi/Desktop/Engine/build/CMakeFiles/CMakeScratch/TryCompile-sMihd1"
+      source: "/Users/chenhongchi/Desktop/Engine/build/CMakeFiles/CMakeScratch/TryCompile-4g5sH0"
+      binary: "/Users/chenhongchi/Desktop/Engine/build/CMakeFiles/CMakeScratch/TryCompile-sMihd1"
+      binary: "/Users/chenhongchi/Desktop/Engine/build/CMakeFiles/CMakeScratch/TryCompile-4g5sH0"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: ""
+    cmakeVariables:
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_CXX_FLAGS: ""
+      CMAKE_CXX_STDLIB_MODULES_JSON: ""
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_CXX_STDLIB_MODULES_JSON: ""
+      CMAKE_OSX_ARCHITECTURES: ""
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_OSX_DEPLOYMENT_TARGET: ""
+      CMAKE_OSX_ARCHITECTURES: ""
+      CMAKE_OSX_SYSROOT: ""
+      CMAKE_OSX_DEPLOYMENT_TARGET: ""
+    buildResult:
+      CMAKE_OSX_SYSROOT: ""
+      variable: "CMAKE_HAVE_LIBC_PTHREAD"
+    buildResult:
+      cached: true
+      variable: "CMAKE_HAVE_LIBC_PTHREAD"
+      stdout: |
+      cached: true
+        Change Dir: '/Users/chenhongchi/Desktop/Engine/build/CMakeFiles/CMakeScratch/TryCompile-sMihd1'
+      stdout: |
+        
+        Change Dir: '/Users/chenhongchi/Desktop/Engine/build/CMakeFiles/CMakeScratch/TryCompile-4g5sH0'
+        Run Build Command(s): /opt/homebrew/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_bdaa9/fast
+        
+        /Library/Developer/CommandLineTools/usr/bin/make  -f CMakeFiles/cmTC_bdaa9.dir/build.make CMakeFiles/cmTC_bdaa9.dir/build
+        Run Build Command(s): /opt/homebrew/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_e40f1/fast
+        Building CXX object CMakeFiles/cmTC_bdaa9.dir/src.cxx.o
+        /Library/Developer/CommandLineTools/usr/bin/make  -f CMakeFiles/cmTC_e40f1.dir/build.make CMakeFiles/cmTC_e40f1.dir/build
+        /usr/bin/c++ -DCMAKE_HAVE_LIBC_PTHREAD  -std=c++17 -MD -MT CMakeFiles/cmTC_bdaa9.dir/src.cxx.o -MF CMakeFiles/cmTC_bdaa9.dir/src.cxx.o.d -o CMakeFiles/cmTC_bdaa9.dir/src.cxx.o -c /Users/chenhongchi/Desktop/Engine/build/CMakeFiles/CMakeScratch/TryCompile-sMihd1/src.cxx
+        Building CXX object CMakeFiles/cmTC_e40f1.dir/src.cxx.o
+        Linking CXX executable cmTC_bdaa9
+        /usr/bin/c++ -DCMAKE_HAVE_LIBC_PTHREAD  -std=c++17 -MD -MT CMakeFiles/cmTC_e40f1.dir/src.cxx.o -MF CMakeFiles/cmTC_e40f1.dir/src.cxx.o.d -o CMakeFiles/cmTC_e40f1.dir/src.cxx.o -c /Users/chenhongchi/Desktop/Engine/build/CMakeFiles/CMakeScratch/TryCompile-4g5sH0/src.cxx
+        /opt/homebrew/bin/cmake -E cmake_link_script CMakeFiles/cmTC_bdaa9.dir/link.txt --verbose=1
+        Linking CXX executable cmTC_e40f1
+        /usr/bin/c++ CMakeFiles/cmTC_bdaa9.dir/src.cxx.o -o cmTC_bdaa9
+        /opt/homebrew/bin/cmake -E cmake_link_script CMakeFiles/cmTC_e40f1.dir/link.txt --verbose=1
+        
+        /usr/bin/c++ CMakeFiles/cmTC_e40f1.dir/src.cxx.o -o cmTC_e40f1
+      exitCode: 0
+        
+      exitCode: 0
+  -
+    kind: "find_package-v1"
+    backtrace:
+      - "CMakeLists.txt:10 (find_package)"
+    name: "glfw3"
+    configs:
+      -
+        filename: "glfw3.cps"
+        kind: "cps"
+      -
+        filename: "glfw3Config.cmake"
+        kind: "cmake"
+      -
+        filename: "glfw3-config.cmake"
+        kind: "cmake"
+    version_request:
+      exact: false
+    settings:
+      required: "required_explicit"
+      quiet: false
+      global: false
+      policy_scope: true
+      bypass_provider: false
+      names:
+        - "glfw3"
+      path_suffixes:
+        - ""
+      paths:
+        CMAKE_FIND_USE_CMAKE_PATH: true
+        CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: true
+        CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+        CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+        CMAKE_FIND_USE_INSTALL_PREFIX: true
+        CMAKE_FIND_USE_PACKAGE_ROOT_PATH: true
+  -
+        CMAKE_FIND_USE_CMAKE_PACKAGE_REGISTRY: true
+    kind: "find_package-v1"
+        CMAKE_FIND_USE_SYSTEM_PACKAGE_REGISTRY: true
+    backtrace:
+        CMAKE_FIND_ROOT_PATH_MODE: "BOTH"
+      - "CMakeLists.txt:10 (find_package)"
+    candidates:
+      -
+        path: "/Users/chenhongchi/Desktop/Engine/build/CMakeFiles/pkgRedirects/glfw3Config.cmake"
+    name: "glfw3"
+        mode: "config"
+    configs:
+        reason: "no_exist"
+      -
+      -
+        filename: "glfw3.cps"
+        path: "/Users/chenhongchi/Desktop/Engine/build/CMakeFiles/pkgRedirects/glfw3-config.cmake"
+        kind: "cps"
+        mode: "config"
+      -
+        reason: "no_exist"
+        filename: "glfw3Config.cmake"
+      -
+        path: "/Users/chenhongchi/Desktop/Engine/build/CMakeFiles/pkgRedirects/lib64/cps/glfw3.cps"
+        kind: "cmake"
+        mode: "cps"
+      -
+        reason: "no_exist"
+        filename: "glfw3-config.cmake"
+      -
+        kind: "cmake"
+        path: "/Users/chenhongchi/Desktop/Engine/build/CMakeFiles/pkgRedirects/lib/cps/glfw3.cps"
+    version_request:
+        mode: "cps"
+      exact: false
+        reason: "no_exist"
+    settings:
+      -
+      required: "required_explicit"
+        path: "/Users/chenhongchi/Desktop/Engine/build/CMakeFiles/pkgRedirects/share/cps/glfw3.cps"
+      quiet: false
+        mode: "cps"
+      global: false
+        reason: "no_exist"
+      policy_scope: true
+      -
+      bypass_provider: false
+        path: "/Users/chenhongchi/.codex/tmp/arg0/codex-arg0Z4LyeF/glfw3Config.cmake"
+      names:
+        mode: "config"
+        - "glfw3"
+        reason: "no_exist"
+      path_suffixes:
+      -
+        - ""
+        path: "/Users/chenhongchi/.codex/tmp/arg0/codex-arg0Z4LyeF/glfw3-config.cmake"
+      paths:
+        mode: "config"
+        CMAKE_FIND_USE_CMAKE_PATH: true
+        reason: "no_exist"
+        CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: true
+      -
+        CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+        path: "/Users/chenhongchi/.codex/tmp/arg0/codex-arg0Z4LyeF/lib64/cps/glfw3.cps"
+        CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+        mode: "cps"
+        CMAKE_FIND_USE_INSTALL_PREFIX: true
+        reason: "no_exist"
+        CMAKE_FIND_USE_PACKAGE_ROOT_PATH: true
+      -
+        CMAKE_FIND_USE_CMAKE_PACKAGE_REGISTRY: true
+        path: "/Users/chenhongchi/.codex/tmp/arg0/codex-arg0Z4LyeF/lib/cps/glfw3.cps"
+        CMAKE_FIND_USE_SYSTEM_PACKAGE_REGISTRY: true
+        mode: "cps"
+        CMAKE_FIND_ROOT_PATH_MODE: "BOTH"
+        reason: "no_exist"
+    candidates:
+      -
+      -
+        path: "/Users/chenhongchi/.codex/tmp/arg0/codex-arg0Z4LyeF/share/cps/glfw3.cps"
+        path: "/Users/chenhongchi/Desktop/Engine/build/CMakeFiles/pkgRedirects/glfw3Config.cmake"
+        mode: "cps"
+        mode: "config"
+        reason: "no_exist"
+        reason: "no_exist"
+      -
+      -
+        path: "/Users/chenhongchi/Library/Caches/JetBrains/CLion2026.1/acp-agents/.runtimes/node/24.13.0/npm-cache/_npx/7fd314b1ecd85c67/node_modules/@openai/codex-darwin-arm64/vendor/aarch64-apple-darwin/path/glfw3Config.cmake"
+        path: "/Users/chenhongchi/Desktop/Engine/build/CMakeFiles/pkgRedirects/glfw3-config.cmake"
+        mode: "config"
+        mode: "config"
+        reason: "no_exist"
+        reason: "no_exist"
+      -
+      -
+        path: "/Users/chenhongchi/Library/Caches/JetBrains/CLion2026.1/acp-agents/.runtimes/node/24.13.0/npm-cache/_npx/7fd314b1ecd85c67/node_modules/@openai/codex-darwin-arm64/vendor/aarch64-apple-darwin/path/glfw3-config.cmake"
+        path: "/Users/chenhongchi/Desktop/Engine/build/CMakeFiles/pkgRedirects/lib64/cps/glfw3.cps"
+        mode: "config"
+        mode: "cps"
+        reason: "no_exist"
+        reason: "no_exist"
+      -
+      -
+        path: "/Users/chenhongchi/Library/Caches/JetBrains/CLion2026.1/acp-agents/.runtimes/node/24.13.0/npm-cache/_npx/7fd314b1ecd85c67/node_modules/@openai/codex-darwin-arm64/vendor/aarch64-apple-darwin/path/lib64/cps/glfw3.cps"
+        path: "/Users/chenhongchi/Desktop/Engine/build/CMakeFiles/pkgRedirects/lib/cps/glfw3.cps"
+        mode: "cps"
+        mode: "cps"
+        reason: "no_exist"
+        reason: "no_exist"
+      -
+      -
+        path: "/Users/chenhongchi/Library/Caches/JetBrains/CLion2026.1/acp-agents/.runtimes/node/24.13.0/npm-cache/_npx/7fd314b1ecd85c67/node_modules/@openai/codex-darwin-arm64/vendor/aarch64-apple-darwin/path/lib/cps/glfw3.cps"
+        path: "/Users/chenhongchi/Desktop/Engine/build/CMakeFiles/pkgRedirects/share/cps/glfw3.cps"
+        mode: "cps"
+        mode: "cps"
+        reason: "no_exist"
+        reason: "no_exist"
+      -
+      -
+        path: "/Users/chenhongchi/Library/Caches/JetBrains/CLion2026.1/acp-agents/.runtimes/node/24.13.0/npm-cache/_npx/7fd314b1ecd85c67/node_modules/@openai/codex-darwin-arm64/vendor/aarch64-apple-darwin/path/share/cps/glfw3.cps"
+        path: "/Users/chenhongchi/.codex/tmp/arg0/codex-arg0Z4LyeF/glfw3Config.cmake"
+        mode: "cps"
+        mode: "config"
+        reason: "no_exist"
+        reason: "no_exist"
+      -
+      -
+        path: "/Users/chenhongchi/Library/Caches/JetBrains/CLion2026.1/acp-agents/.runtimes/node/24.13.0/npm-cache/_npx/7fd314b1ecd85c67/node_modules/.bin/glfw3Config.cmake"
+        path: "/Users/chenhongchi/.codex/tmp/arg0/codex-arg0Z4LyeF/glfw3-config.cmake"
+        mode: "config"
+        mode: "config"
+        reason: "no_exist"
+        reason: "no_exist"
+      -
+      -
+        path: "/Users/chenhongchi/Library/Caches/JetBrains/CLion2026.1/acp-agents/.runtimes/node/24.13.0/npm-cache/_npx/7fd314b1ecd85c67/node_modules/.bin/glfw3-config.cmake"
+        path: "/Users/chenhongchi/.codex/tmp/arg0/codex-arg0Z4LyeF/lib64/cps/glfw3.cps"
+        mode: "config"
+        mode: "cps"
+        reason: "no_exist"
+        reason: "no_exist"
+      -
+      -
+        path: "/Users/chenhongchi/Library/Caches/JetBrains/CLion2026.1/acp-agents/.runtimes/node/24.13.0/npm-cache/_npx/7fd314b1ecd85c67/node_modules/.bin/lib64/cps/glfw3.cps"
+        path: "/Users/chenhongchi/.codex/tmp/arg0/codex-arg0Z4LyeF/lib/cps/glfw3.cps"
+        mode: "cps"
+        mode: "cps"
+        reason: "no_exist"
+        reason: "no_exist"
+      -
+      -
+        path: "/Users/chenhongchi/Library/Caches/JetBrains/CLion2026.1/acp-agents/.runtimes/node/24.13.0/npm-cache/_npx/7fd314b1ecd85c67/node_modules/.bin/lib/cps/glfw3.cps"
+        path: "/Users/chenhongchi/.codex/tmp/arg0/codex-arg0Z4LyeF/share/cps/glfw3.cps"
+        mode: "cps"
+        mode: "cps"
+        reason: "no_exist"
+        reason: "no_exist"
+      -
+      -
+        path: "/Users/chenhongchi/Library/Caches/JetBrains/CLion2026.1/acp-agents/.runtimes/node/24.13.0/npm-cache/_npx/7fd314b1ecd85c67/node_modules/.bin/share/cps/glfw3.cps"
+        path: "/Users/chenhongchi/Library/Caches/JetBrains/CLion2026.1/acp-agents/.runtimes/node/24.13.0/npm-cache/_npx/7fd314b1ecd85c67/node_modules/@openai/codex-darwin-arm64/vendor/aarch64-apple-darwin/path/glfw3Config.cmake"
+        mode: "cps"
+        mode: "config"
+        reason: "no_exist"
+        reason: "no_exist"
+      -
+      -
+        path: "/Users/chenhongchi/Library/Caches/JetBrains/CLion2026.1/acp-agents/.runtimes/node/24.13.0/lib/node_modules/npm/node_modules/@npmcli/run-script/lib/node-gyp-bin/glfw3Config.cmake"
+        path: "/Users/chenhongchi/Library/Caches/JetBrains/CLion2026.1/acp-agents/.runtimes/node/24.13.0/npm-cache/_npx/7fd314b1ecd85c67/node_modules/@openai/codex-darwin-arm64/vendor/aarch64-apple-darwin/path/glfw3-config.cmake"
+        mode: "config"
+        mode: "config"
+        reason: "no_exist"
+        reason: "no_exist"
+      -
+      -
+        path: "/Users/chenhongchi/Library/Caches/JetBrains/CLion2026.1/acp-agents/.runtimes/node/24.13.0/lib/node_modules/npm/node_modules/@npmcli/run-script/lib/node-gyp-bin/glfw3-config.cmake"
+        path: "/Users/chenhongchi/Library/Caches/JetBrains/CLion2026.1/acp-agents/.runtimes/node/24.13.0/npm-cache/_npx/7fd314b1ecd85c67/node_modules/@openai/codex-darwin-arm64/vendor/aarch64-apple-darwin/path/lib64/cps/glfw3.cps"
+        mode: "config"
+        mode: "cps"
+        reason: "no_exist"
+        reason: "no_exist"
+      -
+      -
+        path: "/Users/chenhongchi/Library/Caches/JetBrains/CLion2026.1/acp-agents/.runtimes/node/24.13.0/npm-cache/_npx/7fd314b1ecd85c67/node_modules/@openai/codex-darwin-arm64/vendor/aarch64-apple-darwin/path/lib/cps/glfw3.cps"
+        path: "/Users/chenhongchi/Library/Caches/JetBrains/CLion2026.1/acp-agents/.runtimes/node/24.13.0/lib/node_modules/npm/node_modules/@npmcli/run-script/lib/node-gyp-bin/lib64/cps/glfw3.cps"
+        mode: "cps"
+        mode: "cps"
+        reason: "no_exist"
+        reason: "no_exist"
+      -
+      -
+        path: "/Users/chenhongchi/Library/Caches/JetBrains/CLion2026.1/acp-agents/.runtimes/node/24.13.0/npm-cache/_npx/7fd314b1ecd85c67/node_modules/@openai/codex-darwin-arm64/vendor/aarch64-apple-darwin/path/share/cps/glfw3.cps"
+        path: "/Users/chenhongchi/Library/Caches/JetBrains/CLion2026.1/acp-agents/.runtimes/node/24.13.0/lib/node_modules/npm/node_modules/@npmcli/run-script/lib/node-gyp-bin/lib/cps/glfw3.cps"
+        mode: "cps"
+        mode: "cps"
+        reason: "no_exist"
+        reason: "no_exist"
+      -
+      -
+        path: "/Users/chenhongchi/Library/Caches/JetBrains/CLion2026.1/acp-agents/.runtimes/node/24.13.0/npm-cache/_npx/7fd314b1ecd85c67/node_modules/.bin/glfw3Config.cmake"
+        path: "/Users/chenhongchi/Library/Caches/JetBrains/CLion2026.1/acp-agents/.runtimes/node/24.13.0/lib/node_modules/npm/node_modules/@npmcli/run-script/lib/node-gyp-bin/share/cps/glfw3.cps"
+        mode: "config"
+        mode: "cps"
+        reason: "no_exist"
+        reason: "no_exist"
+      -
+      -
+        path: "/Users/chenhongchi/Library/Caches/JetBrains/CLion2026.1/acp-agents/.runtimes/node/24.13.0/npm-cache/_npx/7fd314b1ecd85c67/node_modules/.bin/glfw3-config.cmake"
+        path: "/Users/chenhongchi/Library/Caches/JetBrains/CLion2026.1/acp-agents/.runtimes/node/24.13.0/glfw3Config.cmake"
+        mode: "config"
+        mode: "config"
+        reason: "no_exist"
+        reason: "no_exist"
+      -
+      -
+        path: "/Users/chenhongchi/Library/Caches/JetBrains/CLion2026.1/acp-agents/.runtimes/node/24.13.0/npm-cache/_npx/7fd314b1ecd85c67/node_modules/.bin/lib64/cps/glfw3.cps"
+        path: "/Users/chenhongchi/Library/Caches/JetBrains/CLion2026.1/acp-agents/.runtimes/node/24.13.0/glfw3-config.cmake"
+        mode: "cps"
+        mode: "config"
+        reason: "no_exist"
+        reason: "no_exist"
+      -
+      -
+        path: "/Users/chenhongchi/Library/Caches/JetBrains/CLion2026.1/acp-agents/.runtimes/node/24.13.0/npm-cache/_npx/7fd314b1ecd85c67/node_modules/.bin/lib/cps/glfw3.cps"
+        path: "/Users/chenhongchi/Library/Caches/JetBrains/CLion2026.1/acp-agents/.runtimes/node/24.13.0/lib64/cps/glfw3.cps"
+        mode: "cps"
+        mode: "cps"
+        reason: "no_exist"
+        reason: "no_exist"
+      -
+      -
+        path: "/Users/chenhongchi/Library/Caches/JetBrains/CLion2026.1/acp-agents/.runtimes/node/24.13.0/npm-cache/_npx/7fd314b1ecd85c67/node_modules/.bin/share/cps/glfw3.cps"
+        path: "/Users/chenhongchi/Library/Caches/JetBrains/CLion2026.1/acp-agents/.runtimes/node/24.13.0/lib/cps/glfw3.cps"
+        mode: "cps"
+        mode: "cps"
+        reason: "no_exist"
+        reason: "no_exist"
+      -
+      -
+        path: "/Users/chenhongchi/Library/Caches/JetBrains/CLion2026.1/acp-agents/.runtimes/node/24.13.0/lib/node_modules/npm/node_modules/@npmcli/run-script/lib/node-gyp-bin/glfw3Config.cmake"
+        path: "/Users/chenhongchi/Library/Caches/JetBrains/CLion2026.1/acp-agents/.runtimes/node/24.13.0/share/cps/glfw3.cps"
+        mode: "config"
+        mode: "cps"
+        reason: "no_exist"
+        reason: "no_exist"
+      -
+      -
+        path: "/Users/chenhongchi/Library/Caches/JetBrains/CLion2026.1/acp-agents/.runtimes/node/24.13.0/lib/node_modules/npm/node_modules/@npmcli/run-script/lib/node-gyp-bin/glfw3-config.cmake"
+        path: "/opt/homebrew/glfw3Config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/Users/chenhongchi/Library/Caches/JetBrains/CLion2026.1/acp-agents/.runtimes/node/24.13.0/lib/node_modules/npm/node_modules/@npmcli/run-script/lib/node-gyp-bin/lib64/cps/glfw3.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "/Users/chenhongchi/Library/Caches/JetBrains/CLion2026.1/acp-agents/.runtimes/node/24.13.0/lib/node_modules/npm/node_modules/@npmcli/run-script/lib/node-gyp-bin/lib/cps/glfw3.cps"
+        mode: "cps"
+        mode: "config"
+        reason: "no_exist"
+        reason: "no_exist"
+      -
+      -
+        path: "/Users/chenhongchi/Library/Caches/JetBrains/CLion2026.1/acp-agents/.runtimes/node/24.13.0/lib/node_modules/npm/node_modules/@npmcli/run-script/lib/node-gyp-bin/share/cps/glfw3.cps"
+        path: "/opt/homebrew/glfw3-config.cmake"
+        mode: "cps"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/Users/chenhongchi/Library/Caches/JetBrains/CLion2026.1/acp-agents/.runtimes/node/24.13.0/glfw3Config.cmake"
+        reason: "no_exist"
+        mode: "config"
+      -
+        reason: "no_exist"
+        path: "/opt/homebrew/lib64/cps/glfw3.cps"
+      -
+        mode: "cps"
+        path: "/Users/chenhongchi/Library/Caches/JetBrains/CLion2026.1/acp-agents/.runtimes/node/24.13.0/glfw3-config.cmake"
+        reason: "no_exist"
+        mode: "config"
+      -
+        reason: "no_exist"
+        path: "/opt/homebrew/lib/cps/glfw3.cps"
+      -
+        mode: "cps"
+        path: "/Users/chenhongchi/Library/Caches/JetBrains/CLion2026.1/acp-agents/.runtimes/node/24.13.0/lib64/cps/glfw3.cps"
+        reason: "no_exist"
+        mode: "cps"
+      -
+        path: "/opt/homebrew/share/cps/glfw3.cps"
+        mode: "cps"
+        reason: "no_exist"
+        reason: "no_exist"
+    found:
+      -
+      path: "/opt/homebrew/lib/cmake/glfw3/glfw3Config.cmake"
+        path: "/Users/chenhongchi/Library/Caches/JetBrains/CLion2026.1/acp-agents/.runtimes/node/24.13.0/lib/cps/glfw3.cps"
+      mode: "config"
+        mode: "cps"
+      version: "3.4.0"
+        reason: "no_exist"
+    search_context:
+      -
+      ENV{PATH}:
+        path: "/Users/chenhongchi/Library/Caches/JetBrains/CLion2026.1/acp-agents/.runtimes/node/24.13.0/share/cps/glfw3.cps"
+        - "/Users/chenhongchi/.codex/tmp/arg0/codex-arg0Z4LyeF"
+        mode: "cps"
+        - "/Users/chenhongchi/Library/Caches/JetBrains/CLion2026.1/acp-agents/.runtimes/node/24.13.0/npm-cache/_npx/7fd314b1ecd85c67/node_modules/@openai/codex-darwin-arm64/vendor/aarch64-apple-darwin/path"
+        reason: "no_exist"
+        - "/Users/chenhongchi/Library/Caches/JetBrains/CLion2026.1/acp-agents/.runtimes/node/24.13.0/npm-cache/_npx/7fd314b1ecd85c67/node_modules/.bin"
+      -
+        - "/Users/chenhongchi/Desktop/Engine/node_modules/.bin"
+        path: "/opt/homebrew/glfw3Config.cmake"
+        - "/Users/chenhongchi/Desktop/node_modules/.bin"
+        mode: "config"
+        - "/Users/chenhongchi/node_modules/.bin"
+        reason: "no_exist"
+        - "/Users/node_modules/.bin"
+      -
+        - "/node_modules/.bin"
+        path: "/opt/homebrew/glfw3-config.cmake"
+        - "/Users/chenhongchi/Library/Caches/JetBrains/CLion2026.1/acp-agents/.runtimes/node/24.13.0/lib/node_modules/npm/node_modules/@npmcli/run-script/lib/node-gyp-bin"
+        mode: "config"
+        - "/Users/chenhongchi/Library/Caches/JetBrains/CLion2026.1/acp-agents/.runtimes/node/24.13.0/bin"
+        reason: "no_exist"
+        - "/opt/homebrew/bin"
+      -
+        - "/opt/homebrew/sbin"
+        path: "/opt/homebrew/lib64/cps/glfw3.cps"
+        - "/usr/local/bin"
+        mode: "cps"
+        - "/System/Cryptexes/App/usr/bin"
+        - "/usr/bin"
+        reason: "no_exist"
+        - "/bin"
+      -
+        - "/usr/sbin"
+        path: "/opt/homebrew/lib/cps/glfw3.cps"
+        - "/sbin"
+        mode: "cps"
+        - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin"
+        reason: "no_exist"
+        - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin"
+      -
+        - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin"
+        path: "/opt/homebrew/share/cps/glfw3.cps"
+        - "/opt/pkg/env/active/bin"
+        mode: "cps"
+        - "/opt/pmk/env/global/bin"
+        reason: "no_exist"
+        - "/Library/Apple/usr/bin"
+    found:
+        - "/usr/local/share/dotnet"
+      path: "/opt/homebrew/lib/cmake/glfw3/glfw3Config.cmake"
+        - "~/.dotnet/tools"
+      mode: "config"
+        - "/Users/chenhongchi/.local/bin"
+      version: "3.4.0"
+        - "/Users/chenhongchi/.local/bin"
+    search_context:
+      CMAKE_INSTALL_PREFIX: "/usr/local"
+      ENV{PATH}:
+      CMAKE_SYSTEM_PREFIX_PATH:
+        - "/Users/chenhongchi/.codex/tmp/arg0/codex-arg0Z4LyeF"
+        - "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr"
+        - "/Users/chenhongchi/Library/Caches/JetBrains/CLion2026.1/acp-agents/.runtimes/node/24.13.0/npm-cache/_npx/7fd314b1ecd85c67/node_modules/@openai/codex-darwin-arm64/vendor/aarch64-apple-darwin/path"
+        - "/opt/homebrew"
+        - "/Users/chenhongchi/Library/Caches/JetBrains/CLion2026.1/acp-agents/.runtimes/node/24.13.0/npm-cache/_npx/7fd314b1ecd85c67/node_modules/.bin"
+        - "/usr/local"
+        - "/Users/chenhongchi/Desktop/Engine/node_modules/.bin"
+        - "/usr"
+        - "/Users/chenhongchi/Desktop/node_modules/.bin"
+        - "/"
+        - "/Users/chenhongchi/node_modules/.bin"
+        - "/opt/homebrew"
+        - "/Users/node_modules/.bin"
+        - "/usr/local"
+        - "/node_modules/.bin"
+        - "/usr/X11R6"
+        - "/Users/chenhongchi/Library/Caches/JetBrains/CLion2026.1/acp-agents/.runtimes/node/24.13.0/lib/node_modules/npm/node_modules/@npmcli/run-script/lib/node-gyp-bin"
+        - "/usr/pkg"
+        - "/Users/chenhongchi/Library/Caches/JetBrains/CLion2026.1/acp-agents/.runtimes/node/24.13.0/bin"
+        - "/opt"
+        - "/opt/homebrew/bin"
+        - "/sw"
+        - "/opt/homebrew/sbin"
+        - "/opt/local"
+        - "/usr/local/bin"
+        - "/System/Cryptexes/App/usr/bin"
+      CMAKE_SYSTEM_FRAMEWORK_PATH:
+        - "/usr/bin"
+        - "~/Library/Frameworks"
+        - "/bin"
+        - "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/Library/Frameworks"
+        - "/usr/sbin"
+        - "/sbin"
+        - "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/Network/Library/Frameworks"
+        - "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/System/Library/Frameworks"
+        - "/Library/Developer/CommandLineTools/Library/Frameworks"
+        - "/Library/Developer/CommandLineTools/Library/Frameworks"
+        - "/Library/Frameworks"
+        - "/Network/Library/Frameworks"
+        - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin"
+        - "/System/Library/Frameworks"
+        - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin"
+        - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin"
+        - "/opt/pkg/env/active/bin"
+        - "/opt/pmk/env/global/bin"
+        - "/Library/Apple/usr/bin"
+        - "/usr/local/share/dotnet"
+        - "~/.dotnet/tools"
+        - "/Users/chenhongchi/.local/bin"
+        - "/Users/chenhongchi/.local/bin"
+      CMAKE_INSTALL_PREFIX: "/usr/local"
+      CMAKE_SYSTEM_PREFIX_PATH:
+        - "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr"
+        - "/opt/homebrew"
+        - "/usr/local"
+        - "/usr"
+        - "/"
+        - "/opt/homebrew"
+        - "/usr/local"
+        - "/usr/X11R6"
+        - "/usr/pkg"
+        - "/opt"
+        - "/sw"
+...
+        - "/opt/local"
+      CMAKE_SYSTEM_FRAMEWORK_PATH:
+        - "~/Library/Frameworks"
+        - "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/Library/Frameworks"
+        - "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/Network/Library/Frameworks"
+        - "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/System/Library/Frameworks"
+        - "/Library/Developer/CommandLineTools/Library/Frameworks"
+        - "/Library/Developer/CommandLineTools/Library/Frameworks"
+        - "/Library/Frameworks"
+        - "/Network/Library/Frameworks"
+        - "/System/Library/Frameworks"
+...
