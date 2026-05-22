@@ -1,5 +1,6 @@
 #pragma once
 
+#include <string_view>
 #include <utility>
 
 #include "engine/input/InputState.hpp"
@@ -16,7 +17,9 @@ public:
     Window(const Window&) = delete;
     Window& operator=(const Window&) = delete;
 
-    void initialize();
+    void Initialize();
+    void InitGlfwWindow();
+    void InitCallBacks();
     void shutdown();
     void pollEvents();
     void waitEvents() const;
@@ -24,6 +27,7 @@ public:
     bool consumeFramebufferResized();
     std::pair<int, int> framebufferSize() const;
     const engine::input::InputState& inputState() const noexcept;
+    void setTitle(std::string_view title) const;
 
     GLFWwindow* nativeHandle() const noexcept;
 

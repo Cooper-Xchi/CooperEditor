@@ -4,7 +4,7 @@
 # compile CXX with /usr/bin/c++
 CXX_DEFINES = -DENGINE_SHADER_DIR=\"/Users/chenhongchi/Desktop/Engine/build/shaders\"
 
-CXX_INCLUDES = -I/Users/chenhongchi/Desktop/Engine/include -I/Users/chenhongchi/Desktop/Engine/src -isystem /Users/chenhongchi/VulkanSDK/1.4.350.0/macOS/include -isystem /opt/homebrew/include
+CXX_INCLUDES = -I/Users/chenhongchi/Desktop/Engine/include -I/Users/chenhongchi/Desktop/Engine/src -I/Users/chenhongchi/Desktop/Engine/third_party/imgui-docking -I/Users/chenhongchi/Desktop/Engine/third_party/imgui-docking/backends -isystem /Users/chenhongchi/VulkanSDK/1.4.350.0/macOS/include -isystem /opt/homebrew/include
 
 CXX_FLAGS = -std=c++17
 

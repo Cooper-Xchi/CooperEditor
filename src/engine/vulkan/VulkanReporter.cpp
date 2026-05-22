@@ -184,14 +184,20 @@ void printContextSummary(const VulkanContext& context) {
                       << runtime->swapchainImages.size() << '\n';
             std::cout << "  Swapchain image view count: "
                       << runtime->swapchainImageViews.size() << '\n';
-            if (runtime->renderPass != VK_NULL_HANDLE) {
-                std::cout << "  Render pass created successfully.\n";
+            if (runtime->swapchainRenderPass != VK_NULL_HANDLE) {
+                std::cout << "  Swapchain render pass created successfully.\n";
+            }
+            if (runtime->sceneRenderPass != VK_NULL_HANDLE) {
+                std::cout << "  Scene render pass created successfully.\n";
             }
             if (runtime->pipelineLayout != VK_NULL_HANDLE) {
                 std::cout << "  Pipeline layout created successfully.\n";
             }
-            if (runtime->graphicsPipeline != VK_NULL_HANDLE) {
-                std::cout << "  Graphics pipeline created successfully.\n";
+            if (runtime->swapchainGraphicsPipeline != VK_NULL_HANDLE) {
+                std::cout << "  Swapchain graphics pipeline created successfully.\n";
+            }
+            if (runtime->sceneGraphicsPipeline != VK_NULL_HANDLE) {
+                std::cout << "  Scene graphics pipeline created successfully.\n";
             }
             if (!runtime->vertexShaderFile.empty()) {
                 std::cout << "  Vertex shader: " << runtime->vertexShaderFile

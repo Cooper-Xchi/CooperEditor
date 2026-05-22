@@ -36,6 +36,12 @@ struct BufferResource {
     void* mappedData = nullptr;
 };
 
+struct ImageResource {
+    VkImage image = VK_NULL_HANDLE;
+    VkDeviceMemory memory = VK_NULL_HANDLE;
+    VkImageView imageView = VK_NULL_HANDLE;
+};
+
 struct CameraUniformData {
     math::Mat4 viewProjection = math::Mat4::identity();
     math::Mat4 model = math::Mat4::identity();
@@ -56,22 +62,32 @@ struct DeviceRuntime {
     uint32_t drawVertexCount = 0;
     std::string vertexShaderFile;
     std::string fragmentShaderFile;
-    CameraUniformData cameraUniform;
+    CameraUniformData sceneCameraUniform;
+    CameraUniformData gameCameraUniform;
     VkDevice logicalDevice = VK_NULL_HANDLE;
     VkQueue graphicsQueue = VK_NULL_HANDLE;
     VkQueue presentQueue = VK_NULL_HANDLE;
     std::optional<SwapchainSelection> swapchainSelection;
+    uint32_t swapchainMinImageCount = 0;
     VkDescriptorSetLayout descriptorSetLayout = VK_NULL_HANDLE;
     VkDescriptorPool descriptorPool = VK_NULL_HANDLE;
-    std::vector<BufferResource> cameraUniformBuffers;
-    std::vector<VkDescriptorSet> cameraDescriptorSets;
+    std::vector<BufferResource> sceneCameraUniformBuffers;
+    std::vector<BufferResource> gameCameraUniformBuffers;
+    std::vector<VkDescriptorSet> sceneCameraDescriptorSets;
+    std::vector<VkDescriptorSet> gameCameraDescriptorSets;
     BufferResource vertexBuffer;
+    ImageResource sceneViewportColorImage;
+    ImageResource gameViewportColorImage;
     VkSwapchainKHR swapchain = VK_NULL_HANDLE;
     std::vector<VkImage> swapchainImages;
     std::vector<VkImageView> swapchainImageViews;
-    VkRenderPass renderPass = VK_NULL_HANDLE;
+    VkRenderPass swapchainRenderPass = VK_NULL_HANDLE;
+    VkRenderPass sceneRenderPass = VK_NULL_HANDLE;
     VkPipelineLayout pipelineLayout = VK_NULL_HANDLE;
-    VkPipeline graphicsPipeline = VK_NULL_HANDLE;
+    VkPipeline swapchainGraphicsPipeline = VK_NULL_HANDLE;
+    VkPipeline sceneGraphicsPipeline = VK_NULL_HANDLE;
+    VkFramebuffer sceneViewportFramebuffer = VK_NULL_HANDLE;
+    VkFramebuffer gameViewportFramebuffer = VK_NULL_HANDLE;
     std::vector<VkFramebuffer> framebuffers;
     VkCommandPool commandPool = VK_NULL_HANDLE;
     std::vector<VkCommandBuffer> commandBuffers;

@@ -170,10 +170,80 @@ CMakeFiles/Engine.dir/src/engine/config/AppConfigValidation.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/Engine.dir/src/engine/config/AppConfigValidation.cpp.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/chenhongchi/Desktop/Engine/src/engine/config/AppConfigValidation.cpp -o CMakeFiles/Engine.dir/src/engine/config/AppConfigValidation.cpp.s
 
+CMakeFiles/Engine.dir/src/engine/editor/EditorLayer.cpp.o: CMakeFiles/Engine.dir/flags.make
+CMakeFiles/Engine.dir/src/engine/editor/EditorLayer.cpp.o: /Users/chenhongchi/Desktop/Engine/src/engine/editor/EditorLayer.cpp
+CMakeFiles/Engine.dir/src/engine/editor/EditorLayer.cpp.o: CMakeFiles/Engine.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/chenhongchi/Desktop/Engine/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/Engine.dir/src/engine/editor/EditorLayer.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Engine.dir/src/engine/editor/EditorLayer.cpp.o -MF CMakeFiles/Engine.dir/src/engine/editor/EditorLayer.cpp.o.d -o CMakeFiles/Engine.dir/src/engine/editor/EditorLayer.cpp.o -c /Users/chenhongchi/Desktop/Engine/src/engine/editor/EditorLayer.cpp
+
+CMakeFiles/Engine.dir/src/engine/editor/EditorLayer.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/Engine.dir/src/engine/editor/EditorLayer.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/chenhongchi/Desktop/Engine/src/engine/editor/EditorLayer.cpp > CMakeFiles/Engine.dir/src/engine/editor/EditorLayer.cpp.i
+
+CMakeFiles/Engine.dir/src/engine/editor/EditorLayer.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/Engine.dir/src/engine/editor/EditorLayer.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/chenhongchi/Desktop/Engine/src/engine/editor/EditorLayer.cpp -o CMakeFiles/Engine.dir/src/engine/editor/EditorLayer.cpp.s
+
+CMakeFiles/Engine.dir/src/engine/editor/EditorUi.cpp.o: CMakeFiles/Engine.dir/flags.make
+CMakeFiles/Engine.dir/src/engine/editor/EditorUi.cpp.o: /Users/chenhongchi/Desktop/Engine/src/engine/editor/EditorUi.cpp
+CMakeFiles/Engine.dir/src/engine/editor/EditorUi.cpp.o: CMakeFiles/Engine.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/chenhongchi/Desktop/Engine/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/Engine.dir/src/engine/editor/EditorUi.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Engine.dir/src/engine/editor/EditorUi.cpp.o -MF CMakeFiles/Engine.dir/src/engine/editor/EditorUi.cpp.o.d -o CMakeFiles/Engine.dir/src/engine/editor/EditorUi.cpp.o -c /Users/chenhongchi/Desktop/Engine/src/engine/editor/EditorUi.cpp
+
+CMakeFiles/Engine.dir/src/engine/editor/EditorUi.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/Engine.dir/src/engine/editor/EditorUi.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/chenhongchi/Desktop/Engine/src/engine/editor/EditorUi.cpp > CMakeFiles/Engine.dir/src/engine/editor/EditorUi.cpp.i
+
+CMakeFiles/Engine.dir/src/engine/editor/EditorUi.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/Engine.dir/src/engine/editor/EditorUi.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/chenhongchi/Desktop/Engine/src/engine/editor/EditorUi.cpp -o CMakeFiles/Engine.dir/src/engine/editor/EditorUi.cpp.s
+
+CMakeFiles/Engine.dir/src/engine/editor/panels/ConsolePanel.cpp.o: CMakeFiles/Engine.dir/flags.make
+CMakeFiles/Engine.dir/src/engine/editor/panels/ConsolePanel.cpp.o: /Users/chenhongchi/Desktop/Engine/src/engine/editor/panels/ConsolePanel.cpp
+CMakeFiles/Engine.dir/src/engine/editor/panels/ConsolePanel.cpp.o: CMakeFiles/Engine.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/chenhongchi/Desktop/Engine/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/Engine.dir/src/engine/editor/panels/ConsolePanel.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Engine.dir/src/engine/editor/panels/ConsolePanel.cpp.o -MF CMakeFiles/Engine.dir/src/engine/editor/panels/ConsolePanel.cpp.o.d -o CMakeFiles/Engine.dir/src/engine/editor/panels/ConsolePanel.cpp.o -c /Users/chenhongchi/Desktop/Engine/src/engine/editor/panels/ConsolePanel.cpp
+
+CMakeFiles/Engine.dir/src/engine/editor/panels/ConsolePanel.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/Engine.dir/src/engine/editor/panels/ConsolePanel.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/chenhongchi/Desktop/Engine/src/engine/editor/panels/ConsolePanel.cpp > CMakeFiles/Engine.dir/src/engine/editor/panels/ConsolePanel.cpp.i
+
+CMakeFiles/Engine.dir/src/engine/editor/panels/ConsolePanel.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/Engine.dir/src/engine/editor/panels/ConsolePanel.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/chenhongchi/Desktop/Engine/src/engine/editor/panels/ConsolePanel.cpp -o CMakeFiles/Engine.dir/src/engine/editor/panels/ConsolePanel.cpp.s
+
+CMakeFiles/Engine.dir/src/engine/editor/panels/HierarchyPanel.cpp.o: CMakeFiles/Engine.dir/flags.make
+CMakeFiles/Engine.dir/src/engine/editor/panels/HierarchyPanel.cpp.o: /Users/chenhongchi/Desktop/Engine/src/engine/editor/panels/HierarchyPanel.cpp
+CMakeFiles/Engine.dir/src/engine/editor/panels/HierarchyPanel.cpp.o: CMakeFiles/Engine.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/chenhongchi/Desktop/Engine/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object CMakeFiles/Engine.dir/src/engine/editor/panels/HierarchyPanel.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Engine.dir/src/engine/editor/panels/HierarchyPanel.cpp.o -MF CMakeFiles/Engine.dir/src/engine/editor/panels/HierarchyPanel.cpp.o.d -o CMakeFiles/Engine.dir/src/engine/editor/panels/HierarchyPanel.cpp.o -c /Users/chenhongchi/Desktop/Engine/src/engine/editor/panels/HierarchyPanel.cpp
+
+CMakeFiles/Engine.dir/src/engine/editor/panels/HierarchyPanel.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/Engine.dir/src/engine/editor/panels/HierarchyPanel.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/chenhongchi/Desktop/Engine/src/engine/editor/panels/HierarchyPanel.cpp > CMakeFiles/Engine.dir/src/engine/editor/panels/HierarchyPanel.cpp.i
+
+CMakeFiles/Engine.dir/src/engine/editor/panels/HierarchyPanel.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/Engine.dir/src/engine/editor/panels/HierarchyPanel.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/chenhongchi/Desktop/Engine/src/engine/editor/panels/HierarchyPanel.cpp -o CMakeFiles/Engine.dir/src/engine/editor/panels/HierarchyPanel.cpp.s
+
+CMakeFiles/Engine.dir/src/engine/editor/panels/InspectorPanel.cpp.o: CMakeFiles/Engine.dir/flags.make
+CMakeFiles/Engine.dir/src/engine/editor/panels/InspectorPanel.cpp.o: /Users/chenhongchi/Desktop/Engine/src/engine/editor/panels/InspectorPanel.cpp
+CMakeFiles/Engine.dir/src/engine/editor/panels/InspectorPanel.cpp.o: CMakeFiles/Engine.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/chenhongchi/Desktop/Engine/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building CXX object CMakeFiles/Engine.dir/src/engine/editor/panels/InspectorPanel.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Engine.dir/src/engine/editor/panels/InspectorPanel.cpp.o -MF CMakeFiles/Engine.dir/src/engine/editor/panels/InspectorPanel.cpp.o.d -o CMakeFiles/Engine.dir/src/engine/editor/panels/InspectorPanel.cpp.o -c /Users/chenhongchi/Desktop/Engine/src/engine/editor/panels/InspectorPanel.cpp
+
+CMakeFiles/Engine.dir/src/engine/editor/panels/InspectorPanel.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/Engine.dir/src/engine/editor/panels/InspectorPanel.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/chenhongchi/Desktop/Engine/src/engine/editor/panels/InspectorPanel.cpp > CMakeFiles/Engine.dir/src/engine/editor/panels/InspectorPanel.cpp.i
+
+CMakeFiles/Engine.dir/src/engine/editor/panels/InspectorPanel.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/Engine.dir/src/engine/editor/panels/InspectorPanel.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/chenhongchi/Desktop/Engine/src/engine/editor/panels/InspectorPanel.cpp -o CMakeFiles/Engine.dir/src/engine/editor/panels/InspectorPanel.cpp.s
+
 CMakeFiles/Engine.dir/src/engine/render/Scene.cpp.o: CMakeFiles/Engine.dir/flags.make
 CMakeFiles/Engine.dir/src/engine/render/Scene.cpp.o: /Users/chenhongchi/Desktop/Engine/src/engine/render/Scene.cpp
 CMakeFiles/Engine.dir/src/engine/render/Scene.cpp.o: CMakeFiles/Engine.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/chenhongchi/Desktop/Engine/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/Engine.dir/src/engine/render/Scene.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/chenhongchi/Desktop/Engine/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building CXX object CMakeFiles/Engine.dir/src/engine/render/Scene.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Engine.dir/src/engine/render/Scene.cpp.o -MF CMakeFiles/Engine.dir/src/engine/render/Scene.cpp.o.d -o CMakeFiles/Engine.dir/src/engine/render/Scene.cpp.o -c /Users/chenhongchi/Desktop/Engine/src/engine/render/Scene.cpp
 
 CMakeFiles/Engine.dir/src/engine/render/Scene.cpp.i: cmake_force
@@ -187,7 +257,7 @@ CMakeFiles/Engine.dir/src/engine/render/Scene.cpp.s: cmake_force
 CMakeFiles/Engine.dir/src/engine/render/Transform.cpp.o: CMakeFiles/Engine.dir/flags.make
 CMakeFiles/Engine.dir/src/engine/render/Transform.cpp.o: /Users/chenhongchi/Desktop/Engine/src/engine/render/Transform.cpp
 CMakeFiles/Engine.dir/src/engine/render/Transform.cpp.o: CMakeFiles/Engine.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/chenhongchi/Desktop/Engine/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/Engine.dir/src/engine/render/Transform.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/chenhongchi/Desktop/Engine/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Building CXX object CMakeFiles/Engine.dir/src/engine/render/Transform.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Engine.dir/src/engine/render/Transform.cpp.o -MF CMakeFiles/Engine.dir/src/engine/render/Transform.cpp.o.d -o CMakeFiles/Engine.dir/src/engine/render/Transform.cpp.o -c /Users/chenhongchi/Desktop/Engine/src/engine/render/Transform.cpp
 
 CMakeFiles/Engine.dir/src/engine/render/Transform.cpp.i: cmake_force
@@ -198,10 +268,24 @@ CMakeFiles/Engine.dir/src/engine/render/Transform.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/Engine.dir/src/engine/render/Transform.cpp.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/chenhongchi/Desktop/Engine/src/engine/render/Transform.cpp -o CMakeFiles/Engine.dir/src/engine/render/Transform.cpp.s
 
+CMakeFiles/Engine.dir/src/engine/ui/DockLayout.cpp.o: CMakeFiles/Engine.dir/flags.make
+CMakeFiles/Engine.dir/src/engine/ui/DockLayout.cpp.o: /Users/chenhongchi/Desktop/Engine/src/engine/ui/DockLayout.cpp
+CMakeFiles/Engine.dir/src/engine/ui/DockLayout.cpp.o: CMakeFiles/Engine.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/chenhongchi/Desktop/Engine/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Building CXX object CMakeFiles/Engine.dir/src/engine/ui/DockLayout.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Engine.dir/src/engine/ui/DockLayout.cpp.o -MF CMakeFiles/Engine.dir/src/engine/ui/DockLayout.cpp.o.d -o CMakeFiles/Engine.dir/src/engine/ui/DockLayout.cpp.o -c /Users/chenhongchi/Desktop/Engine/src/engine/ui/DockLayout.cpp
+
+CMakeFiles/Engine.dir/src/engine/ui/DockLayout.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/Engine.dir/src/engine/ui/DockLayout.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/chenhongchi/Desktop/Engine/src/engine/ui/DockLayout.cpp > CMakeFiles/Engine.dir/src/engine/ui/DockLayout.cpp.i
+
+CMakeFiles/Engine.dir/src/engine/ui/DockLayout.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/Engine.dir/src/engine/ui/DockLayout.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/chenhongchi/Desktop/Engine/src/engine/ui/DockLayout.cpp -o CMakeFiles/Engine.dir/src/engine/ui/DockLayout.cpp.s
+
 CMakeFiles/Engine.dir/src/engine/vulkan/VulkanBuffer.cpp.o: CMakeFiles/Engine.dir/flags.make
 CMakeFiles/Engine.dir/src/engine/vulkan/VulkanBuffer.cpp.o: /Users/chenhongchi/Desktop/Engine/src/engine/vulkan/VulkanBuffer.cpp
 CMakeFiles/Engine.dir/src/engine/vulkan/VulkanBuffer.cpp.o: CMakeFiles/Engine.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/chenhongchi/Desktop/Engine/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/Engine.dir/src/engine/vulkan/VulkanBuffer.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/chenhongchi/Desktop/Engine/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Building CXX object CMakeFiles/Engine.dir/src/engine/vulkan/VulkanBuffer.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Engine.dir/src/engine/vulkan/VulkanBuffer.cpp.o -MF CMakeFiles/Engine.dir/src/engine/vulkan/VulkanBuffer.cpp.o.d -o CMakeFiles/Engine.dir/src/engine/vulkan/VulkanBuffer.cpp.o -c /Users/chenhongchi/Desktop/Engine/src/engine/vulkan/VulkanBuffer.cpp
 
 CMakeFiles/Engine.dir/src/engine/vulkan/VulkanBuffer.cpp.i: cmake_force
@@ -215,7 +299,7 @@ CMakeFiles/Engine.dir/src/engine/vulkan/VulkanBuffer.cpp.s: cmake_force
 CMakeFiles/Engine.dir/src/engine/vulkan/VulkanContext.cpp.o: CMakeFiles/Engine.dir/flags.make
 CMakeFiles/Engine.dir/src/engine/vulkan/VulkanContext.cpp.o: /Users/chenhongchi/Desktop/Engine/src/engine/vulkan/VulkanContext.cpp
 CMakeFiles/Engine.dir/src/engine/vulkan/VulkanContext.cpp.o: CMakeFiles/Engine.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/chenhongchi/Desktop/Engine/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object CMakeFiles/Engine.dir/src/engine/vulkan/VulkanContext.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/chenhongchi/Desktop/Engine/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_17) "Building CXX object CMakeFiles/Engine.dir/src/engine/vulkan/VulkanContext.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Engine.dir/src/engine/vulkan/VulkanContext.cpp.o -MF CMakeFiles/Engine.dir/src/engine/vulkan/VulkanContext.cpp.o.d -o CMakeFiles/Engine.dir/src/engine/vulkan/VulkanContext.cpp.o -c /Users/chenhongchi/Desktop/Engine/src/engine/vulkan/VulkanContext.cpp
 
 CMakeFiles/Engine.dir/src/engine/vulkan/VulkanContext.cpp.i: cmake_force
@@ -229,7 +313,7 @@ CMakeFiles/Engine.dir/src/engine/vulkan/VulkanContext.cpp.s: cmake_force
 CMakeFiles/Engine.dir/src/engine/vulkan/VulkanBootstrap.cpp.o: CMakeFiles/Engine.dir/flags.make
 CMakeFiles/Engine.dir/src/engine/vulkan/VulkanBootstrap.cpp.o: /Users/chenhongchi/Desktop/Engine/src/engine/vulkan/VulkanBootstrap.cpp
 CMakeFiles/Engine.dir/src/engine/vulkan/VulkanBootstrap.cpp.o: CMakeFiles/Engine.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/chenhongchi/Desktop/Engine/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building CXX object CMakeFiles/Engine.dir/src/engine/vulkan/VulkanBootstrap.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/chenhongchi/Desktop/Engine/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_18) "Building CXX object CMakeFiles/Engine.dir/src/engine/vulkan/VulkanBootstrap.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Engine.dir/src/engine/vulkan/VulkanBootstrap.cpp.o -MF CMakeFiles/Engine.dir/src/engine/vulkan/VulkanBootstrap.cpp.o.d -o CMakeFiles/Engine.dir/src/engine/vulkan/VulkanBootstrap.cpp.o -c /Users/chenhongchi/Desktop/Engine/src/engine/vulkan/VulkanBootstrap.cpp
 
 CMakeFiles/Engine.dir/src/engine/vulkan/VulkanBootstrap.cpp.i: cmake_force
@@ -243,7 +327,7 @@ CMakeFiles/Engine.dir/src/engine/vulkan/VulkanBootstrap.cpp.s: cmake_force
 CMakeFiles/Engine.dir/src/engine/vulkan/VulkanDevice.cpp.o: CMakeFiles/Engine.dir/flags.make
 CMakeFiles/Engine.dir/src/engine/vulkan/VulkanDevice.cpp.o: /Users/chenhongchi/Desktop/Engine/src/engine/vulkan/VulkanDevice.cpp
 CMakeFiles/Engine.dir/src/engine/vulkan/VulkanDevice.cpp.o: CMakeFiles/Engine.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/chenhongchi/Desktop/Engine/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building CXX object CMakeFiles/Engine.dir/src/engine/vulkan/VulkanDevice.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/chenhongchi/Desktop/Engine/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_19) "Building CXX object CMakeFiles/Engine.dir/src/engine/vulkan/VulkanDevice.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Engine.dir/src/engine/vulkan/VulkanDevice.cpp.o -MF CMakeFiles/Engine.dir/src/engine/vulkan/VulkanDevice.cpp.o.d -o CMakeFiles/Engine.dir/src/engine/vulkan/VulkanDevice.cpp.o -c /Users/chenhongchi/Desktop/Engine/src/engine/vulkan/VulkanDevice.cpp
 
 CMakeFiles/Engine.dir/src/engine/vulkan/VulkanDevice.cpp.i: cmake_force
@@ -257,7 +341,7 @@ CMakeFiles/Engine.dir/src/engine/vulkan/VulkanDevice.cpp.s: cmake_force
 CMakeFiles/Engine.dir/src/engine/vulkan/VulkanPipeline.cpp.o: CMakeFiles/Engine.dir/flags.make
 CMakeFiles/Engine.dir/src/engine/vulkan/VulkanPipeline.cpp.o: /Users/chenhongchi/Desktop/Engine/src/engine/vulkan/VulkanPipeline.cpp
 CMakeFiles/Engine.dir/src/engine/vulkan/VulkanPipeline.cpp.o: CMakeFiles/Engine.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/chenhongchi/Desktop/Engine/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Building CXX object CMakeFiles/Engine.dir/src/engine/vulkan/VulkanPipeline.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/chenhongchi/Desktop/Engine/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_20) "Building CXX object CMakeFiles/Engine.dir/src/engine/vulkan/VulkanPipeline.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Engine.dir/src/engine/vulkan/VulkanPipeline.cpp.o -MF CMakeFiles/Engine.dir/src/engine/vulkan/VulkanPipeline.cpp.o.d -o CMakeFiles/Engine.dir/src/engine/vulkan/VulkanPipeline.cpp.o -c /Users/chenhongchi/Desktop/Engine/src/engine/vulkan/VulkanPipeline.cpp
 
 CMakeFiles/Engine.dir/src/engine/vulkan/VulkanPipeline.cpp.i: cmake_force
@@ -271,7 +355,7 @@ CMakeFiles/Engine.dir/src/engine/vulkan/VulkanPipeline.cpp.s: cmake_force
 CMakeFiles/Engine.dir/src/engine/vulkan/VulkanRender.cpp.o: CMakeFiles/Engine.dir/flags.make
 CMakeFiles/Engine.dir/src/engine/vulkan/VulkanRender.cpp.o: /Users/chenhongchi/Desktop/Engine/src/engine/vulkan/VulkanRender.cpp
 CMakeFiles/Engine.dir/src/engine/vulkan/VulkanRender.cpp.o: CMakeFiles/Engine.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/chenhongchi/Desktop/Engine/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Building CXX object CMakeFiles/Engine.dir/src/engine/vulkan/VulkanRender.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/chenhongchi/Desktop/Engine/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_21) "Building CXX object CMakeFiles/Engine.dir/src/engine/vulkan/VulkanRender.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Engine.dir/src/engine/vulkan/VulkanRender.cpp.o -MF CMakeFiles/Engine.dir/src/engine/vulkan/VulkanRender.cpp.o.d -o CMakeFiles/Engine.dir/src/engine/vulkan/VulkanRender.cpp.o -c /Users/chenhongchi/Desktop/Engine/src/engine/vulkan/VulkanRender.cpp
 
 CMakeFiles/Engine.dir/src/engine/vulkan/VulkanRender.cpp.i: cmake_force
@@ -285,7 +369,7 @@ CMakeFiles/Engine.dir/src/engine/vulkan/VulkanRender.cpp.s: cmake_force
 CMakeFiles/Engine.dir/src/engine/vulkan/VulkanReporter.cpp.o: CMakeFiles/Engine.dir/flags.make
 CMakeFiles/Engine.dir/src/engine/vulkan/VulkanReporter.cpp.o: /Users/chenhongchi/Desktop/Engine/src/engine/vulkan/VulkanReporter.cpp
 CMakeFiles/Engine.dir/src/engine/vulkan/VulkanReporter.cpp.o: CMakeFiles/Engine.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/chenhongchi/Desktop/Engine/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Building CXX object CMakeFiles/Engine.dir/src/engine/vulkan/VulkanReporter.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/chenhongchi/Desktop/Engine/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_22) "Building CXX object CMakeFiles/Engine.dir/src/engine/vulkan/VulkanReporter.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Engine.dir/src/engine/vulkan/VulkanReporter.cpp.o -MF CMakeFiles/Engine.dir/src/engine/vulkan/VulkanReporter.cpp.o.d -o CMakeFiles/Engine.dir/src/engine/vulkan/VulkanReporter.cpp.o -c /Users/chenhongchi/Desktop/Engine/src/engine/vulkan/VulkanReporter.cpp
 
 CMakeFiles/Engine.dir/src/engine/vulkan/VulkanReporter.cpp.i: cmake_force
@@ -299,7 +383,7 @@ CMakeFiles/Engine.dir/src/engine/vulkan/VulkanReporter.cpp.s: cmake_force
 CMakeFiles/Engine.dir/src/engine/vulkan/VulkanShader.cpp.o: CMakeFiles/Engine.dir/flags.make
 CMakeFiles/Engine.dir/src/engine/vulkan/VulkanShader.cpp.o: /Users/chenhongchi/Desktop/Engine/src/engine/vulkan/VulkanShader.cpp
 CMakeFiles/Engine.dir/src/engine/vulkan/VulkanShader.cpp.o: CMakeFiles/Engine.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/chenhongchi/Desktop/Engine/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_17) "Building CXX object CMakeFiles/Engine.dir/src/engine/vulkan/VulkanShader.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/chenhongchi/Desktop/Engine/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_23) "Building CXX object CMakeFiles/Engine.dir/src/engine/vulkan/VulkanShader.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Engine.dir/src/engine/vulkan/VulkanShader.cpp.o -MF CMakeFiles/Engine.dir/src/engine/vulkan/VulkanShader.cpp.o.d -o CMakeFiles/Engine.dir/src/engine/vulkan/VulkanShader.cpp.o -c /Users/chenhongchi/Desktop/Engine/src/engine/vulkan/VulkanShader.cpp
 
 CMakeFiles/Engine.dir/src/engine/vulkan/VulkanShader.cpp.i: cmake_force
@@ -313,7 +397,7 @@ CMakeFiles/Engine.dir/src/engine/vulkan/VulkanShader.cpp.s: cmake_force
 CMakeFiles/Engine.dir/src/engine/vulkan/VulkanSwapchain.cpp.o: CMakeFiles/Engine.dir/flags.make
 CMakeFiles/Engine.dir/src/engine/vulkan/VulkanSwapchain.cpp.o: /Users/chenhongchi/Desktop/Engine/src/engine/vulkan/VulkanSwapchain.cpp
 CMakeFiles/Engine.dir/src/engine/vulkan/VulkanSwapchain.cpp.o: CMakeFiles/Engine.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/chenhongchi/Desktop/Engine/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_18) "Building CXX object CMakeFiles/Engine.dir/src/engine/vulkan/VulkanSwapchain.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/chenhongchi/Desktop/Engine/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_24) "Building CXX object CMakeFiles/Engine.dir/src/engine/vulkan/VulkanSwapchain.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Engine.dir/src/engine/vulkan/VulkanSwapchain.cpp.o -MF CMakeFiles/Engine.dir/src/engine/vulkan/VulkanSwapchain.cpp.o.d -o CMakeFiles/Engine.dir/src/engine/vulkan/VulkanSwapchain.cpp.o -c /Users/chenhongchi/Desktop/Engine/src/engine/vulkan/VulkanSwapchain.cpp
 
 CMakeFiles/Engine.dir/src/engine/vulkan/VulkanSwapchain.cpp.i: cmake_force
@@ -327,7 +411,7 @@ CMakeFiles/Engine.dir/src/engine/vulkan/VulkanSwapchain.cpp.s: cmake_force
 CMakeFiles/Engine.dir/src/engine/window/Window.cpp.o: CMakeFiles/Engine.dir/flags.make
 CMakeFiles/Engine.dir/src/engine/window/Window.cpp.o: /Users/chenhongchi/Desktop/Engine/src/engine/window/Window.cpp
 CMakeFiles/Engine.dir/src/engine/window/Window.cpp.o: CMakeFiles/Engine.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/chenhongchi/Desktop/Engine/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_19) "Building CXX object CMakeFiles/Engine.dir/src/engine/window/Window.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/chenhongchi/Desktop/Engine/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_25) "Building CXX object CMakeFiles/Engine.dir/src/engine/window/Window.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Engine.dir/src/engine/window/Window.cpp.o -MF CMakeFiles/Engine.dir/src/engine/window/Window.cpp.o.d -o CMakeFiles/Engine.dir/src/engine/window/Window.cpp.o -c /Users/chenhongchi/Desktop/Engine/src/engine/window/Window.cpp
 
 CMakeFiles/Engine.dir/src/engine/window/Window.cpp.i: cmake_force
@@ -338,6 +422,90 @@ CMakeFiles/Engine.dir/src/engine/window/Window.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/Engine.dir/src/engine/window/Window.cpp.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/chenhongchi/Desktop/Engine/src/engine/window/Window.cpp -o CMakeFiles/Engine.dir/src/engine/window/Window.cpp.s
 
+CMakeFiles/Engine.dir/third_party/imgui-docking/imgui.cpp.o: CMakeFiles/Engine.dir/flags.make
+CMakeFiles/Engine.dir/third_party/imgui-docking/imgui.cpp.o: /Users/chenhongchi/Desktop/Engine/third_party/imgui-docking/imgui.cpp
+CMakeFiles/Engine.dir/third_party/imgui-docking/imgui.cpp.o: CMakeFiles/Engine.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/chenhongchi/Desktop/Engine/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_26) "Building CXX object CMakeFiles/Engine.dir/third_party/imgui-docking/imgui.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Engine.dir/third_party/imgui-docking/imgui.cpp.o -MF CMakeFiles/Engine.dir/third_party/imgui-docking/imgui.cpp.o.d -o CMakeFiles/Engine.dir/third_party/imgui-docking/imgui.cpp.o -c /Users/chenhongchi/Desktop/Engine/third_party/imgui-docking/imgui.cpp
+
+CMakeFiles/Engine.dir/third_party/imgui-docking/imgui.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/Engine.dir/third_party/imgui-docking/imgui.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/chenhongchi/Desktop/Engine/third_party/imgui-docking/imgui.cpp > CMakeFiles/Engine.dir/third_party/imgui-docking/imgui.cpp.i
+
+CMakeFiles/Engine.dir/third_party/imgui-docking/imgui.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/Engine.dir/third_party/imgui-docking/imgui.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/chenhongchi/Desktop/Engine/third_party/imgui-docking/imgui.cpp -o CMakeFiles/Engine.dir/third_party/imgui-docking/imgui.cpp.s
+
+CMakeFiles/Engine.dir/third_party/imgui-docking/imgui_draw.cpp.o: CMakeFiles/Engine.dir/flags.make
+CMakeFiles/Engine.dir/third_party/imgui-docking/imgui_draw.cpp.o: /Users/chenhongchi/Desktop/Engine/third_party/imgui-docking/imgui_draw.cpp
+CMakeFiles/Engine.dir/third_party/imgui-docking/imgui_draw.cpp.o: CMakeFiles/Engine.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/chenhongchi/Desktop/Engine/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_27) "Building CXX object CMakeFiles/Engine.dir/third_party/imgui-docking/imgui_draw.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Engine.dir/third_party/imgui-docking/imgui_draw.cpp.o -MF CMakeFiles/Engine.dir/third_party/imgui-docking/imgui_draw.cpp.o.d -o CMakeFiles/Engine.dir/third_party/imgui-docking/imgui_draw.cpp.o -c /Users/chenhongchi/Desktop/Engine/third_party/imgui-docking/imgui_draw.cpp
+
+CMakeFiles/Engine.dir/third_party/imgui-docking/imgui_draw.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/Engine.dir/third_party/imgui-docking/imgui_draw.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/chenhongchi/Desktop/Engine/third_party/imgui-docking/imgui_draw.cpp > CMakeFiles/Engine.dir/third_party/imgui-docking/imgui_draw.cpp.i
+
+CMakeFiles/Engine.dir/third_party/imgui-docking/imgui_draw.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/Engine.dir/third_party/imgui-docking/imgui_draw.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/chenhongchi/Desktop/Engine/third_party/imgui-docking/imgui_draw.cpp -o CMakeFiles/Engine.dir/third_party/imgui-docking/imgui_draw.cpp.s
+
+CMakeFiles/Engine.dir/third_party/imgui-docking/imgui_tables.cpp.o: CMakeFiles/Engine.dir/flags.make
+CMakeFiles/Engine.dir/third_party/imgui-docking/imgui_tables.cpp.o: /Users/chenhongchi/Desktop/Engine/third_party/imgui-docking/imgui_tables.cpp
+CMakeFiles/Engine.dir/third_party/imgui-docking/imgui_tables.cpp.o: CMakeFiles/Engine.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/chenhongchi/Desktop/Engine/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_28) "Building CXX object CMakeFiles/Engine.dir/third_party/imgui-docking/imgui_tables.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Engine.dir/third_party/imgui-docking/imgui_tables.cpp.o -MF CMakeFiles/Engine.dir/third_party/imgui-docking/imgui_tables.cpp.o.d -o CMakeFiles/Engine.dir/third_party/imgui-docking/imgui_tables.cpp.o -c /Users/chenhongchi/Desktop/Engine/third_party/imgui-docking/imgui_tables.cpp
+
+CMakeFiles/Engine.dir/third_party/imgui-docking/imgui_tables.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/Engine.dir/third_party/imgui-docking/imgui_tables.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/chenhongchi/Desktop/Engine/third_party/imgui-docking/imgui_tables.cpp > CMakeFiles/Engine.dir/third_party/imgui-docking/imgui_tables.cpp.i
+
+CMakeFiles/Engine.dir/third_party/imgui-docking/imgui_tables.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/Engine.dir/third_party/imgui-docking/imgui_tables.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/chenhongchi/Desktop/Engine/third_party/imgui-docking/imgui_tables.cpp -o CMakeFiles/Engine.dir/third_party/imgui-docking/imgui_tables.cpp.s
+
+CMakeFiles/Engine.dir/third_party/imgui-docking/imgui_widgets.cpp.o: CMakeFiles/Engine.dir/flags.make
+CMakeFiles/Engine.dir/third_party/imgui-docking/imgui_widgets.cpp.o: /Users/chenhongchi/Desktop/Engine/third_party/imgui-docking/imgui_widgets.cpp
+CMakeFiles/Engine.dir/third_party/imgui-docking/imgui_widgets.cpp.o: CMakeFiles/Engine.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/chenhongchi/Desktop/Engine/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_29) "Building CXX object CMakeFiles/Engine.dir/third_party/imgui-docking/imgui_widgets.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Engine.dir/third_party/imgui-docking/imgui_widgets.cpp.o -MF CMakeFiles/Engine.dir/third_party/imgui-docking/imgui_widgets.cpp.o.d -o CMakeFiles/Engine.dir/third_party/imgui-docking/imgui_widgets.cpp.o -c /Users/chenhongchi/Desktop/Engine/third_party/imgui-docking/imgui_widgets.cpp
+
+CMakeFiles/Engine.dir/third_party/imgui-docking/imgui_widgets.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/Engine.dir/third_party/imgui-docking/imgui_widgets.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/chenhongchi/Desktop/Engine/third_party/imgui-docking/imgui_widgets.cpp > CMakeFiles/Engine.dir/third_party/imgui-docking/imgui_widgets.cpp.i
+
+CMakeFiles/Engine.dir/third_party/imgui-docking/imgui_widgets.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/Engine.dir/third_party/imgui-docking/imgui_widgets.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/chenhongchi/Desktop/Engine/third_party/imgui-docking/imgui_widgets.cpp -o CMakeFiles/Engine.dir/third_party/imgui-docking/imgui_widgets.cpp.s
+
+CMakeFiles/Engine.dir/third_party/imgui-docking/backends/imgui_impl_glfw.cpp.o: CMakeFiles/Engine.dir/flags.make
+CMakeFiles/Engine.dir/third_party/imgui-docking/backends/imgui_impl_glfw.cpp.o: /Users/chenhongchi/Desktop/Engine/third_party/imgui-docking/backends/imgui_impl_glfw.cpp
+CMakeFiles/Engine.dir/third_party/imgui-docking/backends/imgui_impl_glfw.cpp.o: CMakeFiles/Engine.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/chenhongchi/Desktop/Engine/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_30) "Building CXX object CMakeFiles/Engine.dir/third_party/imgui-docking/backends/imgui_impl_glfw.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Engine.dir/third_party/imgui-docking/backends/imgui_impl_glfw.cpp.o -MF CMakeFiles/Engine.dir/third_party/imgui-docking/backends/imgui_impl_glfw.cpp.o.d -o CMakeFiles/Engine.dir/third_party/imgui-docking/backends/imgui_impl_glfw.cpp.o -c /Users/chenhongchi/Desktop/Engine/third_party/imgui-docking/backends/imgui_impl_glfw.cpp
+
+CMakeFiles/Engine.dir/third_party/imgui-docking/backends/imgui_impl_glfw.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/Engine.dir/third_party/imgui-docking/backends/imgui_impl_glfw.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/chenhongchi/Desktop/Engine/third_party/imgui-docking/backends/imgui_impl_glfw.cpp > CMakeFiles/Engine.dir/third_party/imgui-docking/backends/imgui_impl_glfw.cpp.i
+
+CMakeFiles/Engine.dir/third_party/imgui-docking/backends/imgui_impl_glfw.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/Engine.dir/third_party/imgui-docking/backends/imgui_impl_glfw.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/chenhongchi/Desktop/Engine/third_party/imgui-docking/backends/imgui_impl_glfw.cpp -o CMakeFiles/Engine.dir/third_party/imgui-docking/backends/imgui_impl_glfw.cpp.s
+
+CMakeFiles/Engine.dir/third_party/imgui-docking/backends/imgui_impl_vulkan.cpp.o: CMakeFiles/Engine.dir/flags.make
+CMakeFiles/Engine.dir/third_party/imgui-docking/backends/imgui_impl_vulkan.cpp.o: /Users/chenhongchi/Desktop/Engine/third_party/imgui-docking/backends/imgui_impl_vulkan.cpp
+CMakeFiles/Engine.dir/third_party/imgui-docking/backends/imgui_impl_vulkan.cpp.o: CMakeFiles/Engine.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/chenhongchi/Desktop/Engine/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_31) "Building CXX object CMakeFiles/Engine.dir/third_party/imgui-docking/backends/imgui_impl_vulkan.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Engine.dir/third_party/imgui-docking/backends/imgui_impl_vulkan.cpp.o -MF CMakeFiles/Engine.dir/third_party/imgui-docking/backends/imgui_impl_vulkan.cpp.o.d -o CMakeFiles/Engine.dir/third_party/imgui-docking/backends/imgui_impl_vulkan.cpp.o -c /Users/chenhongchi/Desktop/Engine/third_party/imgui-docking/backends/imgui_impl_vulkan.cpp
+
+CMakeFiles/Engine.dir/third_party/imgui-docking/backends/imgui_impl_vulkan.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/Engine.dir/third_party/imgui-docking/backends/imgui_impl_vulkan.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/chenhongchi/Desktop/Engine/third_party/imgui-docking/backends/imgui_impl_vulkan.cpp > CMakeFiles/Engine.dir/third_party/imgui-docking/backends/imgui_impl_vulkan.cpp.i
+
+CMakeFiles/Engine.dir/third_party/imgui-docking/backends/imgui_impl_vulkan.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/Engine.dir/third_party/imgui-docking/backends/imgui_impl_vulkan.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/chenhongchi/Desktop/Engine/third_party/imgui-docking/backends/imgui_impl_vulkan.cpp -o CMakeFiles/Engine.dir/third_party/imgui-docking/backends/imgui_impl_vulkan.cpp.s
+
 # Object files for target Engine
 Engine_OBJECTS = \
 "CMakeFiles/Engine.dir/main.cpp.o" \
@@ -347,8 +515,14 @@ Engine_OBJECTS = \
 "CMakeFiles/Engine.dir/src/engine/camera/PerspectiveCamera.cpp.o" \
 "CMakeFiles/Engine.dir/src/engine/config/AppConfig.cpp.o" \
 "CMakeFiles/Engine.dir/src/engine/config/AppConfigValidation.cpp.o" \
+"CMakeFiles/Engine.dir/src/engine/editor/EditorLayer.cpp.o" \
+"CMakeFiles/Engine.dir/src/engine/editor/EditorUi.cpp.o" \
+"CMakeFiles/Engine.dir/src/engine/editor/panels/ConsolePanel.cpp.o" \
+"CMakeFiles/Engine.dir/src/engine/editor/panels/HierarchyPanel.cpp.o" \
+"CMakeFiles/Engine.dir/src/engine/editor/panels/InspectorPanel.cpp.o" \
 "CMakeFiles/Engine.dir/src/engine/render/Scene.cpp.o" \
 "CMakeFiles/Engine.dir/src/engine/render/Transform.cpp.o" \
+"CMakeFiles/Engine.dir/src/engine/ui/DockLayout.cpp.o" \
 "CMakeFiles/Engine.dir/src/engine/vulkan/VulkanBuffer.cpp.o" \
 "CMakeFiles/Engine.dir/src/engine/vulkan/VulkanContext.cpp.o" \
 "CMakeFiles/Engine.dir/src/engine/vulkan/VulkanBootstrap.cpp.o" \
@@ -358,7 +532,13 @@ Engine_OBJECTS = \
 "CMakeFiles/Engine.dir/src/engine/vulkan/VulkanReporter.cpp.o" \
 "CMakeFiles/Engine.dir/src/engine/vulkan/VulkanShader.cpp.o" \
 "CMakeFiles/Engine.dir/src/engine/vulkan/VulkanSwapchain.cpp.o" \
-"CMakeFiles/Engine.dir/src/engine/window/Window.cpp.o"
+"CMakeFiles/Engine.dir/src/engine/window/Window.cpp.o" \
+"CMakeFiles/Engine.dir/third_party/imgui-docking/imgui.cpp.o" \
+"CMakeFiles/Engine.dir/third_party/imgui-docking/imgui_draw.cpp.o" \
+"CMakeFiles/Engine.dir/third_party/imgui-docking/imgui_tables.cpp.o" \
+"CMakeFiles/Engine.dir/third_party/imgui-docking/imgui_widgets.cpp.o" \
+"CMakeFiles/Engine.dir/third_party/imgui-docking/backends/imgui_impl_glfw.cpp.o" \
+"CMakeFiles/Engine.dir/third_party/imgui-docking/backends/imgui_impl_vulkan.cpp.o"
 
 # External object files for target Engine
 Engine_EXTERNAL_OBJECTS =
@@ -370,8 +550,14 @@ Engine: CMakeFiles/Engine.dir/src/engine/camera/OrthographicCamera.cpp.o
 Engine: CMakeFiles/Engine.dir/src/engine/camera/PerspectiveCamera.cpp.o
 Engine: CMakeFiles/Engine.dir/src/engine/config/AppConfig.cpp.o
 Engine: CMakeFiles/Engine.dir/src/engine/config/AppConfigValidation.cpp.o
+Engine: CMakeFiles/Engine.dir/src/engine/editor/EditorLayer.cpp.o
+Engine: CMakeFiles/Engine.dir/src/engine/editor/EditorUi.cpp.o
+Engine: CMakeFiles/Engine.dir/src/engine/editor/panels/ConsolePanel.cpp.o
+Engine: CMakeFiles/Engine.dir/src/engine/editor/panels/HierarchyPanel.cpp.o
+Engine: CMakeFiles/Engine.dir/src/engine/editor/panels/InspectorPanel.cpp.o
 Engine: CMakeFiles/Engine.dir/src/engine/render/Scene.cpp.o
 Engine: CMakeFiles/Engine.dir/src/engine/render/Transform.cpp.o
+Engine: CMakeFiles/Engine.dir/src/engine/ui/DockLayout.cpp.o
 Engine: CMakeFiles/Engine.dir/src/engine/vulkan/VulkanBuffer.cpp.o
 Engine: CMakeFiles/Engine.dir/src/engine/vulkan/VulkanContext.cpp.o
 Engine: CMakeFiles/Engine.dir/src/engine/vulkan/VulkanBootstrap.cpp.o
@@ -382,11 +568,17 @@ Engine: CMakeFiles/Engine.dir/src/engine/vulkan/VulkanReporter.cpp.o
 Engine: CMakeFiles/Engine.dir/src/engine/vulkan/VulkanShader.cpp.o
 Engine: CMakeFiles/Engine.dir/src/engine/vulkan/VulkanSwapchain.cpp.o
 Engine: CMakeFiles/Engine.dir/src/engine/window/Window.cpp.o
+Engine: CMakeFiles/Engine.dir/third_party/imgui-docking/imgui.cpp.o
+Engine: CMakeFiles/Engine.dir/third_party/imgui-docking/imgui_draw.cpp.o
+Engine: CMakeFiles/Engine.dir/third_party/imgui-docking/imgui_tables.cpp.o
+Engine: CMakeFiles/Engine.dir/third_party/imgui-docking/imgui_widgets.cpp.o
+Engine: CMakeFiles/Engine.dir/third_party/imgui-docking/backends/imgui_impl_glfw.cpp.o
+Engine: CMakeFiles/Engine.dir/third_party/imgui-docking/backends/imgui_impl_vulkan.cpp.o
 Engine: CMakeFiles/Engine.dir/build.make
 Engine: /Users/chenhongchi/VulkanSDK/1.4.350.0/macOS/lib/libvulkan.dylib
 Engine: /opt/homebrew/lib/libglfw.3.4.dylib
 Engine: CMakeFiles/Engine.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/Users/chenhongchi/Desktop/Engine/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_20) "Linking CXX executable Engine"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/Users/chenhongchi/Desktop/Engine/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_32) "Linking CXX executable Engine"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/Engine.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

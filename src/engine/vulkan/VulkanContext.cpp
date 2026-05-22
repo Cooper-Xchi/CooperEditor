@@ -38,11 +38,13 @@ const DeviceRuntime* VulkanContext::primaryDeviceRuntime() const noexcept {
     return &primaryDeviceRuntime_.value();
 }
 
-void VulkanContext::uploadCameraUniforms(DeviceRuntime& runtime) {
-    for (auto& uniformBuffer : runtime.cameraUniformBuffers) {
+void VulkanContext::uploadUniforms(
+    const std::vector<BufferResource>& uniformBuffers,
+    const CameraUniformData& uniform) {
+    for (const auto& uniformBuffer : uniformBuffers) {
         if (uniformBuffer.mappedData != nullptr) {
             std::memcpy(uniformBuffer.mappedData,
-                        &runtime.cameraUniform,
+                        &uniform,
                         sizeof(CameraUniformData));
         }
     }
@@ -76,14 +78,16 @@ void VulkanContext::destroyFrameSyncObjects(DeviceRuntime& runtime) {
 void VulkanContext::destroySwapchainResources(DeviceRuntime& runtime) {
     destroyFrameSyncObjects(runtime);
     runtime.swapchainSelection.reset();
+    runtime.swapchainMinImageCount = 0;
 
     if (runtime.descriptorPool != VK_NULL_HANDLE) {
         vkDestroyDescriptorPool(runtime.logicalDevice, runtime.descriptorPool, nullptr);
         runtime.descriptorPool = VK_NULL_HANDLE;
     }
-    runtime.cameraDescriptorSets.clear();
+    runtime.sceneCameraDescriptorSets.clear();
+    runtime.gameCameraDescriptorSets.clear();
 
-    for (auto& uniformBuffer : runtime.cameraUniformBuffers) {
+    for (auto& uniformBuffer : runtime.sceneCameraUniformBuffers) {
         if (uniformBuffer.mappedData != nullptr) {
             vkUnmapMemory(runtime.logicalDevice, uniformBuffer.memory);
             uniformBuffer.mappedData = nullptr;
@@ -97,7 +101,23 @@ void VulkanContext::destroySwapchainResources(DeviceRuntime& runtime) {
             uniformBuffer.memory = VK_NULL_HANDLE;
         }
     }
-    runtime.cameraUniformBuffers.clear();
+    runtime.sceneCameraUniformBuffers.clear();
+
+    for (auto& uniformBuffer : runtime.gameCameraUniformBuffers) {
+        if (uniformBuffer.mappedData != nullptr) {
+            vkUnmapMemory(runtime.logicalDevice, uniformBuffer.memory);
+            uniformBuffer.mappedData = nullptr;
+        }
+        if (uniformBuffer.buffer != VK_NULL_HANDLE) {
+            vkDestroyBuffer(runtime.logicalDevice, uniformBuffer.buffer, nullptr);
+            uniformBuffer.buffer = VK_NULL_HANDLE;
+        }
+        if (uniformBuffer.memory != VK_NULL_HANDLE) {
+            vkFreeMemory(runtime.logicalDevice, uniformBuffer.memory, nullptr);
+            uniformBuffer.memory = VK_NULL_HANDLE;
+        }
+    }
+    runtime.gameCameraUniformBuffers.clear();
 
     if (runtime.commandPool != VK_NULL_HANDLE) {
         vkDestroyCommandPool(runtime.logicalDevice, runtime.commandPool, nullptr);
@@ -106,9 +126,30 @@ void VulkanContext::destroySwapchainResources(DeviceRuntime& runtime) {
     runtime.commandBuffers.clear();
     runtime.commandBuffersRecorded = false;
 
-    if (runtime.graphicsPipeline != VK_NULL_HANDLE) {
-        vkDestroyPipeline(runtime.logicalDevice, runtime.graphicsPipeline, nullptr);
-        runtime.graphicsPipeline = VK_NULL_HANDLE;
+    if (runtime.swapchainGraphicsPipeline != VK_NULL_HANDLE) {
+        vkDestroyPipeline(runtime.logicalDevice,
+                          runtime.swapchainGraphicsPipeline,
+                          nullptr);
+        runtime.swapchainGraphicsPipeline = VK_NULL_HANDLE;
+    }
+    if (runtime.sceneGraphicsPipeline != VK_NULL_HANDLE) {
+        vkDestroyPipeline(runtime.logicalDevice,
+                          runtime.sceneGraphicsPipeline,
+                          nullptr);
+        runtime.sceneGraphicsPipeline = VK_NULL_HANDLE;
+    }
+
+    if (runtime.sceneViewportFramebuffer != VK_NULL_HANDLE) {
+        vkDestroyFramebuffer(runtime.logicalDevice,
+                             runtime.sceneViewportFramebuffer,
+                             nullptr);
+        runtime.sceneViewportFramebuffer = VK_NULL_HANDLE;
+    }
+    if (runtime.gameViewportFramebuffer != VK_NULL_HANDLE) {
+        vkDestroyFramebuffer(runtime.logicalDevice,
+                             runtime.gameViewportFramebuffer,
+                             nullptr);
+        runtime.gameViewportFramebuffer = VK_NULL_HANDLE;
     }
 
     for (auto& framebuffer : runtime.framebuffers) {
@@ -119,10 +160,23 @@ void VulkanContext::destroySwapchainResources(DeviceRuntime& runtime) {
     }
     runtime.framebuffers.clear();
 
-    if (runtime.renderPass != VK_NULL_HANDLE) {
-        vkDestroyRenderPass(runtime.logicalDevice, runtime.renderPass, nullptr);
-        runtime.renderPass = VK_NULL_HANDLE;
+    if (runtime.sceneRenderPass != VK_NULL_HANDLE) {
+        vkDestroyRenderPass(runtime.logicalDevice,
+                            runtime.sceneRenderPass,
+                            nullptr);
+        runtime.sceneRenderPass = VK_NULL_HANDLE;
     }
+    if (runtime.swapchainRenderPass != VK_NULL_HANDLE) {
+        vkDestroyRenderPass(runtime.logicalDevice,
+                            runtime.swapchainRenderPass,
+                            nullptr);
+        runtime.swapchainRenderPass = VK_NULL_HANDLE;
+    }
+
+    detail::destroyImageResource(runtime.logicalDevice,
+                                 runtime.sceneViewportColorImage);
+    detail::destroyImageResource(runtime.logicalDevice,
+                                 runtime.gameViewportColorImage);
 
     for (auto& imageView : runtime.swapchainImageViews) {
         if (imageView != VK_NULL_HANDLE) {
@@ -159,6 +213,7 @@ void VulkanContext::createSwapchainResources(const DeviceInfo& device,
         detail::chooseSwapchainSelection(device.swapchainSupport,
                                          framebufferExtent);
     runtime.swapchainSelection = selection;
+    runtime.swapchainMinImageCount = selection.imageCount;
     runtime.swapchain =
         detail::createSwapchain(runtime.logicalDevice,
                                 surface_,
@@ -172,22 +227,61 @@ void VulkanContext::createSwapchainResources(const DeviceInfo& device,
             runtime.logicalDevice,
             runtime.swapchainImages,
             selection.surfaceFormat.format);
-    runtime.renderPass =
+    runtime.sceneRenderPass =
         detail::createRenderPass(runtime.logicalDevice,
-                                 selection.surfaceFormat.format);
-    runtime.graphicsPipeline =
+                                 selection.surfaceFormat.format,
+                                 VK_IMAGE_LAYOUT_SHADER_READ_ONLY_OPTIMAL);
+    runtime.swapchainRenderPass =
+        detail::createRenderPass(runtime.logicalDevice,
+                                 selection.surfaceFormat.format,
+                                 VK_IMAGE_LAYOUT_PRESENT_SRC_KHR);
+    runtime.sceneViewportColorImage =
+        detail::createImageResource(device.physicalDevice,
+                                    runtime.logicalDevice,
+                                    selection.extent.width,
+                                    selection.extent.height,
+                                    selection.surfaceFormat.format,
+                                    VK_IMAGE_USAGE_COLOR_ATTACHMENT_BIT |
+                                        VK_IMAGE_USAGE_SAMPLED_BIT,
+                                    VK_IMAGE_ASPECT_COLOR_BIT);
+    runtime.gameViewportColorImage =
+        detail::createImageResource(device.physicalDevice,
+                                    runtime.logicalDevice,
+                                    selection.extent.width,
+                                    selection.extent.height,
+                                    selection.surfaceFormat.format,
+                                    VK_IMAGE_USAGE_COLOR_ATTACHMENT_BIT |
+                                        VK_IMAGE_USAGE_SAMPLED_BIT,
+                                    VK_IMAGE_ASPECT_COLOR_BIT);
+    runtime.sceneGraphicsPipeline =
         detail::createGraphicsPipeline(runtime.logicalDevice,
                                        selection.extent,
-                                       runtime.renderPass,
+                                       runtime.sceneRenderPass,
                                        runtime.pipelineLayout,
                                        runtime.vertexShaderFile,
                                        runtime.fragmentShaderFile);
-    runtime.cameraUniformBuffers.clear();
-    runtime.cameraUniformBuffers.reserve(runtime.swapchainImages.size());
+    runtime.swapchainGraphicsPipeline =
+        detail::createGraphicsPipeline(runtime.logicalDevice,
+                                       selection.extent,
+                                       runtime.swapchainRenderPass,
+                                       runtime.pipelineLayout,
+                                       runtime.vertexShaderFile,
+                                       runtime.fragmentShaderFile);
+    runtime.sceneCameraUniformBuffers.clear();
+    runtime.gameCameraUniformBuffers.clear();
+    runtime.sceneCameraUniformBuffers.reserve(runtime.swapchainImages.size());
+    runtime.gameCameraUniformBuffers.reserve(runtime.swapchainImages.size());
     for (uint32_t index = 0;
          index < static_cast<uint32_t>(runtime.swapchainImages.size());
          ++index) {
-        runtime.cameraUniformBuffers.push_back(
+        runtime.sceneCameraUniformBuffers.push_back(
+            detail::createBufferResource(device.physicalDevice,
+                                         runtime.logicalDevice,
+                                         sizeof(CameraUniformData),
+                                         VK_BUFFER_USAGE_UNIFORM_BUFFER_BIT,
+                                         VK_MEMORY_PROPERTY_HOST_VISIBLE_BIT |
+                                             VK_MEMORY_PROPERTY_HOST_COHERENT_BIT));
+        runtime.gameCameraUniformBuffers.push_back(
             detail::createBufferResource(device.physicalDevice,
                                          runtime.logicalDevice,
                                          sizeof(CameraUniformData),
@@ -198,16 +292,32 @@ void VulkanContext::createSwapchainResources(const DeviceInfo& device,
     runtime.descriptorPool =
         detail::createCameraDescriptorPool(runtime.logicalDevice,
                                            static_cast<uint32_t>(
-                                               runtime.cameraUniformBuffers.size()));
-    runtime.cameraDescriptorSets =
+                                               runtime.swapchainImages.size() * 2));
+    runtime.sceneCameraDescriptorSets =
         detail::allocateCameraDescriptorSets(runtime.logicalDevice,
                                              runtime.descriptorPool,
                                              runtime.descriptorSetLayout,
-                                             runtime.cameraUniformBuffers);
-    uploadCameraUniforms(runtime);
+                                             runtime.sceneCameraUniformBuffers);
+    runtime.gameCameraDescriptorSets =
+        detail::allocateCameraDescriptorSets(runtime.logicalDevice,
+                                             runtime.descriptorPool,
+                                             runtime.descriptorSetLayout,
+                                             runtime.gameCameraUniformBuffers);
+    uploadUniforms(runtime.sceneCameraUniformBuffers, runtime.sceneCameraUniform);
+    uploadUniforms(runtime.gameCameraUniformBuffers, runtime.gameCameraUniform);
+    runtime.sceneViewportFramebuffer =
+        detail::createFramebuffer(runtime.logicalDevice,
+                                  runtime.sceneRenderPass,
+                                  runtime.sceneViewportColorImage.imageView,
+                                  selection.extent);
+    runtime.gameViewportFramebuffer =
+        detail::createFramebuffer(runtime.logicalDevice,
+                                  runtime.sceneRenderPass,
+                                  runtime.gameViewportColorImage.imageView,
+                                  selection.extent);
     runtime.framebuffers =
         detail::createFramebuffers(runtime.logicalDevice,
-                                   runtime.renderPass,
+                                   runtime.swapchainRenderPass,
                                    runtime.swapchainImageViews,
                                    selection.extent);
     runtime.commandPool =
@@ -218,15 +328,6 @@ void VulkanContext::createSwapchainResources(const DeviceInfo& device,
             runtime.logicalDevice,
             runtime.commandPool,
             static_cast<uint32_t>(runtime.framebuffers.size()));
-    detail::recordCommandBuffers(runtime.renderPass,
-                                 selection.extent,
-                                 runtime.framebuffers,
-                                 runtime.commandBuffers,
-                                 runtime.pipelineLayout,
-                                 runtime.graphicsPipeline,
-                                 runtime.vertexBuffer.buffer,
-                                 runtime.cameraDescriptorSets,
-                                 runtime.drawVertexCount);
     runtime.commandBuffersRecorded = true;
     runtime.framesInFlight =
         detail::createFrameSyncObjects(runtime.logicalDevice, 2);
@@ -318,7 +419,8 @@ void VulkanContext::shutdown() {
     }
 }
 
-bool VulkanContext::drawFrame() {
+bool VulkanContext::drawFrame(
+    const std::function<void(VkCommandBuffer)>& overlayRecorder) {
     if (!primaryDeviceIndex_.has_value()) {
         return false;
     }
@@ -332,19 +434,120 @@ bool VulkanContext::drawFrame() {
     }
 
     const auto& device = devices_[primaryDeviceIndex_.value()];
-    const auto submitStatus =
-        detail::submitSingleFrame(runtime->logicalDevice,
-                                  runtime->graphicsQueue,
-                                  runtime->presentQueue,
-                                  runtime->swapchain,
-                                  runtime->commandBuffers,
-                                  runtime->framesInFlight,
-                                  runtime->imagesInFlight,
-                                  runtime->currentFrameIndex);
-    if (submitStatus == detail::FrameSubmitStatus::RecreateSwapchain) {
+    auto& currentFrame = runtime->framesInFlight[runtime->currentFrameIndex];
+
+    detail::check(vkWaitForFences(runtime->logicalDevice,
+                                  1,
+                                  &currentFrame.inFlightFence,
+                                  VK_TRUE,
+                                  UINT64_MAX),
+                  "vkWaitForFences failed");
+    detail::check(vkResetFences(runtime->logicalDevice,
+                                1,
+                                &currentFrame.inFlightFence),
+                  "vkResetFences failed");
+
+    uint32_t imageIndex = 0;
+    bool recreateSwapchainAfterPresent = false;
+    const auto acquireResult =
+        vkAcquireNextImageKHR(runtime->logicalDevice,
+                              runtime->swapchain,
+                              UINT64_MAX,
+                              currentFrame.imageAvailableSemaphore,
+                              VK_NULL_HANDLE,
+                              &imageIndex);
+    if (acquireResult == VK_ERROR_OUT_OF_DATE_KHR) {
         recreateSwapchain(device, *runtime);
         return false;
     }
+    if (acquireResult == VK_SUBOPTIMAL_KHR) {
+        recreateSwapchainAfterPresent = true;
+    } else {
+        detail::check(acquireResult, "vkAcquireNextImageKHR failed");
+    }
+
+    if (runtime->imagesInFlight[imageIndex] != VK_NULL_HANDLE) {
+        detail::check(vkWaitForFences(runtime->logicalDevice,
+                                      1,
+                                      &runtime->imagesInFlight[imageIndex],
+                                      VK_TRUE,
+                                      UINT64_MAX),
+                      "vkWaitForFences for swapchain image failed");
+    }
+    runtime->imagesInFlight[imageIndex] = currentFrame.inFlightFence;
+
+    detail::check(vkResetCommandBuffer(runtime->commandBuffers[imageIndex], 0),
+                  "vkResetCommandBuffer failed");
+    const VkDescriptorSet sceneCameraDescriptorSet =
+        imageIndex < runtime->sceneCameraDescriptorSets.size()
+            ? runtime->sceneCameraDescriptorSets[imageIndex]
+            : VK_NULL_HANDLE;
+    const VkDescriptorSet gameCameraDescriptorSet =
+        imageIndex < runtime->gameCameraDescriptorSets.size()
+            ? runtime->gameCameraDescriptorSets[imageIndex]
+            : VK_NULL_HANDLE;
+    detail::recordCommandBuffer(runtime->swapchainRenderPass,
+                                runtime->swapchainSelection->extent,
+                                runtime->framebuffers[imageIndex],
+                                runtime->commandBuffers[imageIndex],
+                                runtime->sceneRenderPass,
+                                runtime->sceneViewportFramebuffer,
+                                runtime->gameViewportFramebuffer,
+                                runtime->sceneGraphicsPipeline,
+                                runtime->swapchainSelection->extent,
+                                runtime->pipelineLayout,
+                                runtime->swapchainGraphicsPipeline,
+                                runtime->vertexBuffer.buffer,
+                                sceneCameraDescriptorSet,
+                                gameCameraDescriptorSet,
+                                runtime->sceneViewportColorImage.image,
+                                runtime->gameViewportColorImage.image,
+                                runtime->drawVertexCount,
+                                overlayRecorder);
+
+    VkSemaphore waitSemaphores[] = {currentFrame.imageAvailableSemaphore};
+    VkPipelineStageFlags waitStages[] = {
+        VK_PIPELINE_STAGE_COLOR_ATTACHMENT_OUTPUT_BIT,
+    };
+    VkSemaphore signalSemaphores[] = {currentFrame.renderFinishedSemaphore};
+
+    VkSubmitInfo submitInfo{};
+    submitInfo.sType = VK_STRUCTURE_TYPE_SUBMIT_INFO;
+    submitInfo.waitSemaphoreCount = 1;
+    submitInfo.pWaitSemaphores = waitSemaphores;
+    submitInfo.pWaitDstStageMask = waitStages;
+    submitInfo.commandBufferCount = 1;
+    submitInfo.pCommandBuffers = &runtime->commandBuffers[imageIndex];
+    submitInfo.signalSemaphoreCount = 1;
+    submitInfo.pSignalSemaphores = signalSemaphores;
+
+    detail::check(vkQueueSubmit(runtime->graphicsQueue,
+                                1,
+                                &submitInfo,
+                                currentFrame.inFlightFence),
+                  "vkQueueSubmit failed");
+
+    VkPresentInfoKHR presentInfo{};
+    presentInfo.sType = VK_STRUCTURE_TYPE_PRESENT_INFO_KHR;
+    presentInfo.waitSemaphoreCount = 1;
+    presentInfo.pWaitSemaphores = signalSemaphores;
+    presentInfo.swapchainCount = 1;
+    presentInfo.pSwapchains = &runtime->swapchain;
+    presentInfo.pImageIndices = &imageIndex;
+
+    const auto presentResult =
+        vkQueuePresentKHR(runtime->presentQueue, &presentInfo);
+    if (presentResult == VK_ERROR_OUT_OF_DATE_KHR ||
+        presentResult == VK_SUBOPTIMAL_KHR ||
+        recreateSwapchainAfterPresent) {
+        recreateSwapchain(device, *runtime);
+    } else {
+        detail::check(presentResult, "vkQueuePresentKHR failed");
+    }
+
+    runtime->currentFrameIndex =
+        (runtime->currentFrameIndex + 1) %
+        static_cast<uint32_t>(runtime->framesInFlight.size());
     runtime->frameSubmitted = true;
     return true;
 }
@@ -369,16 +572,28 @@ void VulkanContext::handleFramebufferResize() {
     recreateSwapchain(device, *runtime);
 }
 
-void VulkanContext::updateFrameUniform(const engine::math::Mat4& viewProjection,
-                                       const engine::math::Mat4& model) {
+void VulkanContext::updateSceneViewUniform(const engine::math::Mat4& viewProjection,
+                                           const engine::math::Mat4& model) {
     auto* runtime = primaryDeviceRuntime();
     if (runtime == nullptr) {
         return;
     }
 
-    runtime->cameraUniform.viewProjection = viewProjection;
-    runtime->cameraUniform.model = model;
-    uploadCameraUniforms(*runtime);
+    runtime->sceneCameraUniform.viewProjection = viewProjection;
+    runtime->sceneCameraUniform.model = model;
+    uploadUniforms(runtime->sceneCameraUniformBuffers, runtime->sceneCameraUniform);
+}
+
+void VulkanContext::updateGameViewUniform(const engine::math::Mat4& viewProjection,
+                                          const engine::math::Mat4& model) {
+    auto* runtime = primaryDeviceRuntime();
+    if (runtime == nullptr) {
+        return;
+    }
+
+    runtime->gameCameraUniform.viewProjection = viewProjection;
+    runtime->gameCameraUniform.model = model;
+    uploadUniforms(runtime->gameCameraUniformBuffers, runtime->gameCameraUniform);
 }
 
 uint32_t VulkanContext::runtimeApiVersion() const noexcept {
@@ -387,6 +602,64 @@ uint32_t VulkanContext::runtimeApiVersion() const noexcept {
 
 const std::vector<DeviceInfo>& VulkanContext::devices() const noexcept {
     return devices_;
+}
+
+VkInstance VulkanContext::instanceHandle() const noexcept {
+    return instance_;
+}
+
+VkPhysicalDevice VulkanContext::primaryPhysicalDevice() const noexcept {
+    if (!primaryDeviceIndex_.has_value()) {
+        return VK_NULL_HANDLE;
+    }
+    return devices_[primaryDeviceIndex_.value()].physicalDevice;
+}
+
+VkDevice VulkanContext::primaryLogicalDevice() const noexcept {
+    const auto* runtime = primaryDeviceRuntime();
+    return runtime != nullptr ? runtime->logicalDevice : VK_NULL_HANDLE;
+}
+
+VkQueue VulkanContext::primaryGraphicsQueue() const noexcept {
+    const auto* runtime = primaryDeviceRuntime();
+    return runtime != nullptr ? runtime->graphicsQueue : VK_NULL_HANDLE;
+}
+
+uint32_t VulkanContext::primaryGraphicsQueueFamilyIndex() const noexcept {
+    if (!primaryDeviceIndex_.has_value()) {
+        return 0;
+    }
+    return devices_[primaryDeviceIndex_.value()]
+        .graphicsQueueFamilyIndex.value_or(0);
+}
+
+VkRenderPass VulkanContext::primaryRenderPass() const noexcept {
+    const auto* runtime = primaryDeviceRuntime();
+    return runtime != nullptr ? runtime->swapchainRenderPass : VK_NULL_HANDLE;
+}
+
+uint32_t VulkanContext::swapchainImageCount() const noexcept {
+    const auto* runtime = primaryDeviceRuntime();
+    return runtime != nullptr
+               ? static_cast<uint32_t>(runtime->swapchainImages.size())
+               : 0;
+}
+
+uint32_t VulkanContext::swapchainMinImageCount() const noexcept {
+    const auto* runtime = primaryDeviceRuntime();
+    return runtime != nullptr ? runtime->swapchainMinImageCount : 0;
+}
+
+VkImageView VulkanContext::sceneViewportImageView() const noexcept {
+    const auto* runtime = primaryDeviceRuntime();
+    return runtime != nullptr ? runtime->sceneViewportColorImage.imageView
+                              : VK_NULL_HANDLE;
+}
+
+VkImageView VulkanContext::gameViewportImageView() const noexcept {
+    const auto* runtime = primaryDeviceRuntime();
+    return runtime != nullptr ? runtime->gameViewportColorImage.imageView
+                              : VK_NULL_HANDLE;
 }
 
 }  // namespace engine::vulkan

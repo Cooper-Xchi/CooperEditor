@@ -827,12 +827,15 @@ CMakeFiles/Engine.dir/src/engine/Application.cpp.o: \
   /Users/chenhongchi/Desktop/Engine/include/engine/input/InputState.hpp \
   /Users/chenhongchi/Desktop/Engine/include/engine/config/AppConfig.hpp \
   /Users/chenhongchi/Desktop/Engine/include/engine/config/AppConfigValidation.hpp \
+  /Users/chenhongchi/Desktop/Engine/include/engine/editor/EditorLayer.hpp \
+  /Users/chenhongchi/Desktop/Engine/include/engine/editor/EditorTypes.hpp \
   /Users/chenhongchi/Desktop/Engine/include/engine/render/Scene.hpp \
   /Users/chenhongchi/Desktop/Engine/include/engine/render/Mesh.hpp \
   /Users/chenhongchi/Desktop/Engine/include/engine/render/Geometry.hpp \
   /Users/chenhongchi/Desktop/Engine/include/engine/render/Material.hpp \
   /Users/chenhongchi/Desktop/Engine/include/engine/render/Transform.hpp \
-  /Users/chenhongchi/Desktop/Engine/include/engine/vulkan/VulkanContext.hpp \
+  /Users/chenhongchi/Desktop/Engine/include/engine/ui/DockLayout.hpp \
+  /Users/chenhongchi/Desktop/Engine/include/engine/editor/EditorUi.hpp \
   /usr/local/include/vulkan/vulkan.h \
   /usr/local/include/vulkan/vk_platform.h \
   /usr/local/include/vulkan/vulkan_core.h \
@@ -848,6 +851,7 @@ CMakeFiles/Engine.dir/src/engine/Application.cpp.o: \
   /usr/local/include/vk_video/vulkan_video_codec_av1std_encode.h \
   /usr/local/include/vk_video/vulkan_video_codec_vp9std.h \
   /usr/local/include/vk_video/vulkan_video_codec_vp9std_decode.h \
+  /Users/chenhongchi/Desktop/Engine/include/engine/vulkan/VulkanContext.hpp \
   /Users/chenhongchi/Desktop/Engine/include/engine/vulkan/VulkanTypes.hpp \
   /Users/chenhongchi/Desktop/Engine/include/engine/vulkan/VulkanReporter.hpp \
   /Users/chenhongchi/Desktop/Engine/include/engine/window/Window.hpp

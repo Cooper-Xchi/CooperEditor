@@ -310,6 +310,126 @@ src/engine/config/AppConfigValidation.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Engine.dir/build.make CMakeFiles/Engine.dir/src/engine/config/AppConfigValidation.cpp.s
 .PHONY : src/engine/config/AppConfigValidation.cpp.s
 
+src/engine/editor/EditorLayer.o: src/engine/editor/EditorLayer.cpp.o
+.PHONY : src/engine/editor/EditorLayer.o
+
+# target to build an object file
+src/engine/editor/EditorLayer.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Engine.dir/build.make CMakeFiles/Engine.dir/src/engine/editor/EditorLayer.cpp.o
+.PHONY : src/engine/editor/EditorLayer.cpp.o
+
+src/engine/editor/EditorLayer.i: src/engine/editor/EditorLayer.cpp.i
+.PHONY : src/engine/editor/EditorLayer.i
+
+# target to preprocess a source file
+src/engine/editor/EditorLayer.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Engine.dir/build.make CMakeFiles/Engine.dir/src/engine/editor/EditorLayer.cpp.i
+.PHONY : src/engine/editor/EditorLayer.cpp.i
+
+src/engine/editor/EditorLayer.s: src/engine/editor/EditorLayer.cpp.s
+.PHONY : src/engine/editor/EditorLayer.s
+
+# target to generate assembly for a file
+src/engine/editor/EditorLayer.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Engine.dir/build.make CMakeFiles/Engine.dir/src/engine/editor/EditorLayer.cpp.s
+.PHONY : src/engine/editor/EditorLayer.cpp.s
+
+src/engine/editor/EditorUi.o: src/engine/editor/EditorUi.cpp.o
+.PHONY : src/engine/editor/EditorUi.o
+
+# target to build an object file
+src/engine/editor/EditorUi.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Engine.dir/build.make CMakeFiles/Engine.dir/src/engine/editor/EditorUi.cpp.o
+.PHONY : src/engine/editor/EditorUi.cpp.o
+
+src/engine/editor/EditorUi.i: src/engine/editor/EditorUi.cpp.i
+.PHONY : src/engine/editor/EditorUi.i
+
+# target to preprocess a source file
+src/engine/editor/EditorUi.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Engine.dir/build.make CMakeFiles/Engine.dir/src/engine/editor/EditorUi.cpp.i
+.PHONY : src/engine/editor/EditorUi.cpp.i
+
+src/engine/editor/EditorUi.s: src/engine/editor/EditorUi.cpp.s
+.PHONY : src/engine/editor/EditorUi.s
+
+# target to generate assembly for a file
+src/engine/editor/EditorUi.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Engine.dir/build.make CMakeFiles/Engine.dir/src/engine/editor/EditorUi.cpp.s
+.PHONY : src/engine/editor/EditorUi.cpp.s
+
+src/engine/editor/panels/ConsolePanel.o: src/engine/editor/panels/ConsolePanel.cpp.o
+.PHONY : src/engine/editor/panels/ConsolePanel.o
+
+# target to build an object file
+src/engine/editor/panels/ConsolePanel.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Engine.dir/build.make CMakeFiles/Engine.dir/src/engine/editor/panels/ConsolePanel.cpp.o
+.PHONY : src/engine/editor/panels/ConsolePanel.cpp.o
+
+src/engine/editor/panels/ConsolePanel.i: src/engine/editor/panels/ConsolePanel.cpp.i
+.PHONY : src/engine/editor/panels/ConsolePanel.i
+
+# target to preprocess a source file
+src/engine/editor/panels/ConsolePanel.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Engine.dir/build.make CMakeFiles/Engine.dir/src/engine/editor/panels/ConsolePanel.cpp.i
+.PHONY : src/engine/editor/panels/ConsolePanel.cpp.i
+
+src/engine/editor/panels/ConsolePanel.s: src/engine/editor/panels/ConsolePanel.cpp.s
+.PHONY : src/engine/editor/panels/ConsolePanel.s
+
+# target to generate assembly for a file
+src/engine/editor/panels/ConsolePanel.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Engine.dir/build.make CMakeFiles/Engine.dir/src/engine/editor/panels/ConsolePanel.cpp.s
+.PHONY : src/engine/editor/panels/ConsolePanel.cpp.s
+
+src/engine/editor/panels/HierarchyPanel.o: src/engine/editor/panels/HierarchyPanel.cpp.o
+.PHONY : src/engine/editor/panels/HierarchyPanel.o
+
+# target to build an object file
+src/engine/editor/panels/HierarchyPanel.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Engine.dir/build.make CMakeFiles/Engine.dir/src/engine/editor/panels/HierarchyPanel.cpp.o
+.PHONY : src/engine/editor/panels/HierarchyPanel.cpp.o
+
+src/engine/editor/panels/HierarchyPanel.i: src/engine/editor/panels/HierarchyPanel.cpp.i
+.PHONY : src/engine/editor/panels/HierarchyPanel.i
+
+# target to preprocess a source file
+src/engine/editor/panels/HierarchyPanel.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Engine.dir/build.make CMakeFiles/Engine.dir/src/engine/editor/panels/HierarchyPanel.cpp.i
+.PHONY : src/engine/editor/panels/HierarchyPanel.cpp.i
+
+src/engine/editor/panels/HierarchyPanel.s: src/engine/editor/panels/HierarchyPanel.cpp.s
+.PHONY : src/engine/editor/panels/HierarchyPanel.s
+
+# target to generate assembly for a file
+src/engine/editor/panels/HierarchyPanel.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Engine.dir/build.make CMakeFiles/Engine.dir/src/engine/editor/panels/HierarchyPanel.cpp.s
+.PHONY : src/engine/editor/panels/HierarchyPanel.cpp.s
+
+src/engine/editor/panels/InspectorPanel.o: src/engine/editor/panels/InspectorPanel.cpp.o
+.PHONY : src/engine/editor/panels/InspectorPanel.o
+
+# target to build an object file
+src/engine/editor/panels/InspectorPanel.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Engine.dir/build.make CMakeFiles/Engine.dir/src/engine/editor/panels/InspectorPanel.cpp.o
+.PHONY : src/engine/editor/panels/InspectorPanel.cpp.o
+
+src/engine/editor/panels/InspectorPanel.i: src/engine/editor/panels/InspectorPanel.cpp.i
+.PHONY : src/engine/editor/panels/InspectorPanel.i
+
+# target to preprocess a source file
+src/engine/editor/panels/InspectorPanel.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Engine.dir/build.make CMakeFiles/Engine.dir/src/engine/editor/panels/InspectorPanel.cpp.i
+.PHONY : src/engine/editor/panels/InspectorPanel.cpp.i
+
+src/engine/editor/panels/InspectorPanel.s: src/engine/editor/panels/InspectorPanel.cpp.s
+.PHONY : src/engine/editor/panels/InspectorPanel.s
+
+# target to generate assembly for a file
+src/engine/editor/panels/InspectorPanel.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Engine.dir/build.make CMakeFiles/Engine.dir/src/engine/editor/panels/InspectorPanel.cpp.s
+.PHONY : src/engine/editor/panels/InspectorPanel.cpp.s
+
 src/engine/render/Scene.o: src/engine/render/Scene.cpp.o
 .PHONY : src/engine/render/Scene.o
 
@@ -357,6 +477,30 @@ src/engine/render/Transform.s: src/engine/render/Transform.cpp.s
 src/engine/render/Transform.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Engine.dir/build.make CMakeFiles/Engine.dir/src/engine/render/Transform.cpp.s
 .PHONY : src/engine/render/Transform.cpp.s
+
+src/engine/ui/DockLayout.o: src/engine/ui/DockLayout.cpp.o
+.PHONY : src/engine/ui/DockLayout.o
+
+# target to build an object file
+src/engine/ui/DockLayout.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Engine.dir/build.make CMakeFiles/Engine.dir/src/engine/ui/DockLayout.cpp.o
+.PHONY : src/engine/ui/DockLayout.cpp.o
+
+src/engine/ui/DockLayout.i: src/engine/ui/DockLayout.cpp.i
+.PHONY : src/engine/ui/DockLayout.i
+
+# target to preprocess a source file
+src/engine/ui/DockLayout.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Engine.dir/build.make CMakeFiles/Engine.dir/src/engine/ui/DockLayout.cpp.i
+.PHONY : src/engine/ui/DockLayout.cpp.i
+
+src/engine/ui/DockLayout.s: src/engine/ui/DockLayout.cpp.s
+.PHONY : src/engine/ui/DockLayout.s
+
+# target to generate assembly for a file
+src/engine/ui/DockLayout.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Engine.dir/build.make CMakeFiles/Engine.dir/src/engine/ui/DockLayout.cpp.s
+.PHONY : src/engine/ui/DockLayout.cpp.s
 
 src/engine/vulkan/VulkanBootstrap.o: src/engine/vulkan/VulkanBootstrap.cpp.o
 .PHONY : src/engine/vulkan/VulkanBootstrap.o
@@ -598,6 +742,150 @@ src/engine/window/Window.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Engine.dir/build.make CMakeFiles/Engine.dir/src/engine/window/Window.cpp.s
 .PHONY : src/engine/window/Window.cpp.s
 
+third_party/imgui-docking/backends/imgui_impl_glfw.o: third_party/imgui-docking/backends/imgui_impl_glfw.cpp.o
+.PHONY : third_party/imgui-docking/backends/imgui_impl_glfw.o
+
+# target to build an object file
+third_party/imgui-docking/backends/imgui_impl_glfw.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Engine.dir/build.make CMakeFiles/Engine.dir/third_party/imgui-docking/backends/imgui_impl_glfw.cpp.o
+.PHONY : third_party/imgui-docking/backends/imgui_impl_glfw.cpp.o
+
+third_party/imgui-docking/backends/imgui_impl_glfw.i: third_party/imgui-docking/backends/imgui_impl_glfw.cpp.i
+.PHONY : third_party/imgui-docking/backends/imgui_impl_glfw.i
+
+# target to preprocess a source file
+third_party/imgui-docking/backends/imgui_impl_glfw.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Engine.dir/build.make CMakeFiles/Engine.dir/third_party/imgui-docking/backends/imgui_impl_glfw.cpp.i
+.PHONY : third_party/imgui-docking/backends/imgui_impl_glfw.cpp.i
+
+third_party/imgui-docking/backends/imgui_impl_glfw.s: third_party/imgui-docking/backends/imgui_impl_glfw.cpp.s
+.PHONY : third_party/imgui-docking/backends/imgui_impl_glfw.s
+
+# target to generate assembly for a file
+third_party/imgui-docking/backends/imgui_impl_glfw.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Engine.dir/build.make CMakeFiles/Engine.dir/third_party/imgui-docking/backends/imgui_impl_glfw.cpp.s
+.PHONY : third_party/imgui-docking/backends/imgui_impl_glfw.cpp.s
+
+third_party/imgui-docking/backends/imgui_impl_vulkan.o: third_party/imgui-docking/backends/imgui_impl_vulkan.cpp.o
+.PHONY : third_party/imgui-docking/backends/imgui_impl_vulkan.o
+
+# target to build an object file
+third_party/imgui-docking/backends/imgui_impl_vulkan.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Engine.dir/build.make CMakeFiles/Engine.dir/third_party/imgui-docking/backends/imgui_impl_vulkan.cpp.o
+.PHONY : third_party/imgui-docking/backends/imgui_impl_vulkan.cpp.o
+
+third_party/imgui-docking/backends/imgui_impl_vulkan.i: third_party/imgui-docking/backends/imgui_impl_vulkan.cpp.i
+.PHONY : third_party/imgui-docking/backends/imgui_impl_vulkan.i
+
+# target to preprocess a source file
+third_party/imgui-docking/backends/imgui_impl_vulkan.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Engine.dir/build.make CMakeFiles/Engine.dir/third_party/imgui-docking/backends/imgui_impl_vulkan.cpp.i
+.PHONY : third_party/imgui-docking/backends/imgui_impl_vulkan.cpp.i
+
+third_party/imgui-docking/backends/imgui_impl_vulkan.s: third_party/imgui-docking/backends/imgui_impl_vulkan.cpp.s
+.PHONY : third_party/imgui-docking/backends/imgui_impl_vulkan.s
+
+# target to generate assembly for a file
+third_party/imgui-docking/backends/imgui_impl_vulkan.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Engine.dir/build.make CMakeFiles/Engine.dir/third_party/imgui-docking/backends/imgui_impl_vulkan.cpp.s
+.PHONY : third_party/imgui-docking/backends/imgui_impl_vulkan.cpp.s
+
+third_party/imgui-docking/imgui.o: third_party/imgui-docking/imgui.cpp.o
+.PHONY : third_party/imgui-docking/imgui.o
+
+# target to build an object file
+third_party/imgui-docking/imgui.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Engine.dir/build.make CMakeFiles/Engine.dir/third_party/imgui-docking/imgui.cpp.o
+.PHONY : third_party/imgui-docking/imgui.cpp.o
+
+third_party/imgui-docking/imgui.i: third_party/imgui-docking/imgui.cpp.i
+.PHONY : third_party/imgui-docking/imgui.i
+
+# target to preprocess a source file
+third_party/imgui-docking/imgui.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Engine.dir/build.make CMakeFiles/Engine.dir/third_party/imgui-docking/imgui.cpp.i
+.PHONY : third_party/imgui-docking/imgui.cpp.i
+
+third_party/imgui-docking/imgui.s: third_party/imgui-docking/imgui.cpp.s
+.PHONY : third_party/imgui-docking/imgui.s
+
+# target to generate assembly for a file
+third_party/imgui-docking/imgui.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Engine.dir/build.make CMakeFiles/Engine.dir/third_party/imgui-docking/imgui.cpp.s
+.PHONY : third_party/imgui-docking/imgui.cpp.s
+
+third_party/imgui-docking/imgui_draw.o: third_party/imgui-docking/imgui_draw.cpp.o
+.PHONY : third_party/imgui-docking/imgui_draw.o
+
+# target to build an object file
+third_party/imgui-docking/imgui_draw.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Engine.dir/build.make CMakeFiles/Engine.dir/third_party/imgui-docking/imgui_draw.cpp.o
+.PHONY : third_party/imgui-docking/imgui_draw.cpp.o
+
+third_party/imgui-docking/imgui_draw.i: third_party/imgui-docking/imgui_draw.cpp.i
+.PHONY : third_party/imgui-docking/imgui_draw.i
+
+# target to preprocess a source file
+third_party/imgui-docking/imgui_draw.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Engine.dir/build.make CMakeFiles/Engine.dir/third_party/imgui-docking/imgui_draw.cpp.i
+.PHONY : third_party/imgui-docking/imgui_draw.cpp.i
+
+third_party/imgui-docking/imgui_draw.s: third_party/imgui-docking/imgui_draw.cpp.s
+.PHONY : third_party/imgui-docking/imgui_draw.s
+
+# target to generate assembly for a file
+third_party/imgui-docking/imgui_draw.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Engine.dir/build.make CMakeFiles/Engine.dir/third_party/imgui-docking/imgui_draw.cpp.s
+.PHONY : third_party/imgui-docking/imgui_draw.cpp.s
+
+third_party/imgui-docking/imgui_tables.o: third_party/imgui-docking/imgui_tables.cpp.o
+.PHONY : third_party/imgui-docking/imgui_tables.o
+
+# target to build an object file
+third_party/imgui-docking/imgui_tables.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Engine.dir/build.make CMakeFiles/Engine.dir/third_party/imgui-docking/imgui_tables.cpp.o
+.PHONY : third_party/imgui-docking/imgui_tables.cpp.o
+
+third_party/imgui-docking/imgui_tables.i: third_party/imgui-docking/imgui_tables.cpp.i
+.PHONY : third_party/imgui-docking/imgui_tables.i
+
+# target to preprocess a source file
+third_party/imgui-docking/imgui_tables.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Engine.dir/build.make CMakeFiles/Engine.dir/third_party/imgui-docking/imgui_tables.cpp.i
+.PHONY : third_party/imgui-docking/imgui_tables.cpp.i
+
+third_party/imgui-docking/imgui_tables.s: third_party/imgui-docking/imgui_tables.cpp.s
+.PHONY : third_party/imgui-docking/imgui_tables.s
+
+# target to generate assembly for a file
+third_party/imgui-docking/imgui_tables.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Engine.dir/build.make CMakeFiles/Engine.dir/third_party/imgui-docking/imgui_tables.cpp.s
+.PHONY : third_party/imgui-docking/imgui_tables.cpp.s
+
+third_party/imgui-docking/imgui_widgets.o: third_party/imgui-docking/imgui_widgets.cpp.o
+.PHONY : third_party/imgui-docking/imgui_widgets.o
+
+# target to build an object file
+third_party/imgui-docking/imgui_widgets.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Engine.dir/build.make CMakeFiles/Engine.dir/third_party/imgui-docking/imgui_widgets.cpp.o
+.PHONY : third_party/imgui-docking/imgui_widgets.cpp.o
+
+third_party/imgui-docking/imgui_widgets.i: third_party/imgui-docking/imgui_widgets.cpp.i
+.PHONY : third_party/imgui-docking/imgui_widgets.i
+
+# target to preprocess a source file
+third_party/imgui-docking/imgui_widgets.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Engine.dir/build.make CMakeFiles/Engine.dir/third_party/imgui-docking/imgui_widgets.cpp.i
+.PHONY : third_party/imgui-docking/imgui_widgets.cpp.i
+
+third_party/imgui-docking/imgui_widgets.s: third_party/imgui-docking/imgui_widgets.cpp.s
+.PHONY : third_party/imgui-docking/imgui_widgets.s
+
+# target to generate assembly for a file
+third_party/imgui-docking/imgui_widgets.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Engine.dir/build.make CMakeFiles/Engine.dir/third_party/imgui-docking/imgui_widgets.cpp.s
+.PHONY : third_party/imgui-docking/imgui_widgets.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -629,12 +917,30 @@ help:
 	@echo "... src/engine/config/AppConfigValidation.o"
 	@echo "... src/engine/config/AppConfigValidation.i"
 	@echo "... src/engine/config/AppConfigValidation.s"
+	@echo "... src/engine/editor/EditorLayer.o"
+	@echo "... src/engine/editor/EditorLayer.i"
+	@echo "... src/engine/editor/EditorLayer.s"
+	@echo "... src/engine/editor/EditorUi.o"
+	@echo "... src/engine/editor/EditorUi.i"
+	@echo "... src/engine/editor/EditorUi.s"
+	@echo "... src/engine/editor/panels/ConsolePanel.o"
+	@echo "... src/engine/editor/panels/ConsolePanel.i"
+	@echo "... src/engine/editor/panels/ConsolePanel.s"
+	@echo "... src/engine/editor/panels/HierarchyPanel.o"
+	@echo "... src/engine/editor/panels/HierarchyPanel.i"
+	@echo "... src/engine/editor/panels/HierarchyPanel.s"
+	@echo "... src/engine/editor/panels/InspectorPanel.o"
+	@echo "... src/engine/editor/panels/InspectorPanel.i"
+	@echo "... src/engine/editor/panels/InspectorPanel.s"
 	@echo "... src/engine/render/Scene.o"
 	@echo "... src/engine/render/Scene.i"
 	@echo "... src/engine/render/Scene.s"
 	@echo "... src/engine/render/Transform.o"
 	@echo "... src/engine/render/Transform.i"
 	@echo "... src/engine/render/Transform.s"
+	@echo "... src/engine/ui/DockLayout.o"
+	@echo "... src/engine/ui/DockLayout.i"
+	@echo "... src/engine/ui/DockLayout.s"
 	@echo "... src/engine/vulkan/VulkanBootstrap.o"
 	@echo "... src/engine/vulkan/VulkanBootstrap.i"
 	@echo "... src/engine/vulkan/VulkanBootstrap.s"
@@ -665,6 +971,24 @@ help:
 	@echo "... src/engine/window/Window.o"
 	@echo "... src/engine/window/Window.i"
 	@echo "... src/engine/window/Window.s"
+	@echo "... third_party/imgui-docking/backends/imgui_impl_glfw.o"
+	@echo "... third_party/imgui-docking/backends/imgui_impl_glfw.i"
+	@echo "... third_party/imgui-docking/backends/imgui_impl_glfw.s"
+	@echo "... third_party/imgui-docking/backends/imgui_impl_vulkan.o"
+	@echo "... third_party/imgui-docking/backends/imgui_impl_vulkan.i"
+	@echo "... third_party/imgui-docking/backends/imgui_impl_vulkan.s"
+	@echo "... third_party/imgui-docking/imgui.o"
+	@echo "... third_party/imgui-docking/imgui.i"
+	@echo "... third_party/imgui-docking/imgui.s"
+	@echo "... third_party/imgui-docking/imgui_draw.o"
+	@echo "... third_party/imgui-docking/imgui_draw.i"
+	@echo "... third_party/imgui-docking/imgui_draw.s"
+	@echo "... third_party/imgui-docking/imgui_tables.o"
+	@echo "... third_party/imgui-docking/imgui_tables.i"
+	@echo "... third_party/imgui-docking/imgui_tables.s"
+	@echo "... third_party/imgui-docking/imgui_widgets.o"
+	@echo "... third_party/imgui-docking/imgui_widgets.i"
+	@echo "... third_party/imgui-docking/imgui_widgets.s"
 .PHONY : help
 
 

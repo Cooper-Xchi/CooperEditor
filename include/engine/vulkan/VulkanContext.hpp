@@ -1,5 +1,6 @@
 #pragma once
 
+#include <functional>
 #include <optional>
 #include <vector>
 
@@ -25,14 +26,26 @@ public:
     void initialize(const engine::window::Window& window,
                     const engine::render::Scene& scene);
     void shutdown();
-    bool drawFrame();
+    bool drawFrame(const std::function<void(VkCommandBuffer)>& overlayRecorder = {});
     void handleFramebufferResize();
-    void updateFrameUniform(const engine::math::Mat4& viewProjection,
-                            const engine::math::Mat4& model);
+    void updateSceneViewUniform(const engine::math::Mat4& viewProjection,
+                                const engine::math::Mat4& model);
+    void updateGameViewUniform(const engine::math::Mat4& viewProjection,
+                               const engine::math::Mat4& model);
 
     uint32_t runtimeApiVersion() const noexcept;
     const std::vector<DeviceInfo>& devices() const noexcept;
     const DeviceRuntime* primaryDeviceRuntime() const noexcept;
+    VkInstance instanceHandle() const noexcept;
+    VkPhysicalDevice primaryPhysicalDevice() const noexcept;
+    VkDevice primaryLogicalDevice() const noexcept;
+    VkQueue primaryGraphicsQueue() const noexcept;
+    uint32_t primaryGraphicsQueueFamilyIndex() const noexcept;
+    VkRenderPass primaryRenderPass() const noexcept;
+    uint32_t swapchainImageCount() const noexcept;
+    uint32_t swapchainMinImageCount() const noexcept;
+    VkImageView sceneViewportImageView() const noexcept;
+    VkImageView gameViewportImageView() const noexcept;
 
 private:
     void createInstance();
@@ -42,7 +55,8 @@ private:
     DeviceInfo collectDeviceInfo(VkPhysicalDevice physicalDevice) const;
     void selectPrimaryDevice();
     void createPrimaryDeviceResources();
-    void uploadCameraUniforms(DeviceRuntime& runtime);
+    void uploadUniforms(const std::vector<BufferResource>& uniformBuffers,
+                        const CameraUniformData& uniform);
     void destroyFrameSyncObjects(DeviceRuntime& runtime);
     void destroySwapchainResources(DeviceRuntime& runtime);
     void createSwapchainResources(const DeviceInfo& device,

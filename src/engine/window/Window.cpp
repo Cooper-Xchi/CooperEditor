@@ -1,5 +1,6 @@
 #include "engine/window/Window.hpp"
 
+#include <string>
 #include <stdexcept>
 
 #include <GLFW/glfw3.h>
@@ -94,19 +95,19 @@ Window::~Window() {
     shutdown();
 }
 
-void Window::initialize() {
-    shutdown();     //清理环境
+void Window::InitGlfwWindow() {
+    //获得glfw配置
     const auto& config = engine::config::appConfig().window; //获取窗口配置
 
     //初始化glfw
     if (glfwInit() != GLFW_TRUE) {
         throw std::runtime_error("glfwInit failed");
     }
-
+    //是否使用opengl 是否允许重制大小
     glfwWindowHint(GLFW_CLIENT_API, GLFW_NO_API); //客户端不使用openglapi 因为之后用vulkan接管
     glfwWindowHint(GLFW_RESIZABLE,
                    config.resizable ? GLFW_TRUE : GLFW_FALSE);     //客户端不允许拖动设置大小
-
+    GLFWmonitor* monitor = glfwGetPrimaryMonitor();
     //创建glfw，传入宽度，高度，标题，是否全屏，是否上下屏
     handle_ = glfwCreateWindow(config.width,
                                config.height,
@@ -118,8 +119,10 @@ void Window::initialize() {
         glfwTerminate();
         throw std::runtime_error("glfwCreateWindow failed");
     }
-
     framebufferResized_ = false;
+}
+
+void Window::InitCallBacks() {
     inputState_ = {};
     glfwSetWindowUserPointer(handle_, this);
     glfwSetFramebufferSizeCallback(handle_, framebufferResizeCallback);
@@ -127,6 +130,13 @@ void Window::initialize() {
     glfwSetCursorPosCallback(handle_, cursorPositionCallback);
     glfwSetMouseButtonCallback(handle_, mouseButtonCallback);
     glfwSetScrollCallback(handle_, scrollCallback);
+
+}
+
+void Window::Initialize() {
+    shutdown();     //清理环境
+    InitGlfwWindow();
+    InitCallBacks();
 }
 
 void Window::shutdown() {
@@ -172,6 +182,15 @@ std::pair<int, int> Window::framebufferSize() const {
 
 const engine::input::InputState& Window::inputState() const noexcept {
     return inputState_;
+}
+
+void Window::setTitle(std::string_view title) const {
+    if (handle_ == nullptr) {
+        return;
+    }
+
+    const std::string titleCopy(title);
+    glfwSetWindowTitle(handle_, titleCopy.c_str());
 }
 
 GLFWwindow* Window::nativeHandle() const noexcept {

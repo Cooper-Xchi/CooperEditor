@@ -1,8 +1,9 @@
 #pragma once
 
+#include <functional>
 #include <cstdint>
-#include <string>
 #include <optional>
+#include <string>
 #include <vector>
 
 #include <vulkan/vulkan.h>
@@ -56,27 +57,41 @@ std::vector<VkImageView> createSwapchainImageViews(
     VkFormat imageFormat);
 
 VkRenderPass createRenderPass(VkDevice logicalDevice,
-                              VkFormat colorAttachmentFormat);
+                              VkFormat colorAttachmentFormat,
+                              VkImageLayout finalLayout);
 std::vector<VkFramebuffer> createFramebuffers(
     VkDevice logicalDevice,
     VkRenderPass renderPass,
     const std::vector<VkImageView>& swapchainImageViews,
     VkExtent2D extent);
+VkFramebuffer createFramebuffer(VkDevice logicalDevice,
+                                VkRenderPass renderPass,
+                                VkImageView imageView,
+                                VkExtent2D extent);
 VkCommandPool createCommandPool(VkDevice logicalDevice,
                                 uint32_t graphicsQueueFamilyIndex);
 std::vector<VkCommandBuffer> allocateCommandBuffers(
     VkDevice logicalDevice,
     VkCommandPool commandPool,
     uint32_t commandBufferCount);
-void recordCommandBuffers(VkRenderPass renderPass,
-                          VkExtent2D extent,
-                          const std::vector<VkFramebuffer>& framebuffers,
-                          const std::vector<VkCommandBuffer>& commandBuffers,
-                          VkPipelineLayout pipelineLayout,
-                          VkPipeline graphicsPipeline,
-                          VkBuffer vertexBuffer,
-                          const std::vector<VkDescriptorSet>& cameraDescriptorSets,
-                          uint32_t drawVertexCount);
+void recordCommandBuffer(VkRenderPass renderPass,
+                         VkExtent2D extent,
+                         VkFramebuffer framebuffer,
+                         VkCommandBuffer commandBuffer,
+                         VkRenderPass sceneRenderPass,
+                         VkFramebuffer sceneFramebuffer,
+                         VkFramebuffer gameFramebuffer,
+                         VkPipeline sceneGraphicsPipeline,
+                         VkExtent2D sceneExtent,
+                         VkPipelineLayout pipelineLayout,
+                         VkPipeline swapchainGraphicsPipeline,
+                         VkBuffer vertexBuffer,
+                         VkDescriptorSet sceneCameraDescriptorSet,
+                         VkDescriptorSet gameCameraDescriptorSet,
+                         VkImage sceneViewportImage,
+                         VkImage gameViewportImage,
+                         uint32_t drawVertexCount,
+                         const std::function<void(VkCommandBuffer)>& overlayRecorder);
 VkSemaphore createSemaphore(VkDevice logicalDevice);
 VkFence createFence(VkDevice logicalDevice);
 std::vector<FrameSyncObjects> createFrameSyncObjects(VkDevice logicalDevice,
@@ -101,6 +116,14 @@ BufferResource createBufferResource(VkPhysicalDevice physicalDevice,
                                     VkDeviceSize size,
                                     VkBufferUsageFlags usage,
                                     VkMemoryPropertyFlags properties);
+ImageResource createImageResource(VkPhysicalDevice physicalDevice,
+                                  VkDevice logicalDevice,
+                                  uint32_t width,
+                                  uint32_t height,
+                                  VkFormat format,
+                                  VkImageUsageFlags usage,
+                                  VkImageAspectFlags aspectMask);
+void destroyImageResource(VkDevice logicalDevice, ImageResource& image);
 void uploadVertexData(BufferResource& vertexBuffer,
                       const std::vector<engine::render::Vertex>& vertices);
 VkDescriptorSetLayout createCameraDescriptorSetLayout(VkDevice logicalDevice);

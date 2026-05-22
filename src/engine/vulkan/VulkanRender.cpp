@@ -4,8 +4,91 @@
 
 namespace engine::vulkan::detail {
 
+namespace {
+
+void transitionViewportForSampling(VkCommandBuffer commandBuffer, VkImage image) {
+    VkImageMemoryBarrier barrier{};
+    barrier.sType = VK_STRUCTURE_TYPE_IMAGE_MEMORY_BARRIER;
+    barrier.srcAccessMask = VK_ACCESS_COLOR_ATTACHMENT_WRITE_BIT;
+    barrier.dstAccessMask = VK_ACCESS_SHADER_READ_BIT;
+    barrier.oldLayout = VK_IMAGE_LAYOUT_SHADER_READ_ONLY_OPTIMAL;
+    barrier.newLayout = VK_IMAGE_LAYOUT_SHADER_READ_ONLY_OPTIMAL;
+    barrier.srcQueueFamilyIndex = VK_QUEUE_FAMILY_IGNORED;
+    barrier.dstQueueFamilyIndex = VK_QUEUE_FAMILY_IGNORED;
+    barrier.image = image;
+    barrier.subresourceRange.aspectMask = VK_IMAGE_ASPECT_COLOR_BIT;
+    barrier.subresourceRange.baseMipLevel = 0;
+    barrier.subresourceRange.levelCount = 1;
+    barrier.subresourceRange.baseArrayLayer = 0;
+    barrier.subresourceRange.layerCount = 1;
+
+    vkCmdPipelineBarrier(commandBuffer,
+                         VK_PIPELINE_STAGE_COLOR_ATTACHMENT_OUTPUT_BIT,
+                         VK_PIPELINE_STAGE_FRAGMENT_SHADER_BIT,
+                         0,
+                         0,
+                         nullptr,
+                         0,
+                         nullptr,
+                         1,
+                         &barrier);
+}
+
+void recordScenePass(VkCommandBuffer commandBuffer,
+                     VkRenderPass sceneRenderPass,
+                     VkFramebuffer sceneFramebuffer,
+                     VkPipeline sceneGraphicsPipeline,
+                     VkExtent2D sceneExtent,
+                     VkPipelineLayout pipelineLayout,
+                     VkBuffer vertexBuffer,
+                     VkDescriptorSet cameraDescriptorSet,
+                     uint32_t drawVertexCount,
+                     const VkClearValue& clearColor) {
+    VkRenderPassBeginInfo sceneRenderPassInfo{};
+    sceneRenderPassInfo.sType = VK_STRUCTURE_TYPE_RENDER_PASS_BEGIN_INFO;
+    sceneRenderPassInfo.renderPass = sceneRenderPass;
+    sceneRenderPassInfo.framebuffer = sceneFramebuffer;
+    sceneRenderPassInfo.renderArea.offset = {0, 0};
+    sceneRenderPassInfo.renderArea.extent = sceneExtent;
+    sceneRenderPassInfo.clearValueCount = 1;
+    sceneRenderPassInfo.pClearValues = &clearColor;
+
+    vkCmdBeginRenderPass(commandBuffer,
+                         &sceneRenderPassInfo,
+                         VK_SUBPASS_CONTENTS_INLINE);
+    if (sceneGraphicsPipeline != VK_NULL_HANDLE) {
+        vkCmdBindPipeline(commandBuffer,
+                          VK_PIPELINE_BIND_POINT_GRAPHICS,
+                          sceneGraphicsPipeline);
+        if (vertexBuffer != VK_NULL_HANDLE) {
+            const VkBuffer vertexBuffers[] = {vertexBuffer};
+            const VkDeviceSize offsets[] = {0};
+            vkCmdBindVertexBuffers(commandBuffer,
+                                   0,
+                                   1,
+                                   vertexBuffers,
+                                   offsets);
+        }
+        if (cameraDescriptorSet != VK_NULL_HANDLE) {
+            vkCmdBindDescriptorSets(commandBuffer,
+                                    VK_PIPELINE_BIND_POINT_GRAPHICS,
+                                    pipelineLayout,
+                                    0,
+                                    1,
+                                    &cameraDescriptorSet,
+                                    0,
+                                    nullptr);
+        }
+        vkCmdDraw(commandBuffer, drawVertexCount, 1, 0, 0);
+    }
+    vkCmdEndRenderPass(commandBuffer);
+}
+
+}  // namespace
+
 VkRenderPass createRenderPass(VkDevice logicalDevice,
-                              VkFormat colorAttachmentFormat) {
+                              VkFormat colorAttachmentFormat,
+                              VkImageLayout finalLayout) {
     VkAttachmentDescription colorAttachment{};
     colorAttachment.format = colorAttachmentFormat;
     colorAttachment.samples = VK_SAMPLE_COUNT_1_BIT;
@@ -14,7 +97,7 @@ VkRenderPass createRenderPass(VkDevice logicalDevice,
     colorAttachment.stencilLoadOp = VK_ATTACHMENT_LOAD_OP_DONT_CARE;
     colorAttachment.stencilStoreOp = VK_ATTACHMENT_STORE_OP_DONT_CARE;
     colorAttachment.initialLayout = VK_IMAGE_LAYOUT_UNDEFINED;
-    colorAttachment.finalLayout = VK_IMAGE_LAYOUT_PRESENT_SRC_KHR;
+    colorAttachment.finalLayout = finalLayout;
 
     VkAttachmentReference colorAttachmentRef{};
     colorAttachmentRef.attachment = 0;
@@ -92,6 +175,30 @@ std::vector<VkFramebuffer> createFramebuffers(
     return framebuffers;
 }
 
+VkFramebuffer createFramebuffer(VkDevice logicalDevice,
+                                VkRenderPass renderPass,
+                                VkImageView imageView,
+                                VkExtent2D extent) {
+    VkImageView attachments[] = {imageView};
+
+    VkFramebufferCreateInfo framebufferInfo{};
+    framebufferInfo.sType = VK_STRUCTURE_TYPE_FRAMEBUFFER_CREATE_INFO;
+    framebufferInfo.renderPass = renderPass;
+    framebufferInfo.attachmentCount = 1;
+    framebufferInfo.pAttachments = attachments;
+    framebufferInfo.width = extent.width;
+    framebufferInfo.height = extent.height;
+    framebufferInfo.layers = 1;
+
+    VkFramebuffer framebuffer = VK_NULL_HANDLE;
+    check(vkCreateFramebuffer(logicalDevice,
+                              &framebufferInfo,
+                              nullptr,
+                              &framebuffer),
+          "vkCreateFramebuffer failed");
+    return framebuffer;
+}
+
 VkCommandPool createCommandPool(VkDevice logicalDevice,
                                 uint32_t graphicsQueueFamilyIndex) {
     VkCommandPoolCreateInfo poolInfo{};
@@ -124,74 +231,89 @@ std::vector<VkCommandBuffer> allocateCommandBuffers(
     return commandBuffers;
 }
 
-void recordCommandBuffers(VkRenderPass renderPass,
-                          VkExtent2D extent,
-                          const std::vector<VkFramebuffer>& framebuffers,
-                          const std::vector<VkCommandBuffer>& commandBuffers,
-                          VkPipelineLayout pipelineLayout,
-                          VkPipeline graphicsPipeline,
-                          VkBuffer vertexBuffer,
-                          const std::vector<VkDescriptorSet>& cameraDescriptorSets,
-                          uint32_t drawVertexCount) {
+void recordCommandBuffer(VkRenderPass renderPass,
+                         VkExtent2D extent,
+                         VkFramebuffer framebuffer,
+                         VkCommandBuffer commandBuffer,
+                         VkRenderPass sceneRenderPass,
+                         VkFramebuffer sceneFramebuffer,
+                         VkFramebuffer gameFramebuffer,
+                         VkPipeline sceneGraphicsPipeline,
+                         VkExtent2D sceneExtent,
+                         VkPipelineLayout pipelineLayout,
+                         VkPipeline swapchainGraphicsPipeline,
+                         VkBuffer vertexBuffer,
+                         VkDescriptorSet sceneCameraDescriptorSet,
+                         VkDescriptorSet gameCameraDescriptorSet,
+                         VkImage sceneViewportImage,
+                         VkImage gameViewportImage,
+                         uint32_t drawVertexCount,
+                         const std::function<void(VkCommandBuffer)>& overlayRecorder) {
     const auto& clearColorConfig = engine::config::appConfig().render.clearColor;
 
-    for (uint32_t index = 0;
-         index < static_cast<uint32_t>(commandBuffers.size());
-         ++index) {
-        VkCommandBufferBeginInfo beginInfo{};
-        beginInfo.sType = VK_STRUCTURE_TYPE_COMMAND_BUFFER_BEGIN_INFO;
+    VkCommandBufferBeginInfo beginInfo{};
+    beginInfo.sType = VK_STRUCTURE_TYPE_COMMAND_BUFFER_BEGIN_INFO;
 
-        check(vkBeginCommandBuffer(commandBuffers[index], &beginInfo),
-              "vkBeginCommandBuffer failed");
+    check(vkBeginCommandBuffer(commandBuffer, &beginInfo),
+          "vkBeginCommandBuffer failed");
 
-        VkClearValue clearColor{};
-        clearColor.color = {{clearColorConfig[0],
-                             clearColorConfig[1],
-                             clearColorConfig[2],
-                             clearColorConfig[3]}};
+    VkClearValue clearColor{};
+    clearColor.color = {{clearColorConfig[0],
+                         clearColorConfig[1],
+                         clearColorConfig[2],
+                         clearColorConfig[3]}};
 
-        VkRenderPassBeginInfo renderPassInfo{};
-        renderPassInfo.sType = VK_STRUCTURE_TYPE_RENDER_PASS_BEGIN_INFO;
-        renderPassInfo.renderPass = renderPass;
-        renderPassInfo.framebuffer = framebuffers[index];
-        renderPassInfo.renderArea.offset = {0, 0};
-        renderPassInfo.renderArea.extent = extent;
-        renderPassInfo.clearValueCount = 1;
-        renderPassInfo.pClearValues = &clearColor;
+    recordScenePass(commandBuffer,
+                    sceneRenderPass,
+                    sceneFramebuffer,
+                    sceneGraphicsPipeline,
+                    sceneExtent,
+                    pipelineLayout,
+                    vertexBuffer,
+                    sceneCameraDescriptorSet,
+                    drawVertexCount,
+                    clearColor);
+    transitionViewportForSampling(commandBuffer, sceneViewportImage);
 
-        vkCmdBeginRenderPass(commandBuffers[index],
-                             &renderPassInfo,
-                             VK_SUBPASS_CONTENTS_INLINE);
-        if (graphicsPipeline != VK_NULL_HANDLE) {
-            vkCmdBindPipeline(commandBuffers[index],
-                              VK_PIPELINE_BIND_POINT_GRAPHICS,
-                              graphicsPipeline);
-            if (vertexBuffer != VK_NULL_HANDLE) {
-                const VkBuffer vertexBuffers[] = {vertexBuffer};
-                const VkDeviceSize offsets[] = {0};
-                vkCmdBindVertexBuffers(commandBuffers[index],
-                                       0,
-                                       1,
-                                       vertexBuffers,
-                                       offsets);
-            }
-            if (!cameraDescriptorSets.empty()) {
-                vkCmdBindDescriptorSets(commandBuffers[index],
-                                        VK_PIPELINE_BIND_POINT_GRAPHICS,
-                                        pipelineLayout,
-                                        0,
-                                        1,
-                                        &cameraDescriptorSets[index],
-                                        0,
-                                        nullptr);
-            }
-            vkCmdDraw(commandBuffers[index], drawVertexCount, 1, 0, 0);
-        }
-        vkCmdEndRenderPass(commandBuffers[index]);
+    recordScenePass(commandBuffer,
+                    sceneRenderPass,
+                    gameFramebuffer,
+                    sceneGraphicsPipeline,
+                    sceneExtent,
+                    pipelineLayout,
+                    vertexBuffer,
+                    gameCameraDescriptorSet,
+                    drawVertexCount,
+                    clearColor);
+    transitionViewportForSampling(commandBuffer, gameViewportImage);
 
-        check(vkEndCommandBuffer(commandBuffers[index]),
-              "vkEndCommandBuffer failed");
+    VkClearValue editorClearColor{};
+    editorClearColor.color = {{0.219f, 0.219f, 0.219f, 1.0f}};
+
+    VkRenderPassBeginInfo swapchainRenderPassInfo{};
+    swapchainRenderPassInfo.sType = VK_STRUCTURE_TYPE_RENDER_PASS_BEGIN_INFO;
+    swapchainRenderPassInfo.renderPass = renderPass;
+    swapchainRenderPassInfo.framebuffer = framebuffer;
+    swapchainRenderPassInfo.renderArea.offset = {0, 0};
+    swapchainRenderPassInfo.renderArea.extent = extent;
+    swapchainRenderPassInfo.clearValueCount = 1;
+    swapchainRenderPassInfo.pClearValues = &editorClearColor;
+
+    vkCmdBeginRenderPass(commandBuffer,
+                         &swapchainRenderPassInfo,
+                         VK_SUBPASS_CONTENTS_INLINE);
+    if (swapchainGraphicsPipeline != VK_NULL_HANDLE) {
+        vkCmdBindPipeline(commandBuffer,
+                          VK_PIPELINE_BIND_POINT_GRAPHICS,
+                          swapchainGraphicsPipeline);
     }
+    if (overlayRecorder) {
+        overlayRecorder(commandBuffer);
+    }
+    vkCmdEndRenderPass(commandBuffer);
+
+    check(vkEndCommandBuffer(commandBuffer),
+          "vkEndCommandBuffer failed");
 }
 
 VkSemaphore createSemaphore(VkDevice logicalDevice) {
